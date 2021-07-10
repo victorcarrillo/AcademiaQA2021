@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testing.org/testing-1.0.dtd">
+<suite name="Demo Maven cmd Line" verbose="1" parallel="false" thread-count="1">
+
+    <test name="Quick Test">
+        <classes>
+            <class name="TestLogin.LoginTest"/>
+        </classes>
+    </test>
+
+</suite>
