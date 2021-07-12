@@ -1,0 +1,6 @@
+PageObjects\InventoryPage.class
+PageObjects\LoginPage.class
+utilities\Log.class
+PageObjects\BaseTest.class
+PageObjects\BasePage.class
+utilities\CommonUtilities.class

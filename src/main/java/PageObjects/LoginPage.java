@@ -1,7 +1,6 @@
 package PageObjects;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -13,6 +12,7 @@ public class LoginPage extends BasePage{
     By bySauceLogo = By.cssSelector("div.login_logo");
     By byUserInput = By.cssSelector("input#user-name");
     By byPasswordInput = By.cssSelector("input#password");
+    By byLoginButton = By.cssSelector("input#login-button");
     By byMessageEpicSad = By.cssSelector("div.error-message-container.error >h3");
 
 
@@ -32,18 +32,26 @@ public class LoginPage extends BasePage{
         }
     }
 
-    public void insertCredentials(String user, String password){
-        Log.info("Trying access with user: "+user);
+    public void insertUser(String user){
+        Log.info("Trying access with user: "+ user);
         WebElement userInput =  getElementOfPresenceOfElementLocated(byUserInput, 5);
         userInput.sendKeys(user);
+    }
+
+    public void insertPassword(String password){
         Log.info("Trying access with password: "+password);
         WebElement userPassword =  getElementOfPresenceOfElementLocated(byPasswordInput, 5);
         userPassword.sendKeys(password);
-        userPassword.sendKeys(Keys.ENTER);
+    }
+
+    public void clickLoginButton(){
+        Log.info("Click on login button");
+        WebElement loginButton =  getElementOfPresenceOfElementLocated(byLoginButton, 5);
+        loginButton.click();
     }
 
     public void checkMessageEpicSadFace(String message){
-        Log.info("Comparing Epic sad face message");
+        Log.info("Comparing Epic sad face message: "+ message);
         WebElement messageEpicSad = getElementOfPresenceOfElementLocated(byMessageEpicSad,5);
         Assert.assertEquals(messageEpicSad.getText(), message);
     }
