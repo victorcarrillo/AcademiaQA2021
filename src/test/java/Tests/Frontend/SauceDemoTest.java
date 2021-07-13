@@ -2,7 +2,6 @@ package Tests.Frontend;
 
 import PageObjects.*;
 import org.json.JSONArray;
-import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.Log;
@@ -24,6 +23,18 @@ public class SauceDemoTest extends BaseTest {
     String INDEX_PRODUCT2;
     String NUM_NOTIFICATIONS_EXPECTED;
     String HEADER_CART;
+    String EMPTY_NOTIFICATIONS;
+    String HEADER_STEP_ONE;
+    String NAME_STEP_ONE;
+    String LAST_NAME_STEP_ONE;
+    String POSTAL_CODE_STEP_ONE;
+    String HEADER_STEP_TWO;
+    String PAYMENT_INFO;
+    String SHIPPING_INFO;
+
+    /**Auxiliary Constants**/
+    int i;
+    JSONArray arrayProducts;
 
     @Test
     public void successLogin(){
@@ -147,11 +158,11 @@ public class SauceDemoTest extends BaseTest {
 
     @Test
     public void sortedAtoZ(){
+        successLogin();
         PRODUCTS = props.getProperty("inventory.productsList");
         MESSAGE_INVENTORY_BUTTON = props.getProperty("inventory.messageButtonAdd");
         SORTED_BY = props.getProperty("inventory.sortValueAZ");
 
-        successLogin();
         Log.info("Start of sorted A to Z Case");
         InventoryPage inventoryPage = new InventoryPage(driver);
         JSONArray arrayProducts = inventoryPage.checkProductsContainerInInventory(PRODUCTS, MESSAGE_INVENTORY_BUTTON);
@@ -161,11 +172,11 @@ public class SauceDemoTest extends BaseTest {
 
     @Test
     public void sortedZtoA(){
+        successLogin();
         PRODUCTS = props.getProperty("inventory.productsList");
         MESSAGE_INVENTORY_BUTTON = props.getProperty("inventory.messageButtonAdd");
         SORTED_BY = props.getProperty("inventory.sortValueZA");
 
-        successLogin();
         Log.info("Start of sorted Z to A Case");
         InventoryPage inventoryPage = new InventoryPage(driver);
         JSONArray arrayProducts = inventoryPage.checkProductsContainerInInventory(PRODUCTS, MESSAGE_INVENTORY_BUTTON);
@@ -175,11 +186,11 @@ public class SauceDemoTest extends BaseTest {
 
     @Test
     public void sortedPriceLoToHi(){
+        successLogin();
         PRODUCTS = props.getProperty("inventory.productsList");
         MESSAGE_INVENTORY_BUTTON = props.getProperty("inventory.messageButtonAdd");
         SORTED_BY = props.getProperty("inventory.sortValueLoHi");
 
-        successLogin();
         Log.info("Start of sorted price low to high Case");
         InventoryPage inventoryPage = new InventoryPage(driver);
         JSONArray arrayProducts = inventoryPage.checkProductsContainerInInventory(PRODUCTS, MESSAGE_INVENTORY_BUTTON);
@@ -189,11 +200,11 @@ public class SauceDemoTest extends BaseTest {
 
     @Test
     public void sortedPriceHiToLo(){
+        successLogin();
         PRODUCTS = props.getProperty("inventory.productsList");
         MESSAGE_INVENTORY_BUTTON = props.getProperty("inventory.messageButtonAdd");
         SORTED_BY = props.getProperty("inventory.sortValueHiLo");
 
-        successLogin();
         Log.info("Start of sorted price high  to low Case");
         InventoryPage inventoryPage = new InventoryPage(driver);
         JSONArray arrayProducts = inventoryPage.checkProductsContainerInInventory(PRODUCTS, MESSAGE_INVENTORY_BUTTON);
@@ -203,9 +214,9 @@ public class SauceDemoTest extends BaseTest {
 
     @Test
     public void visualizeMenu(){
+        successLogin();
         URL_ABOUT = props.getProperty("menu.urlAbout");
 
-        successLogin();
         Log.info("Start of visualize Menu Case");
         MenuList menuList = new MenuList(driver);
         menuList.clickBurgerButton();
@@ -222,12 +233,13 @@ public class SauceDemoTest extends BaseTest {
 
     @Test
     public void resetApp(){
+        successLogin();
         MESSAGE_INVENTORY_BUTTON = props.getProperty("inventory.messageButtonRemove");
         INDEX_PRODUCT = props.getProperty("inventory.indexProduct");
         INDEX_PRODUCT2 = props.getProperty("inventory.indexProduct2");
         NUM_NOTIFICATIONS_EXPECTED = props.getProperty("menu.numProductsAddedResetAppCase");
+        EMPTY_NOTIFICATIONS = props.getProperty("menu.emptyNotificationsCart");
 
-        successLogin();
         Log.info("Start of reset app Case");
         MenuList menuList = new MenuList(driver);
         menuList.clickBurgerButton();
@@ -241,31 +253,30 @@ public class SauceDemoTest extends BaseTest {
         menuList.clickBurgerButton();
         menuList.checkNotificationsCart(NUM_NOTIFICATIONS_EXPECTED);
         menuList.clickResetApp();
-        menuList.checkNotificationsCart("");
+        menuList.checkNotificationsCart(EMPTY_NOTIFICATIONS);
         Log.info("End of reset app Case");
     }
 
     @Test
     public void productIntoCart(){
+        successLogin();
         String SwitchButtonMessage = props.getProperty("inventory.messageButtonRemove");
         MESSAGE_INVENTORY_BUTTON = props.getProperty("inventory.messageButtonAdd");
         PRODUCTS = props.getProperty("inventory.productsList");
         INDEX_PRODUCT = props.getProperty("inventory.indexProduct");
         NUM_NOTIFICATIONS_EXPECTED = props.getProperty("menu.numProductsAddedAddCar");
         HEADER_CART = props.getProperty("cart.title");
-        int i;
         String headerCart;
 
-        successLogin();
         Log.info("Start of product into cart Case");
         InventoryPage inventoryPage = new InventoryPage(driver);
-        JSONArray arrayProducts = inventoryPage.checkProductsContainerInInventory(PRODUCTS, MESSAGE_INVENTORY_BUTTON);
+        arrayProducts = inventoryPage.checkProductsContainerInInventory(PRODUCTS, MESSAGE_INVENTORY_BUTTON);
         String product = inventoryPage.addToCarElement(INDEX_PRODUCT, SwitchButtonMessage);
         i = inventoryPage.checkProductInformation(arrayProducts, product);
         MenuList menuList = new MenuList(driver);
         menuList.checkNotificationsCart(NUM_NOTIFICATIONS_EXPECTED);
-        CartPage cartPage = new CartPage(driver);
         menuList.clickCartIcon();
+        CartPage cartPage = new CartPage(driver);
         headerCart = cartPage.CartHeader();
         Assert.assertEquals(HEADER_CART.toUpperCase(),headerCart.toUpperCase());
         Assert.assertTrue(cartPage.cartButtonsDisplayed());
@@ -273,6 +284,161 @@ public class SauceDemoTest extends BaseTest {
         cartPage.clickButtonContinueShopping();
         menuList.checkNotificationsCart(NUM_NOTIFICATIONS_EXPECTED);
         Log.info("End of product into cart Case");
+    }
+
+    @Test
+    public void productOutCart(){
+        productIntoCart();
+        MESSAGE_INVENTORY_BUTTON = props.getProperty("inventory.messageButtonAdd");
+        EMPTY_NOTIFICATIONS = props.getProperty("menu.emptyNotificationsCart");
+
+        Log.info("Start of product out cart Case");
+        InventoryPage inventoryPage = new InventoryPage(driver);
+        String product = inventoryPage.removeCarElement(INDEX_PRODUCT, MESSAGE_INVENTORY_BUTTON);
+        MenuList menuList = new MenuList(driver);
+        menuList.clickCartIcon();
+        menuList.checkNotificationsCart(EMPTY_NOTIFICATIONS);
+        CartPage cartPage = new CartPage(driver);
+        Assert.assertTrue(cartPage.verifyProductOutCar(product));
+        Log.info("End of product out cart Case");
+    }
+
+    @Test
+    public void checkOutStepOneCancelPurchase(){
+        productIntoCart();
+        HEADER_STEP_ONE = props.getProperty("stepOne.title");
+        HEADER_CART = props.getProperty("cart.title");
+        MESSAGE_INVENTORY_BUTTON = props.getProperty("inventory.messageButtonRemove");
+        String headerStepOne;
+        String headerCart;
+
+        Log.info("Start of cancel purchase in step one Case");
+        MenuList menuList = new MenuList(driver);
+        menuList.clickCartIcon();
+        CartPage cartPage = new CartPage(driver);
+        cartPage.clickButtonCheckout();
+        StepOnePage stepOnePage = new StepOnePage(driver);
+        headerStepOne = stepOnePage.StepOneHeader();
+        Assert.assertEquals(HEADER_STEP_ONE.toUpperCase(),headerStepOne.toUpperCase());
+        stepOnePage.clickOnButtonCancel();
+        headerCart = cartPage.CartHeader();
+        Assert.assertEquals(HEADER_CART.toUpperCase(),headerCart.toUpperCase());
+        cartPage.verifyProductIntoCar(arrayProducts.getJSONObject(i),MESSAGE_INVENTORY_BUTTON);
+        Log.info("End of cancel purchase in step one Case");
+    }
+
+    @Test
+    public void checkOutStepOneNameError(){
+        productIntoCart();
+        HEADER_STEP_ONE = props.getProperty("stepOne.title");
+        ERROR_MESSAGE = props.getProperty("stepOne.messageErrorName");
+        String headerStepOne;
+
+        Log.info("Start of name error in step one Case");
+        MenuList menuList = new MenuList(driver);
+        menuList.clickCartIcon();
+        CartPage cartPage = new CartPage(driver);
+        cartPage.clickButtonCheckout();
+        StepOnePage stepOnePage = new StepOnePage(driver);
+        headerStepOne = stepOnePage.StepOneHeader();
+        Assert.assertEquals(HEADER_STEP_ONE.toUpperCase(),headerStepOne.toUpperCase());
+        stepOnePage.clickOnButtonContinue();
+        stepOnePage.validateErrorMessage(ERROR_MESSAGE);
+        Log.info("End of name error in step one Case");
+    }
+
+    @Test
+    public void checkOutStepOneLastNameError(){
+        productIntoCart();
+        HEADER_STEP_ONE = props.getProperty("stepOne.title");
+        ERROR_MESSAGE = props.getProperty("stepOne.messageErrorLastName");
+        NAME_STEP_ONE = props.getProperty("stepOne.name");
+        String headerStepOne;
+
+        Log.info("Start of last name error in step one Case");
+        MenuList menuList = new MenuList(driver);
+        menuList.clickCartIcon();
+        CartPage cartPage = new CartPage(driver);
+        cartPage.clickButtonCheckout();
+        StepOnePage stepOnePage = new StepOnePage(driver);
+        headerStepOne = stepOnePage.StepOneHeader();
+        Assert.assertEquals(HEADER_STEP_ONE.toUpperCase(),headerStepOne.toUpperCase());
+        stepOnePage.insertName(NAME_STEP_ONE);
+        stepOnePage.clickOnButtonContinue();
+        stepOnePage.validateErrorMessage(ERROR_MESSAGE);
+        Log.info("End of last name error in step one Case");
+    }
+
+    @Test
+    public void checkOutStepOnePostalCodeError(){
+        productIntoCart();
+        HEADER_STEP_ONE = props.getProperty("stepOne.title");
+        ERROR_MESSAGE = props.getProperty("stepOne.messageErrorPostalCode");
+        NAME_STEP_ONE = props.getProperty("stepOne.name");
+        LAST_NAME_STEP_ONE = props.getProperty("stepOne.lastName");
+        String headerStepOne;
+
+        Log.info("Start of postal code error in step one Case");
+        MenuList menuList = new MenuList(driver);
+        menuList.clickCartIcon();
+        CartPage cartPage = new CartPage(driver);
+        cartPage.clickButtonCheckout();
+        StepOnePage stepOnePage = new StepOnePage(driver);
+        headerStepOne = stepOnePage.StepOneHeader();
+        Assert.assertEquals(HEADER_STEP_ONE.toUpperCase(),headerStepOne.toUpperCase());
+        stepOnePage.insertName(NAME_STEP_ONE);
+        stepOnePage.insertLastName(LAST_NAME_STEP_ONE);
+        stepOnePage.clickOnButtonContinue();
+        stepOnePage.validateErrorMessage(ERROR_MESSAGE);
+        Log.info("End of error last name in step one Case");
+    }
+
+    @Test
+    public void checkOutStepOneContinue(){
+        productIntoCart();
+        HEADER_STEP_ONE = props.getProperty("stepOne.title");
+        HEADER_STEP_TWO = props.getProperty("stepTwo.title");
+        NAME_STEP_ONE = props.getProperty("stepOne.name");
+        LAST_NAME_STEP_ONE = props.getProperty("stepOne.lastName");
+        POSTAL_CODE_STEP_ONE = props.getProperty("stepOne.postalCode");
+        String headerStepOne;
+        String headerStepTwo;
+
+        Log.info("Start of continue step one Case");
+        MenuList menuList = new MenuList(driver);
+        menuList.clickCartIcon();
+        CartPage cartPage = new CartPage(driver);
+        cartPage.clickButtonCheckout();
+        StepOnePage stepOnePage = new StepOnePage(driver);
+        headerStepOne = stepOnePage.StepOneHeader();
+        Assert.assertEquals(HEADER_STEP_ONE.toUpperCase(),headerStepOne.toUpperCase());
+        stepOnePage.insertName(NAME_STEP_ONE);
+        stepOnePage.insertLastName(LAST_NAME_STEP_ONE);
+        stepOnePage.insertPostalCode(POSTAL_CODE_STEP_ONE);
+        stepOnePage.clickOnButtonContinue();
+        StepTwoPage stepTwoPage = new StepTwoPage(driver);
+        headerStepTwo = stepTwoPage.StepTwoHeader();
+        Assert.assertEquals(HEADER_STEP_TWO.toUpperCase(),headerStepTwo.toUpperCase());
+        Log.info("End of continue step one Case");
+    }
+
+    @Test
+    public void checkOutStepTwoCancel(){
+        checkOutStepOneContinue();
+
+        PAYMENT_INFO = props.getProperty("stepTwo.paymentInfo");
+        SHIPPING_INFO = props.getProperty("stepTwo.shippingInfo");
+
+        Log.info("Start of cancel step two Case");
+        StepTwoPage stepTwoPage = new StepTwoPage(driver);
+        stepTwoPage.verifyProductIntoPurchase(arrayProducts.getJSONObject(i));
+        stepTwoPage.validatePaymentInfo(PAYMENT_INFO);
+        stepTwoPage.validateShippingInfo(SHIPPING_INFO);
+        stepTwoPage.validateCorrectValuesPrice(arrayProducts.getJSONObject(i));
+        stepTwoPage.clickOnButtonCancel();
+        InventoryPage inventoryPage = new InventoryPage(driver);
+        Assert.assertTrue(inventoryPage.validateInventoryContainer());
+        Log.info("End of cancel step two Case");
     }
 
 

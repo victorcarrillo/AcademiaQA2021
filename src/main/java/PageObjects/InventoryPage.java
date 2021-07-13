@@ -25,6 +25,7 @@ public class InventoryPage extends BasePage {
     String partIPL = "a#item_";
     String partIPL2 = "_img_link";
     By byAddToCar = By.cssSelector("div.inventory_item_container button");
+    By byRemoveCar = By.cssSelector("div.inventory_item_container button");
     By byBackToProducts = By.cssSelector("button#back-to-products");
     By byNameProductInCar = By.cssSelector("div.inventory_details_name.large_size");
 
@@ -191,7 +192,7 @@ public class InventoryPage extends BasePage {
         WebElement addToCar = getElementOfPresenceOfElementLocated(byAddToCar, 5);
         addToCar.click();
         addToCar = getElementOfPresenceOfElementLocated(byAddToCar, 5);
-        Log.info("Checking the change in the button message");
+        Log.info("Checking change in the button message");
         Assert.assertEquals(addToCar.getText().toUpperCase(),messageCarButton.toUpperCase());
         WebElement backProducts = getElementOfPresenceOfElementLocated(byBackToProducts, 5);
         Log.info("Going back to the products view");
@@ -214,6 +215,25 @@ public class InventoryPage extends BasePage {
 
         }
         return index;
+    }
+
+    public String removeCarElement(String indexProduct, String messageCarButton){
+        Log.info("Click on product with index: "+indexProduct);
+        bySelectImageProductLink = By.cssSelector(partIPL+indexProduct+partIPL2);
+        WebElement productImage = getElementOfPresenceOfElementLocated(bySelectImageProductLink, 5);
+        productImage.click();
+        WebElement productName = getElementOfPresenceOfElementLocated(byNameProductInCar, 5);
+        String nameProduct = productName.getText();
+        Log.info("Remove to car product " +nameProduct );
+        WebElement removeToCar = getElementOfPresenceOfElementLocated(byRemoveCar, 5);
+        removeToCar.click();
+        removeToCar = getElementOfPresenceOfElementLocated(byRemoveCar, 5);
+        Log.info("Checking change in the button message");
+        Assert.assertEquals(removeToCar.getText().toUpperCase(),messageCarButton.toUpperCase());
+        WebElement backProducts = getElementOfPresenceOfElementLocated(byBackToProducts, 5);
+        Log.info("Going back to the products view");
+        backProducts.click();
+        return nameProduct;
     }
 
 }

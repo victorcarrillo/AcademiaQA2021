@@ -1,6 +1,5 @@
 package PageObjects;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -72,9 +71,34 @@ public class CartPage extends BasePage{
         Assert.assertEquals(messageButton.toUpperCase(), buttonRemoveProduct.toUpperCase());
     }
 
+    public boolean verifyProductOutCar(String productName){
+        Log.info("Validate if product "+ productName + " isn't present into car");
+        if(!driver.findElements(byProductsNameInCart).isEmpty()){
+            List<WebElement> productsName = getListElements(byProductsNameInCart, 5);
+            for(int i=0; i < productsName.size(); i++)
+            {
+                String productN = productsName.get(i).getText();
+                String[] element = productN.split("\\\n");
+
+                if(element[0].equals(productName)){
+                    Log.info("Product "+ productName + " is still present into car");
+                    return false;
+                }
+            }
+        }
+        Log.info("Product "+ productName + " isn't present into car");
+        return true;
+    }
+
     public void clickButtonContinueShopping(){
         WebElement continueButton = getElementOfPresenceOfElementLocated(byContinueButton, 5);
         continueButton.click();
         Log.info("Continue shopping button clicked");
+    }
+
+    public void clickButtonCheckout(){
+        WebElement checkoutButton = getElementOfPresenceOfElementLocated(byCheckoutButton, 5);
+        checkoutButton.click();
+        Log.info("Checkout button clicked");
     }
 }
