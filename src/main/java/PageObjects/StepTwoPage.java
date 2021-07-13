@@ -21,6 +21,7 @@ public class StepTwoPage extends BasePage{
     By byTax = By.cssSelector("div.summary_tax_label");
     By byTotal = By.cssSelector("div.summary_total_label");
     By byCancelButton = By.cssSelector("button#cancel");
+    By byFinishButton = By.cssSelector("button#finish");
 
 
     public StepTwoPage(WebDriver driver){
@@ -110,5 +111,11 @@ public class StepTwoPage extends BasePage{
         Log.info("Click on cancel button");
         WebElement cancelButton =  getElementOfPresenceOfElementLocated(byCancelButton, 5);
         cancelButton.click();
+    }
+
+    public void clickOnButtonFinish(){
+        Log.info("Click on finish button");
+        WebElement finishButton =  getElementOfPresenceOfElementLocated(byFinishButton, 5);
+        finishButton.click();
     }
 }

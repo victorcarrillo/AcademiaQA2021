@@ -31,6 +31,10 @@ public class SauceDemoTest extends BaseTest {
     String HEADER_STEP_TWO;
     String PAYMENT_INFO;
     String SHIPPING_INFO;
+    String HEADER_CHECKOUT_COMPLETE;
+    String URL_TWITTER;
+    String URL_FACEBOOK;
+    String URL_LINKEDIN;
 
     /**Auxiliary Constants**/
     int i;
@@ -439,6 +443,49 @@ public class SauceDemoTest extends BaseTest {
         InventoryPage inventoryPage = new InventoryPage(driver);
         Assert.assertTrue(inventoryPage.validateInventoryContainer());
         Log.info("End of cancel step two Case");
+    }
+
+    @Test
+    public void checkoutComplete(){
+        checkOutStepOneContinue();
+
+        PAYMENT_INFO = props.getProperty("stepTwo.paymentInfo");
+        SHIPPING_INFO = props.getProperty("stepTwo.shippingInfo");
+        HEADER_CHECKOUT_COMPLETE = props.getProperty("checkoutComplete.title");
+        EMPTY_NOTIFICATIONS = props.getProperty("menu.emptyNotificationsCart");
+        String headerCheckoutComplete;
+
+        Log.info("Start of checkout complete Case");
+        StepTwoPage stepTwoPage = new StepTwoPage(driver);
+        stepTwoPage.verifyProductIntoPurchase(arrayProducts.getJSONObject(i));
+        stepTwoPage.validatePaymentInfo(PAYMENT_INFO);
+        stepTwoPage.validateShippingInfo(SHIPPING_INFO);
+        stepTwoPage.validateCorrectValuesPrice(arrayProducts.getJSONObject(i));
+        stepTwoPage.clickOnButtonFinish();
+        CheckoutCompletePage checkoutCompletePage = new CheckoutCompletePage(driver);
+        headerCheckoutComplete = checkoutCompletePage.checkoutComHeader();
+        Assert.assertEquals(HEADER_CHECKOUT_COMPLETE.toUpperCase(),headerCheckoutComplete.toUpperCase());
+        Assert.assertTrue(checkoutCompletePage.infoAndButtonIsDisplayed());
+        checkoutCompletePage.clickBackHomeButton();
+        InventoryPage inventoryPage = new InventoryPage(driver);
+        Assert.assertTrue(inventoryPage.validateInventoryContainer());
+        MenuList menuList = new MenuList(driver);
+        menuList.checkNotificationsCart(EMPTY_NOTIFICATIONS);
+        Log.info("End of checkout complete Case");
+    }
+
+    @Test
+    public void socialMediaLinks(){
+        successLogin();
+
+        URL_TWITTER = props.getProperty("footer.urlTwitter");
+        URL_FACEBOOK = props.getProperty("footer.urlFace");
+        URL_LINKEDIN = props.getProperty("footer.urlLinkedin");
+
+        Footer footer = new Footer(driver);
+        footer.checkURLTwitter(URL_TWITTER);
+        footer.checkURLFacebook(URL_FACEBOOK);
+        footer.checkURLLinkedin(URL_LINKEDIN);
     }
 
 
