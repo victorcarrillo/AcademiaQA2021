@@ -1,0 +1,21 @@
+2021-07-14 01:18:10 INFO  Log:20 - Starting Testing ...TestSuite is starting
+2021-07-14 01:18:10 INFO  Log:30 - Setting up test execution
+2021-07-14 01:18:13 INFO  Log:30 - Opening Browser
+2021-07-14 01:18:13 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-14 01:18:14 INFO  Log:30 - Logging into system
+2021-07-14 01:18:14 INFO  Log:30 - Filling up field 'username' with: standard_user
+2021-07-14 01:18:14 INFO  Log:30 - Filling up field 'password' with: secret_sauce
+2021-07-14 01:18:15 INFO  Log:30 - Clicking button 'login'
+2021-07-14 01:18:15 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-14 01:18:15 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-14 01:18:15 INFO  Log:30 - Validating if name in products' cards
+2021-07-14 01:18:15 INFO  Log:30 - All products' cards in inventory have a name
+2021-07-14 01:18:15 INFO  Log:30 - Validating if image in products' cards
+2021-07-14 01:18:15 INFO  Log:30 - All products' cards in inventory have an image
+2021-07-14 01:18:15 INFO  Log:30 - Validating if description in products' cards
+2021-07-14 01:18:15 INFO  Log:30 - All products' cards in inventory have a description
+2021-07-14 01:18:15 INFO  Log:30 - Validating if price in products' cards
+2021-07-14 01:18:15 INFO  Log:30 - All products' cards in inventory have a price
+2021-07-14 01:18:15 INFO  Log:30 - Validating if 'add to cart' button in products' cards
+2021-07-14 01:18:15 INFO  Log:30 - All products' cards in inventory have a button
+2021-07-14 01:18:16 INFO  Log:25 - Ending Testing ...TestSuite is closing

@@ -35,7 +35,7 @@ public class BaseTest {
         if(osEnv.contains("Mac")) {
             System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
             props = CommonUtilities
-                    .loadProperties(projectPath+"src/main/resources/testData.properties");
+                    .loadProperties("src/main/resources/testData.properties");
 
             ChromeOptions op = new ChromeOptions();
             if(props.getProperty("incognito").equals("true")) {
@@ -53,7 +53,7 @@ public class BaseTest {
         } else if(osEnv.contains("Win")) {
             System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
             props = CommonUtilities
-                    .loadProperties(projectPath+"src\\main\\resources\\testData.properties");
+                    .loadProperties("src\\main\\resources\\testData.properties");
 
             ChromeOptions op = new ChromeOptions();
             if(props.getProperty("incognito").equals("true")) {
@@ -76,13 +76,13 @@ public class BaseTest {
     @AfterMethod
     public void testResults(ITestResult result) {
         if(result.getStatus()==ITestResult.SUCCESS) {
-            logger.fail("Test "+ result.getTestName() +" passed");
+            logger.pass("Test "+ result.getName() +" passed");
             extent.flush();
         } else if(result.getStatus()==ITestResult.FAILURE) {
-            logger.fail("Test "+ result.getTestName() +" failed");
+            logger.fail("Test "+ result.getName() +" failed");
             extent.flush();
         } else if(result.getStatus()==ITestResult.SKIP) {
-            logger.fail("Test "+ result.getTestName() +" skipped");
+            logger.skip("Test "+ result.getName() +" skipped");
             extent.flush();
         }
     }

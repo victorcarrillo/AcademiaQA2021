@@ -14,10 +14,11 @@ public class BasePage {
 
     public WebDriver driver;
     public Properties props = CommonUtilities
-            .loadProperties(projectPath+"src/main/resources/testData.properties");
+            .loadProperties("src/main/resources/testData.properties");
 
     WebElement element;
     List<WebElement> listWebElement;
+    List<String> listString;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
@@ -49,5 +50,12 @@ public class BasePage {
             Log.fatal("Elements are not found during execution "+e);
         }
         return null;
+    }
+
+    public List<String> getListString(List<WebElement> listWeb) {
+        for(int i = 0; i < listWeb.size(); i++) {
+            listString.add(listWebElement.get(i).getText());
+        }
+        return listString;
     }
 }

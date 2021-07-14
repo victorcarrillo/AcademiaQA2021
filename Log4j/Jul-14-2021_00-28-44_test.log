@@ -1,0 +1,14 @@
+2021-07-14 00:28:44 INFO  Log:20 - Starting Testing ...TestSuite is starting
+2021-07-14 00:28:44 INFO  Log:30 - Setting up test execution
+2021-07-14 00:28:47 INFO  Log:30 - Opening Browser
+2021-07-14 00:28:47 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-14 00:28:48 INFO  Log:30 - Logging into system
+2021-07-14 00:28:48 INFO  Log:30 - Filling up field 'username' with: standard_user
+2021-07-14 00:28:48 INFO  Log:30 - Filling up field 'password' with: secret_sauce
+2021-07-14 00:28:49 INFO  Log:30 - Clicking button 'login'
+2021-07-14 00:28:49 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-14 00:28:49 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-14 00:28:49 INFO  Log:30 - Validating if products in inventory
+2021-07-14 00:28:49 INFO  Log:30 - Products in inventory
+2021-07-14 00:28:49 FATAL Log:40 - Inventory is empty
+2021-07-14 00:28:50 INFO  Log:25 - Ending Testing ...TestSuite is closing
