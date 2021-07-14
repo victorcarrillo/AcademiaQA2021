@@ -1,6 +1,14 @@
 PageObjects\InventoryPage.class
-PageObjects\LoginPage.class
+PageObjects\StepOnePage.class
+PageObjects\MenuList.class
 utilities\Log.class
 PageObjects\BaseTest.class
 PageObjects\BasePage.class
 utilities\CommonUtilities.class
+PageObjects\CartPage.class
+PageObjects\CheckoutCompletePage.class
+PageObjects\InventoryPage$2.class
+PageObjects\LoginPage.class
+PageObjects\Footer.class
+PageObjects\StepTwoPage.class
+PageObjects\InventoryPage$1.class

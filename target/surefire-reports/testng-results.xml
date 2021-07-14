@@ -1,61 +1,435 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="22" passed="22">
   <reporter-output>
   </reporter-output>
-  <suite name="Demo Maven CMD Line" duration-ms="23736" started-at="2021-07-11T03:37:56Z" finished-at="2021-07-11T03:38:20Z">
+  <suite name="Demo Maven CMD Line" duration-ms="119681" started-at="2021-07-14T18:35:44Z" finished-at="2021-07-14T18:37:44Z">
     <groups>
     </groups>
-    <test name="Login Test" duration-ms="23736" started-at="2021-07-11T03:37:56Z" finished-at="2021-07-11T03:38:20Z">
-      <class name="Tests.Frontend.LoginTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.LoginTests@15d9bc04]" name="setUp" is-config="true" duration-ms="3375" started-at="2021-07-11T03:37:56Z" finished-at="2021-07-11T03:37:59Z">
+    <test name="Login Test" duration-ms="119681" started-at="2021-07-14T18:35:44Z" finished-at="2021-07-14T18:37:44Z">
+      <class name="Tests.Frontend.SauceDemoTest">
+        <test-method status="PASS" signature="setUpReport()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="setUpReport" is-config="true" duration-ms="354" started-at="2021-07-14T18:35:44Z" finished-at="2021-07-14T18:35:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReport -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="setUp" is-config="true" duration-ms="7958" started-at="2021-07-14T18:35:44Z" finished-at="2021-07-14T18:35:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="failedPasswordLogin()[pri:0, instance:Tests.Frontend.LoginTests@15d9bc04]" name="failedPasswordLogin" duration-ms="1833" started-at="2021-07-11T03:37:59Z" finished-at="2021-07-11T03:38:01Z">
+        <test-method status="PASS" signature="checkOutStepOneCancelPurchase()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="checkOutStepOneCancelPurchase" duration-ms="4222" started-at="2021-07-14T18:35:52Z" finished-at="2021-07-14T18:35:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutStepOneCancelPurchase -->
+        <test-method status="PASS" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="cleanUp" is-config="true" duration-ms="2633" started-at="2021-07-14T18:35:57Z" finished-at="2021-07-14T18:35:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkOutStepOneCancelPurchase status=SUCCESS method=SauceDemoTest.checkOutStepOneCancelPurchase()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="setUp" is-config="true" duration-ms="2812" started-at="2021-07-14T18:35:59Z" finished-at="2021-07-14T18:36:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkOutStepOneContinue()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="checkOutStepOneContinue" duration-ms="4363" started-at="2021-07-14T18:36:02Z" finished-at="2021-07-14T18:36:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutStepOneContinue -->
+        <test-method status="PASS" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="cleanUp" is-config="true" duration-ms="1046" started-at="2021-07-14T18:36:06Z" finished-at="2021-07-14T18:36:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkOutStepOneContinue status=SUCCESS method=SauceDemoTest.checkOutStepOneContinue()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="setUp" is-config="true" duration-ms="1810" started-at="2021-07-14T18:36:07Z" finished-at="2021-07-14T18:36:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkOutStepOneLastNameError()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="checkOutStepOneLastNameError" duration-ms="4199" started-at="2021-07-14T18:36:09Z" finished-at="2021-07-14T18:36:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutStepOneLastNameError -->
+        <test-method status="PASS" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="cleanUp" is-config="true" duration-ms="888" started-at="2021-07-14T18:36:13Z" finished-at="2021-07-14T18:36:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkOutStepOneLastNameError status=SUCCESS method=SauceDemoTest.checkOutStepOneLastNameError()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="setUp" is-config="true" duration-ms="1735" started-at="2021-07-14T18:36:14Z" finished-at="2021-07-14T18:36:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkOutStepOneNameError()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="checkOutStepOneNameError" duration-ms="3383" started-at="2021-07-14T18:36:16Z" finished-at="2021-07-14T18:36:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutStepOneNameError -->
+        <test-method status="PASS" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="cleanUp" is-config="true" duration-ms="780" started-at="2021-07-14T18:36:19Z" finished-at="2021-07-14T18:36:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkOutStepOneNameError status=SUCCESS method=SauceDemoTest.checkOutStepOneNameError()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="setUp" is-config="true" duration-ms="1814" started-at="2021-07-14T18:36:20Z" finished-at="2021-07-14T18:36:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkOutStepOnePostalCodeError()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="checkOutStepOnePostalCodeError" duration-ms="3422" started-at="2021-07-14T18:36:22Z" finished-at="2021-07-14T18:36:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutStepOnePostalCodeError -->
+        <test-method status="PASS" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="cleanUp" is-config="true" duration-ms="811" started-at="2021-07-14T18:36:26Z" finished-at="2021-07-14T18:36:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkOutStepOnePostalCodeError status=SUCCESS method=SauceDemoTest.checkOutStepOnePostalCodeError()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="setUp" is-config="true" duration-ms="2576" started-at="2021-07-14T18:36:26Z" finished-at="2021-07-14T18:36:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkOutStepTwoCancel()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="checkOutStepTwoCancel" duration-ms="3633" started-at="2021-07-14T18:36:29Z" finished-at="2021-07-14T18:36:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutStepTwoCancel -->
+        <test-method status="PASS" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="cleanUp" is-config="true" duration-ms="937" started-at="2021-07-14T18:36:33Z" finished-at="2021-07-14T18:36:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkOutStepTwoCancel status=SUCCESS method=SauceDemoTest.checkOutStepTwoCancel()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="setUp" is-config="true" duration-ms="1868" started-at="2021-07-14T18:36:33Z" finished-at="2021-07-14T18:36:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkoutComplete()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="checkoutComplete" duration-ms="3845" started-at="2021-07-14T18:36:35Z" finished-at="2021-07-14T18:36:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutComplete -->
+        <test-method status="PASS" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="cleanUp" is-config="true" duration-ms="833" started-at="2021-07-14T18:36:39Z" finished-at="2021-07-14T18:36:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkoutComplete status=SUCCESS method=SauceDemoTest.checkoutComplete()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="setUp" is-config="true" duration-ms="1757" started-at="2021-07-14T18:36:40Z" finished-at="2021-07-14T18:36:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="emptyPasswordLogin()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="emptyPasswordLogin" duration-ms="1004" started-at="2021-07-14T18:36:42Z" finished-at="2021-07-14T18:36:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyPasswordLogin -->
+        <test-method status="PASS" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="cleanUp" is-config="true" duration-ms="851" started-at="2021-07-14T18:36:43Z" finished-at="2021-07-14T18:36:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=emptyPasswordLogin status=SUCCESS method=SauceDemoTest.emptyPasswordLogin()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="setUp" is-config="true" duration-ms="1490" started-at="2021-07-14T18:36:44Z" finished-at="2021-07-14T18:36:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="emptyUserLogin()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="emptyUserLogin" duration-ms="775" started-at="2021-07-14T18:36:45Z" finished-at="2021-07-14T18:36:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyUserLogin -->
+        <test-method status="PASS" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="cleanUp" is-config="true" duration-ms="806" started-at="2021-07-14T18:36:46Z" finished-at="2021-07-14T18:36:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=emptyUserLogin status=SUCCESS method=SauceDemoTest.emptyUserLogin()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="setUp" is-config="true" duration-ms="1726" started-at="2021-07-14T18:36:47Z" finished-at="2021-07-14T18:36:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="failedPasswordLogin()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="failedPasswordLogin" duration-ms="994" started-at="2021-07-14T18:36:48Z" finished-at="2021-07-14T18:36:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failedPasswordLogin -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.Frontend.LoginTests@15d9bc04]" name="cleanUp" is-config="true" duration-ms="746" started-at="2021-07-11T03:38:01Z" finished-at="2021-07-11T03:38:02Z">
+        <test-method status="PASS" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="cleanUp" is-config="true" duration-ms="985" started-at="2021-07-14T18:36:49Z" finished-at="2021-07-14T18:36:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=failedPasswordLogin status=SUCCESS method=SauceDemoTest.failedPasswordLogin()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.LoginTests@15d9bc04]" name="setUp" is-config="true" duration-ms="3820" started-at="2021-07-11T03:38:02Z" finished-at="2021-07-11T03:38:06Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="setUp" is-config="true" duration-ms="1672" started-at="2021-07-14T18:36:50Z" finished-at="2021-07-14T18:36:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="failedUserLogin()[pri:0, instance:Tests.Frontend.LoginTests@15d9bc04]" name="failedUserLogin" duration-ms="1056" started-at="2021-07-11T03:38:06Z" finished-at="2021-07-11T03:38:07Z">
+        <test-method status="PASS" signature="failedUserLogin()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="failedUserLogin" duration-ms="1051" started-at="2021-07-14T18:36:52Z" finished-at="2021-07-14T18:36:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failedUserLogin -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.Frontend.LoginTests@15d9bc04]" name="cleanUp" is-config="true" duration-ms="2286" started-at="2021-07-11T03:38:07Z" finished-at="2021-07-11T03:38:09Z">
+        <test-method status="PASS" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="cleanUp" is-config="true" duration-ms="834" started-at="2021-07-14T18:36:53Z" finished-at="2021-07-14T18:36:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=failedUserLogin status=SUCCESS method=SauceDemoTest.failedUserLogin()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.LoginTests@15d9bc04]" name="setUp" is-config="true" duration-ms="2703" started-at="2021-07-11T03:38:09Z" finished-at="2021-07-11T03:38:12Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="setUp" is-config="true" duration-ms="1749" started-at="2021-07-14T18:36:54Z" finished-at="2021-07-14T18:36:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="lockedLogin()[pri:0, instance:Tests.Frontend.LoginTests@15d9bc04]" name="lockedLogin" duration-ms="1023" started-at="2021-07-11T03:38:12Z" finished-at="2021-07-11T03:38:13Z">
+        <test-method status="PASS" signature="lockedLogin()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="lockedLogin" duration-ms="1049" started-at="2021-07-14T18:36:56Z" finished-at="2021-07-14T18:36:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lockedLogin -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.Frontend.LoginTests@15d9bc04]" name="cleanUp" is-config="true" duration-ms="1781" started-at="2021-07-11T03:38:13Z" finished-at="2021-07-11T03:38:15Z">
+        <test-method status="PASS" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="cleanUp" is-config="true" duration-ms="1133" started-at="2021-07-14T18:36:57Z" finished-at="2021-07-14T18:36:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=lockedLogin status=SUCCESS method=SauceDemoTest.lockedLogin()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.LoginTests@15d9bc04]" name="setUp" is-config="true" duration-ms="1831" started-at="2021-07-11T03:38:15Z" finished-at="2021-07-11T03:38:17Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="setUp" is-config="true" duration-ms="1588" started-at="2021-07-14T18:36:58Z" finished-at="2021-07-14T18:36:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="successLogin()[pri:0, instance:Tests.Frontend.LoginTests@15d9bc04]" name="successLogin" duration-ms="1669" started-at="2021-07-11T03:38:17Z" finished-at="2021-07-11T03:38:18Z">
+        <test-method status="PASS" signature="productIntoCart()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="productIntoCart" duration-ms="2651" started-at="2021-07-14T18:36:59Z" finished-at="2021-07-14T18:37:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- successLogin -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.Frontend.LoginTests@15d9bc04]" name="cleanUp" is-config="true" duration-ms="1582" started-at="2021-07-11T03:38:18Z" finished-at="2021-07-11T03:38:20Z">
+        </test-method> <!-- productIntoCart -->
+        <test-method status="PASS" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="cleanUp" is-config="true" duration-ms="799" started-at="2021-07-14T18:37:02Z" finished-at="2021-07-14T18:37:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=productIntoCart status=SUCCESS method=SauceDemoTest.productIntoCart()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-      </class> <!-- Tests.Frontend.LoginTests -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="setUp" is-config="true" duration-ms="1936" started-at="2021-07-14T18:37:03Z" finished-at="2021-07-14T18:37:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="productOutCart()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="productOutCart" duration-ms="3052" started-at="2021-07-14T18:37:05Z" finished-at="2021-07-14T18:37:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productOutCart -->
+        <test-method status="PASS" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="cleanUp" is-config="true" duration-ms="1188" started-at="2021-07-14T18:37:08Z" finished-at="2021-07-14T18:37:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=productOutCart status=SUCCESS method=SauceDemoTest.productOutCart()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="setUp" is-config="true" duration-ms="1603" started-at="2021-07-14T18:37:09Z" finished-at="2021-07-14T18:37:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="resetApp()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="resetApp" duration-ms="2623" started-at="2021-07-14T18:37:11Z" finished-at="2021-07-14T18:37:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetApp -->
+        <test-method status="PASS" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="cleanUp" is-config="true" duration-ms="832" started-at="2021-07-14T18:37:13Z" finished-at="2021-07-14T18:37:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=resetApp status=SUCCESS method=SauceDemoTest.resetApp()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="setUp" is-config="true" duration-ms="1522" started-at="2021-07-14T18:37:14Z" finished-at="2021-07-14T18:37:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="socialMediaLinks()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="socialMediaLinks" duration-ms="1306" started-at="2021-07-14T18:37:16Z" finished-at="2021-07-14T18:37:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- socialMediaLinks -->
+        <test-method status="PASS" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="cleanUp" is-config="true" duration-ms="2569" started-at="2021-07-14T18:37:17Z" finished-at="2021-07-14T18:37:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=socialMediaLinks status=SUCCESS method=SauceDemoTest.socialMediaLinks()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="setUp" is-config="true" duration-ms="1420" started-at="2021-07-14T18:37:20Z" finished-at="2021-07-14T18:37:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="sortedAtoZ()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="sortedAtoZ" duration-ms="1627" started-at="2021-07-14T18:37:21Z" finished-at="2021-07-14T18:37:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortedAtoZ -->
+        <test-method status="PASS" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="cleanUp" is-config="true" duration-ms="2454" started-at="2021-07-14T18:37:23Z" finished-at="2021-07-14T18:37:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sortedAtoZ status=SUCCESS method=SauceDemoTest.sortedAtoZ()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="setUp" is-config="true" duration-ms="1587" started-at="2021-07-14T18:37:25Z" finished-at="2021-07-14T18:37:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="sortedPriceHiToLo()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="sortedPriceHiToLo" duration-ms="1538" started-at="2021-07-14T18:37:27Z" finished-at="2021-07-14T18:37:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortedPriceHiToLo -->
+        <test-method status="PASS" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="cleanUp" is-config="true" duration-ms="874" started-at="2021-07-14T18:37:28Z" finished-at="2021-07-14T18:37:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sortedPriceHiToLo status=SUCCESS method=SauceDemoTest.sortedPriceHiToLo()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="setUp" is-config="true" duration-ms="1282" started-at="2021-07-14T18:37:29Z" finished-at="2021-07-14T18:37:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="sortedPriceLoToHi()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="sortedPriceLoToHi" duration-ms="1651" started-at="2021-07-14T18:37:30Z" finished-at="2021-07-14T18:37:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortedPriceLoToHi -->
+        <test-method status="PASS" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="cleanUp" is-config="true" duration-ms="1063" started-at="2021-07-14T18:37:32Z" finished-at="2021-07-14T18:37:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sortedPriceLoToHi status=SUCCESS method=SauceDemoTest.sortedPriceLoToHi()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="setUp" is-config="true" duration-ms="1625" started-at="2021-07-14T18:37:33Z" finished-at="2021-07-14T18:37:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="sortedZtoA()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="sortedZtoA" duration-ms="1757" started-at="2021-07-14T18:37:35Z" finished-at="2021-07-14T18:37:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortedZtoA -->
+        <test-method status="PASS" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="cleanUp" is-config="true" duration-ms="795" started-at="2021-07-14T18:37:36Z" finished-at="2021-07-14T18:37:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sortedZtoA status=SUCCESS method=SauceDemoTest.sortedZtoA()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="setUp" is-config="true" duration-ms="1329" started-at="2021-07-14T18:37:37Z" finished-at="2021-07-14T18:37:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="successLogin()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="successLogin" duration-ms="1122" started-at="2021-07-14T18:37:39Z" finished-at="2021-07-14T18:37:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successLogin -->
+        <test-method status="PASS" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="cleanUp" is-config="true" duration-ms="871" started-at="2021-07-14T18:37:40Z" finished-at="2021-07-14T18:37:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=successLogin status=SUCCESS method=SauceDemoTest.successLogin()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="setUp" is-config="true" duration-ms="1148" started-at="2021-07-14T18:37:41Z" finished-at="2021-07-14T18:37:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="visualizeMenu()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="visualizeMenu" duration-ms="1561" started-at="2021-07-14T18:37:42Z" finished-at="2021-07-14T18:37:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visualizeMenu -->
+        <test-method status="PASS" signature="cleanUp(org.testng.ITestResult)[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554]" name="cleanUp" is-config="true" duration-ms="847" started-at="2021-07-14T18:37:43Z" finished-at="2021-07-14T18:37:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=visualizeMenu status=SUCCESS method=SauceDemoTest.visualizeMenu()[pri:0, instance:Tests.Frontend.SauceDemoTest@61d47554] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- Tests.Frontend.SauceDemoTest -->
     </test> <!-- Login Test -->
   </suite> <!-- Demo Maven CMD Line -->
 </testng-results>
