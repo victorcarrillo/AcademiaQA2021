@@ -1,0 +1,9 @@
+2021-07-15 12:40:04 INFO  Log:20 - Starting Testing ...Suite de pruebas inicializando
+2021-07-15 12:40:04 INFO  Log:30 - Iniciando ejecución de pruebas
+2021-07-15 12:40:06 INFO  Log:30 - Opening Browser
+2021-07-15 12:40:06 INFO  Log:20 - Starting Testing ...Caso de prueba 1: login estandar
+2021-07-15 12:40:06 INFO  Log:30 - Ingresando usuario
+2021-07-15 12:40:06 INFO  Log:30 - Ingresando contraseña
+2021-07-15 12:40:07 INFO  Log:30 - Validando Login exitoso
+2021-07-15 12:40:12 INFO  Log:30 - Limpiando
+2021-07-15 12:40:13 INFO  Log:25 - Ending Testing ...Finalizando ejecución

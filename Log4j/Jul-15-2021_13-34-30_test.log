@@ -1,0 +1,9 @@
+2021-07-15 13:34:30 INFO  Log:20 - Starting Testing ...Suite de pruebas inicializando
+2021-07-15 13:34:30 INFO  Log:30 - Iniciando ejecución de pruebas
+2021-07-15 13:34:32 INFO  Log:30 - Opening Browser
+2021-07-15 13:34:32 INFO  Log:20 - Starting Testing ...Caso de prueba 3: verificacion de inventario
+2021-07-15 13:34:33 INFO  Log:30 - Ingresando usuario
+2021-07-15 13:34:33 INFO  Log:30 - Ingresando contraseña
+2021-07-15 13:34:33 INFO  Log:30 - Productos encontrados
+2021-07-15 13:34:33 INFO  Log:30 - Limpiando
+2021-07-15 13:34:34 INFO  Log:25 - Ending Testing ...Finalizando ejecución

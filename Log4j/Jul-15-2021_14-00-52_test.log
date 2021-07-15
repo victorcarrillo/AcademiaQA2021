@@ -1,0 +1,14 @@
+2021-07-15 14:00:52 INFO  Log:20 - Starting Testing ...Suite de pruebas inicializando
+2021-07-15 14:00:52 INFO  Log:30 - Iniciando ejecución de pruebas
+2021-07-15 14:00:54 INFO  Log:30 - Opening Browser
+2021-07-15 14:00:54 INFO  Log:20 - Starting Testing ...Caso de prueba 5: filtro precio ascendente
+2021-07-15 14:00:55 INFO  Log:30 - Ingresando usuario
+2021-07-15 14:00:55 INFO  Log:30 - Ingresando contraseña
+2021-07-15 14:00:55 INFO  Log:30 - Buscando productos en orden regular
+2021-07-15 14:00:55 INFO  Log:30 - Productos encontrados
+2021-07-15 14:00:55 INFO  Log:30 - Filtrando objetos en orden de precio ascendente
+2021-07-15 14:00:55 INFO  Log:30 - Buscando productos en orden por precio ascendente
+2021-07-15 14:00:55 INFO  Log:30 - Productos encontrados
+2021-07-15 14:00:56 FATAL Log:40 - Productos en orden incorrecto
+2021-07-15 14:00:56 INFO  Log:30 - Limpiando
+2021-07-15 14:00:58 INFO  Log:25 - Ending Testing ...Finalizando ejecución

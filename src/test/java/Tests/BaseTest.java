@@ -18,8 +18,8 @@ import java.util.concurrent.TimeUnit;
 public class BaseTest {
 
     public WebDriver driver;
+    public Properties prop = CommonUtilities.loadProperties("src/main/resources/testData.properties");
     String projectPath= System.getProperty("user.dir");
-    public Properties prop = CommonUtilities.loadProperties("src/main/resources/testDara.properties");
     String osEnv = System.getProperty("os.name");
 
 
