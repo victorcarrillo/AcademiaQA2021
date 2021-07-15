@@ -2,12 +2,14 @@ package Tests;
 
 import PageObjects.InventoryPage;
 import PageObjects.LoginPage;
+import PageObjects.ShoppingCartPage;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.Log;
 
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 public class InventoryTests extends BaseTest{
 
@@ -19,7 +21,7 @@ public class InventoryTests extends BaseTest{
 
     @Test
     public void inventoryTest(){
-        Log.startLog("Caso de prueba 3: verificacion de inventario");
+        Log.startLog("Caso de prueba 7: verificacion de inventario");
 
         URL = prop.getProperty("webApp");
         username = prop.getProperty("username");
@@ -37,7 +39,7 @@ public class InventoryTests extends BaseTest{
 
     @Test
     public void sortByAlphabeticDescendantTest(){
-        Log.startLog("Caso de prueba 4: filtro alfabético ascendente");
+        Log.startLog("Caso de prueba 8: filtro alfabético descendente");
 
         URL = prop.getProperty("webApp");
         username = prop.getProperty("username");
@@ -59,7 +61,7 @@ public class InventoryTests extends BaseTest{
 
     @Test
     public void sortByPriceAscendantTest(){
-        Log.startLog("Caso de prueba 5: filtro precio ascendente");
+        Log.startLog("Caso de prueba 9: filtro precio ascendente");
 
         URL = prop.getProperty("webApp");
         username = prop.getProperty("username");
@@ -81,7 +83,7 @@ public class InventoryTests extends BaseTest{
 
     @Test
     public void sortByPriceDescendantTest(){
-        Log.startLog("Caso de prueba 6: filtro precio descendente");
+        Log.startLog("Caso de prueba 10: filtro precio descendente");
 
         URL = prop.getProperty("webApp");
         username = prop.getProperty("username");
@@ -99,6 +101,104 @@ public class InventoryTests extends BaseTest{
         Log.info("Buscando productos en orden de precio descendente");
         orderedProducts = inventoryPage.retrieveProductsPrices();
         Assert.assertTrue(compareOrder("hilo"));
+    }
+
+    @Test
+    public void addOneProductFromInventoryTest(){
+        Log.startLog("Caso de prueba 11: agregar un producto a carrito desde inventario");
+
+        URL = prop.getProperty("webApp");
+        username = prop.getProperty("username");
+        password = prop.getProperty("password");
+
+        driver.get(URL);
+
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.inputCredentials(username, password);
+
+        InventoryPage inventoryPage = new InventoryPage(driver);
+        products = inventoryPage.retrieveAddButtons();
+        Assert.assertTrue(inventoryPage.addProductToCart(products, 1, "ADD"));
+        inventoryPage.goToShoppingCart();
+
+        ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
+        Assert.assertTrue(shoppingCartPage.verifyCartContent(1));
+    }
+
+    @Test
+    public void addMultipleProductsFromInventoryTest(){
+        Log.startLog("Caso de prueba 12: agregar varios producto a carrito desde inventario");
+
+        URL = prop.getProperty("webApp");
+        username = prop.getProperty("username");
+        password = prop.getProperty("password");
+
+        driver.get(URL);
+
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.inputCredentials(username, password);
+
+        InventoryPage inventoryPage = new InventoryPage(driver);
+        products = inventoryPage.retrieveAddButtons();
+        Assert.assertTrue(inventoryPage.addProductToCart(products, 1, "ADD"));
+        Assert.assertTrue(inventoryPage.addProductToCart(products, 2, "ADD"));
+        Assert.assertTrue(inventoryPage.addProductToCart(products, 3, "ADD"));
+        inventoryPage.goToShoppingCart();
+
+        ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
+        Assert.assertTrue(shoppingCartPage.verifyCartContent(3));
+    }
+
+    @Test
+    public void addAndRemoveOneProductFromInventoryTest(){
+        Log.startLog("Caso de prueba 11: agregar un producto a carrito desde inventario");
+
+        URL = prop.getProperty("webApp");
+        username = prop.getProperty("username");
+        password = prop.getProperty("password");
+
+        driver.get(URL);
+
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.inputCredentials(username, password);
+
+        InventoryPage inventoryPage = new InventoryPage(driver);
+        products = inventoryPage.retrieveAddButtons();
+        Assert.assertTrue(inventoryPage.addProductToCart(products, 1, "ADD"));
+        products = inventoryPage.retrieveAddButtons();
+        Assert.assertTrue(inventoryPage.addProductToCart(products, 1, "REMOVE"));
+        inventoryPage.goToShoppingCart();
+
+        ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
+        Assert.assertTrue(shoppingCartPage.verifyCartContent(0));
+    }
+
+    @Test
+    public void addAndRemoveMultipleProductFromInventoryTest(){
+        Log.startLog("Caso de prueba 11: agregar un producto a carrito desde inventario");
+
+        URL = prop.getProperty("webApp");
+        username = prop.getProperty("username");
+        password = prop.getProperty("password");
+
+        driver.get(URL);
+
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.inputCredentials(username, password);
+
+        InventoryPage inventoryPage = new InventoryPage(driver);
+        products = inventoryPage.retrieveAddButtons();
+        Assert.assertTrue(inventoryPage.addProductToCart(products, 1, "ADD"));
+        Assert.assertTrue(inventoryPage.addProductToCart(products, 2, "ADD"));
+        Assert.assertTrue(inventoryPage.addProductToCart(products, 3, "ADD"));
+        products = inventoryPage.retrieveAddButtons();
+        Assert.assertTrue(inventoryPage.addProductToCart(products, 1, "REMOVE"));
+        Assert.assertTrue(inventoryPage.addProductToCart(products, 2, "REMOVE"));
+        Assert.assertTrue(inventoryPage.addProductToCart(products, 3, "REMOVE"));
+        inventoryPage.goToShoppingCart();
+
+        ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
+        Assert.assertTrue(shoppingCartPage.verifyCartContent(0));
     }
 
     private void printProducts(){

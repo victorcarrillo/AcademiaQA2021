@@ -39,7 +39,7 @@ public class LoginPage extends BasePage{
         byMenuButton = By.cssSelector(prop.getProperty("menuButton"));
         Log.info("Validando Login exitoso");
         try{
-            Assert.assertTrue(getElementOfPresenceOfElementLocated(byMenuButton, 5).isDisplayed());
+            getElementOfPresenceOfElementLocated(byMenuButton, 5);
             Log.info("Login exitoso");
             return true;
         }
@@ -49,17 +49,19 @@ public class LoginPage extends BasePage{
         }
     }
 
-    public boolean validateBlockedLogin() {
+    public boolean validateErrorMessage(String error) {
         byErrorMessage = By.cssSelector(prop.getProperty("errorMessage"));
-        Log.info("Validando Login bloqueado");
+        Log.info("Validando mensaje de error que contenga: " + error);
         try{
-            Assert.assertTrue(getElementOfPresenceOfElementLocated(byErrorMessage, 5).isDisplayed());
-            Log.info("Bloqueo exitoso");
+            WebElement messageBox = getElementOfPresenceOfElementLocated(byErrorMessage, 5);
+            messageBox.getText().contains(error);
+            Log.info("Mensaje de error validado");
             return true;
         }
         catch(Exception e) {
-            Log.fatal("Bloqueo fallido");
+            Log.fatal("Mensaje de error no validado");
             return false;
         }
     }
+
 }

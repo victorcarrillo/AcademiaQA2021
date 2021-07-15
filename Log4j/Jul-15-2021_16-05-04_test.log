@@ -1,0 +1,10 @@
+2021-07-15 16:05:04 INFO  Log:20 - Starting Testing ...Suite de pruebas inicializando
+2021-07-15 16:05:04 INFO  Log:30 - Iniciando ejecución de pruebas
+2021-07-15 16:05:07 INFO  Log:30 - Opening Browser
+2021-07-15 16:05:07 INFO  Log:20 - Starting Testing ...Caso de prueba 3: login con nombre de usuario vacío
+2021-07-15 16:05:08 INFO  Log:30 - Ingresando usuario
+2021-07-15 16:05:08 INFO  Log:30 - Ingresando contraseña
+2021-07-15 16:05:08 INFO  Log:30 - Validando mensaje de error que contenga: do not match
+2021-07-15 16:05:08 INFO  Log:30 - Mensaje de error validado
+2021-07-15 16:05:08 INFO  Log:30 - Limpiando
+2021-07-15 16:05:10 INFO  Log:25 - Ending Testing ...Finalizando ejecución

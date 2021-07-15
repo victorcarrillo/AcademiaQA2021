@@ -1,0 +1,10 @@
+2021-07-15 18:06:23 INFO  Log:20 - Starting Testing ...Suite de pruebas inicializando
+2021-07-15 18:06:23 INFO  Log:30 - Iniciando ejecución de pruebas
+2021-07-15 18:06:25 INFO  Log:30 - Opening Browser
+2021-07-15 18:06:25 INFO  Log:20 - Starting Testing ...Caso de prueba 11: agregar un producto a carrito desde inventario
+2021-07-15 18:06:26 INFO  Log:30 - Ingresando usuario
+2021-07-15 18:06:26 INFO  Log:30 - Ingresando contraseña
+2021-07-15 18:06:26 INFO  Log:30 - Agregando producto al carrito de compra
+2021-07-15 18:06:26 INFO  Log:30 - Encontrando producto para accion: Add
+2021-07-15 18:06:35 FATAL Log:40 - Acción, Add, fallida
+2021-07-15 18:06:35 INFO  Log:30 - Limpiando

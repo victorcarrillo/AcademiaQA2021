@@ -1,0 +1,10 @@
+2021-07-15 15:58:28 INFO  Log:20 - Starting Testing ...Suite de pruebas inicializando
+2021-07-15 15:58:28 INFO  Log:30 - Iniciando ejecución de pruebas
+2021-07-15 15:58:31 INFO  Log:30 - Opening Browser
+2021-07-15 15:58:31 INFO  Log:20 - Starting Testing ...Caso de prueba 2: login bloqueado
+2021-07-15 15:58:32 INFO  Log:30 - Ingresando usuario
+2021-07-15 15:58:32 INFO  Log:30 - Ingresando contraseña
+2021-07-15 15:58:32 INFO  Log:30 - Validando mensaje de error que contenga: locked out
+2021-07-15 15:58:32 INFO  Log:30 - Mensaje de error validado
+2021-07-15 15:58:32 INFO  Log:30 - Limpiando
+2021-07-15 15:58:35 INFO  Log:25 - Ending Testing ...Finalizando ejecución

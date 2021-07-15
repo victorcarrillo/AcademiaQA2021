@@ -15,6 +15,8 @@ public class InventoryPage extends BasePage{
     By byFilterAlphabeticDescendant;
     By byFilterPriceAscendant;
     By byFilterPriceDescendant;
+    By byAddButtons;
+    By byShoppingCartButton;
 
     public InventoryPage(WebDriver driver){
         super(driver);
@@ -52,7 +54,7 @@ public class InventoryPage extends BasePage{
         byFilterAlphabeticDescendant = By.cssSelector(prop.getProperty("filterAlphabeticDescendant"));
 
         Log.info("Filtrando objetos en orden alfabético descendente");
-        WebElement filter = driver.findElement(byFilterAlphabeticDescendant);
+        WebElement filter = getElementOfPresenceOfElementLocated(byFilterAlphabeticDescendant, 5);
         filter.click();
     }
 
@@ -60,7 +62,7 @@ public class InventoryPage extends BasePage{
         byFilterPriceAscendant = By.cssSelector(prop.getProperty("filterPriceAscendant"));
 
         Log.info("Filtrando objetos en orden de precio ascendente");
-        WebElement filter = driver.findElement(byFilterPriceAscendant);
+        WebElement filter = getElementOfPresenceOfElementLocated(byFilterPriceAscendant, 5);
         filter.click();
     }
 
@@ -68,7 +70,44 @@ public class InventoryPage extends BasePage{
         byFilterPriceDescendant = By.cssSelector(prop.getProperty("filterPriceDescendant"));
 
         Log.info("Filtrando objetos en orden de precio descendente");
-        WebElement filter = driver.findElement(byFilterPriceDescendant);
+        WebElement filter = getElementOfPresenceOfElementLocated(byFilterPriceDescendant, 5);
         filter.click();
+    }
+
+    public void goToShoppingCart() {
+        byShoppingCartButton = By.cssSelector(prop.getProperty("shoppingCartButton"));
+
+        Log.info("Accesando carrito de compra");
+        WebElement shoppingCartButton = getElementOfPresenceOfElementLocated(byShoppingCartButton, 5);
+        shoppingCartButton.click();
+    }
+
+    public List<WebElement> retrieveAddButtons() {
+        byAddButtons = By.cssSelector(prop.getProperty("addToCartButton"));
+
+        Log.info("Agregando producto al carrito de compra");
+        List<WebElement> addButtons = getListElements(byAddButtons, 5);
+        return addButtons;
+    }
+
+    public boolean addProductToCart(List<WebElement> products, int productNumber, String action) {
+        if(productNumber <= products.size()) {
+            Log.info("Encontrando producto para accion: " + action);
+            WebElement addButton = products.get(productNumber - 1);
+            String buttonMessage = addButton.getText();
+            if(buttonMessage.contains(action)){
+                addButton.click();
+                Log.info("Acción, " + action + ", exitosa");
+                return true;
+            }
+            else{
+                Log.fatal("Acción, " + action + ", fallida");
+                return false;
+            }
+        }
+        else {
+            Log.fatal("Producto inexistente");
+            return false;
+        }
     }
 }
