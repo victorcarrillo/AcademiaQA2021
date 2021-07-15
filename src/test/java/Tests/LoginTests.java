@@ -2,7 +2,7 @@ package Tests;
 
 import PageObjects.BaseTest;
 import PageObjects.LoginPage;
-import PageObjects.ProductsPage;
+import PageObjects.InventoryPage;
 import Utilities.Log;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -14,8 +14,9 @@ public class LoginTests extends BaseTest {
     String MASTER_PASSWORD ;
     String LOCKED_OUT_USER ;
     String INVALID_USERNAME ;
+    String EMPTY_FIELD = "";
     /**EXPECTED**/
-    String PRODUCTS_PAGE_TITLE;
+    String INVENTORY_PAGE_TITLE;
     String INVALID_CREDENTIALS_MESSAGE;
     String EMPTY_USERNAME_MESSAGE ;
     String EMPTY_PASSWORD_MESSAGE ;
@@ -23,30 +24,37 @@ public class LoginTests extends BaseTest {
     @Test
     public void validLoginCase()  {
 
+        //html output initialization
+        logger = extent.createTest("Valid login test");
+
         //data setup
         VALID_USERNAME = props.getProperty("validUsername");
         MASTER_PASSWORD = props.getProperty("masterPassword");
-        PRODUCTS_PAGE_TITLE = props.getProperty("productsPageTitle");
+        INVENTORY_PAGE_TITLE = props.getProperty("productsPageTitle");
 
         //test run
-        System.out.println("Opening "+URL);
+        logger.info("Opening "+URL);
         driver.get(URL);
+        logger.info("Resource located");
 
-        Log.info("Locating login page elements");
+
+        logger.info("Locating login page elements");
         LoginPage loginPage = new LoginPage(driver);
-        Assert.assertEquals(loginPage.validateLoginPage(),true, "Login page elements validation");
-        Log.info("Login page elements found");
-        Log.info("Logging in with username/password credentials -> "+VALID_USERNAME+":"+MASTER_PASSWORD );
+        loginPage.validateLoginPage();
+        logger.info("Login elements located");
+        logger.info("Attempting login");
         loginPage.login(VALID_USERNAME, MASTER_PASSWORD);
-
-        Log.info("Validating products page load");
-        ProductsPage productsPage = new ProductsPage(driver);
-        Assert.assertTrue(productsPage.validateLogin(PRODUCTS_PAGE_TITLE), "Products page validation");
-        Log.info("Test successful: Products page found.");
+        logger.info("Login attempt completed");
+        logger.info("Validating login");
+        InventoryPage inventoryPage = new InventoryPage(driver);
+        inventoryPage.validateLogin(INVENTORY_PAGE_TITLE);
+        logger.info("Inventory page located. Valid login test completed");
     }
 
     @Test
     public void invalidLoginCase(){
+
+        logger = extent.createTest("Invalid login message test");
 
         //data setup
         INVALID_USERNAME = props.getProperty("invalidUsername");
@@ -54,65 +62,76 @@ public class LoginTests extends BaseTest {
         INVALID_CREDENTIALS_MESSAGE = props.getProperty("invalidCredentialsMessage");
 
         //test run
-        Log.info("Opening "+URL);
+        logger.info("Opening "+URL);
         driver.get(URL);
+        logger.info("Resource located");
 
         LoginPage loginPage = new LoginPage(driver);
-        Log.info("Locating login page elements");
-        Assert.assertEquals(loginPage.validateLoginPage(),true, "Login page elements validation");
-        Log.info("Login page elements found");
-        Log.info("Logging in with username/password credentials -> "+INVALID_USERNAME+":"+MASTER_PASSWORD );
+        logger.info("Locating login page elements");
+        loginPage.validateLoginPage();
+        logger.info("Login page elements found");
+        logger.info("Logging in with username/password credentials -> "+INVALID_USERNAME+":"+MASTER_PASSWORD );
         loginPage.login(INVALID_USERNAME, MASTER_PASSWORD);
+        logger.info("Login attempt completed");
 
-        Log.info("Validating invalid credentials message load");
-        Assert.assertEquals(loginPage.validateErrorMessage(INVALID_CREDENTIALS_MESSAGE), true, "Invalid message validation");
-        Log.info("Test successful: Invalid credentials message found");
+        //test result validation
+        logger.info("Validating invalid credentials message load");
+        loginPage.validateErrorMessage(INVALID_CREDENTIALS_MESSAGE);
+        logger.info("Invaiid login message test completed");
 
     }
 
     @Test
     public void emptyUsernameMessageCase(){
 
+        logger = extent.createTest("Empty username field message test");
+
         //data setup
         EMPTY_USERNAME_MESSAGE = props.getProperty("emptyUsernameMessage");
 
         //test run
-        System.out.println("Opening "+URL);
+        logger.info("Opening "+URL);
         driver.get(URL);
+        logger.info("Resource located");
 
         LoginPage loginPage = new LoginPage(driver);
-        Log.info("Locating login page elements");
-        Assert.assertEquals(loginPage.validateLoginPage(),true, "Login page elements validation");
-        Log.info("Login page elements found");
-        Log.info("Login attempt with empty username field");
-        loginPage.login();
+        logger.info("Locating login page elements");
+        loginPage.validateLoginPage();
+        logger.info("Login page elements found");
+        logger.info("Login attempt with empty username field");
+        loginPage.login(EMPTY_FIELD, EMPTY_FIELD);
+        logger.info("Login attempt completed");
 
-        Log.info("Validating empty user message");
-        Assert.assertEquals(loginPage.validateErrorMessage(EMPTY_USERNAME_MESSAGE), true, "Empty username message validation");
-        Log.info("Test successful: Empty username message found");
+        logger.info("Validating empty user message");
+        loginPage.validateErrorMessage(EMPTY_USERNAME_MESSAGE);
+        logger.info("Empty username message found. Test completed");
     }
 
     @Test
     public void emptyPasswordMessageCase(){
+
+        logger = extent.createTest("Empty password field error message");
 
         //data setup
         VALID_USERNAME = props.getProperty("validUsername");
         EMPTY_PASSWORD_MESSAGE = props.getProperty("emptyPasswordMessage");
 
         //test run
-        Log.info("Opening "+URL);
+        logger.info("Opening "+URL);
         driver.get(URL);
+        logger.info("Resource located");
 
         LoginPage loginPage = new LoginPage(driver);
-        Log.info("Locating login page elements");
-        Assert.assertEquals(loginPage.validateLoginPage(),true, "Login page elements validation");
-        Log.info("Login page elements found");
-        Log.info("Login attempt with empty password field");
-        loginPage.login(VALID_USERNAME);
+        logger.info("Locating login page elements");
+        loginPage.validateLoginPage();
+        logger.info("Login page elements found");
+        logger.info("Login attempt with empty password field");
+        loginPage.login(VALID_USERNAME, EMPTY_FIELD);
+        logger.info("LOgin attempt completed");
 
-        Log.info("Validating empty password message");
-        Assert.assertEquals(loginPage.validateErrorMessage(EMPTY_PASSWORD_MESSAGE), true, "Empty password message validation");
-        Log.info("Test successful: Empty password message found");
+        logger.info("Validating empty password message");
+        loginPage.validateErrorMessage(EMPTY_PASSWORD_MESSAGE);
+        logger.info("Test successful: Empty password message found");
     }
 
 //    @Test(dependsOnMethods = "validLoginCase")

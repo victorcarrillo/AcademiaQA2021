@@ -3,6 +3,7 @@ package PageObjects;
 import Utilities.Log;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 public class LoginPage extends BasePage{
 
@@ -22,44 +23,53 @@ public class LoginPage extends BasePage{
 
     public void login(String username, String password){
 
-        type(username, usernameFieldLocator);
-        type(password, passwordFieldLocator);
-        click(loginButtonLocator);
+        Log.info("Logging in with username/password credentials -> "+username+":"+password );
+        typeOnElement(username, usernameFieldLocator);
+        typeOnElement(password, passwordFieldLocator);
+        clickOnElement(loginButtonLocator);
+        Log.info("Login attempt completed");
 
     }
 
     public void login(){
 
-        click(loginButtonLocator);
+        Log.info("Logging in with empty username field" );
+        clickOnElement(loginButtonLocator);
+        Log.info("Login attempt completed");
 
     }
 
     public void login(String username){
 
-        type(username, usernameFieldLocator);
-        click(loginButtonLocator);
+        Log.info("Logging in with empty password field");
+        typeOnElement(username, usernameFieldLocator);
+        clickOnElement(loginButtonLocator);
+        Log.info("Login attempt completed");
 
     }
 
-    public boolean validateErrorMessage(String expected){
+    public void validateErrorMessage(String expected){
 
-            String actual = getElement(errorMessageLocator, 5).getText();
+        Log.info("Validating error message display and match");
+            String actual = getElementText(errorMessageLocator);
             boolean match = expected.equals(actual);
+        if (match){
+            Log.info("Found error message matches expected error message.");
+        }
             if (!match){
                 Log.info("Expected message: \""+ expected + "\"");
                 Log.info("Actual message: \""+ actual + "\"");
                 Log.fatal("Error message did not match witch expected result");
             }
-            return match;
-
+        Assert.assertEquals(actual, expected, "Error message comparison");
     }
 
 
-    public boolean validateLoginPage(){
-
-            toLocate = getElement(usernameFieldLocator,5);
-            return toLocate.isDisplayed();
-
+    public void validateLoginPage(){
+        Log.info("Validating login page elements");
+        if(elementExists(usernameFieldLocator) && elementExists(passwordFieldLocator) && elementExists(loginButtonLocator)){
+            Log.info("Login page elements found");
+        }
     }
 
 }

@@ -4,11 +4,11 @@
 
 ### For windows
 
-1. Download and install **Google Chrome browser** from [The Google Chrome Browser download page]([Navegador web Google Chrome](https://www.google.com/intl/es-419/chrome/))
+1. Download and install **Google Chrome browser** from [the google chrome download page](https://www.google.com/intl/es-419/chrome/)
 1. Download **apache-maven-3.8.1-bin.zip** from [the apache maven project download page](https://maven.apache.org/download.cgi)
 2. Extract the downloaded folder on your root folder. You can verify you have done this correctly with the following command
 ```
-ls C:\apache-maven-3.8.1
+dir C:\apache-maven-3.8.1
 ```
 Output should display the contents of your extracted folder.
 
@@ -54,15 +54,15 @@ Output should be the absolute path to your java installation.
 	setx PATH /M "%PATH%;%JAVA_HOME%\bin"
 	setx PATH /M "%PATH%;%MAVEN_HOME%\bin"
 ```
-8. You can verify this has been set correctly by opening a new terminal and issuing the following command. 
+8. You can verify this has been set correctly by opening a new terminal and entering the following command. 
 ```
 mvn -v
 ```
-Output should be your Systems maven version, as well as the jdk version
+Output should be your system's maven version, as well as the jdk version
 
 ## Test setup and run
 
-1.  Issue the following commands on the terminal
+1.  Enter the following commands on the terminal to download test suite and enter the downloaded folder
 ```
 cd C:\Your-projects-folder
 git clone https://github.com/victorcarrillo/AcademiaQA2021.git
@@ -71,10 +71,14 @@ git clone https://github.com/victorcarrillo/AcademiaQA2021.git
 
 **src/main/resources/testData.properties**
 
-3. Issue the following command to begin the test
+3. Enter the following command to begin the test, from the root folder of the suite
 ```
 mvn test clean -DsuiteXmlFile=testSuite.xml
 ```
-4. The test suite will be executed, and a test log will be created, from the root folder of the project : 
+4. The test suite will be executed, and a test log will be created, from the root folder of the suite: 
 
 **Log4j/**
+
+5. A report in html format will also be created, from the root folder of the suite:
+
+**report/**
