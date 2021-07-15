@@ -48,7 +48,7 @@ public class CatalogTests extends BaseTest {
         Log.info("Validating if products in inventory");
         catalogPage.productsInInventory();
 
-        Log.info("Validating sort option");
+        Log.info("Validating if 'sort option' in inventory");
         catalogPage.isSortOption();
     }
 
@@ -98,7 +98,7 @@ public class CatalogTests extends BaseTest {
         username = props.getProperty("valid_user");
         password = props.getProperty("pass");
         expectedPage = props.getProperty("inventory_page");
-        testProduct = props.getProperty("product_to_test");
+        testProduct = props.getProperty("product_one_id");
 
         Log.info("Going to "+URL);
         driver.get(URL);
@@ -126,7 +126,7 @@ public class CatalogTests extends BaseTest {
         username = props.getProperty("valid_user");
         password = props.getProperty("pass");
         expectedPage = props.getProperty("inventory_page");
-        testProduct = props.getProperty("product_to_test");
+        testProduct = props.getProperty("product_one_id");
 
         Log.info("Going to "+URL);
         driver.get(URL);
@@ -169,7 +169,7 @@ public class CatalogTests extends BaseTest {
         username = props.getProperty("valid_user");
         password = props.getProperty("pass");
         expectedPage = props.getProperty("inventory_page");
-        testProduct = props.getProperty("product_to_test");
+        testProduct = props.getProperty("product_one_id");
 
         Log.info("Going to "+URL);
         driver.get(URL);
@@ -183,7 +183,7 @@ public class CatalogTests extends BaseTest {
         Log.info("Clicking in product's name");
         productName = catalogPage.toProductPage(testProduct);
 
-        Log.info("Going back to inventory page from "+productName+"'s page");
+        Log.info("Clicking in 'back to products' button from "+productName+"'s page");
         catalogPage.toInventoryFromProduct();
 
         Log.info("Verifying if current page is "+expectedPage);
@@ -350,7 +350,7 @@ public class CatalogTests extends BaseTest {
         username = props.getProperty("valid_user");
         password = props.getProperty("pass");
         expectedPage = props.getProperty("inventory_page");
-        testProduct = props.getProperty("product_to_test");
+        testProduct = props.getProperty("product_one_id");
 
         Log.info("Going to "+URL);
         driver.get(URL);
@@ -384,7 +384,7 @@ public class CatalogTests extends BaseTest {
         CatalogPage catalogPage = new CatalogPage(driver);
 
         expectedPage = props.getProperty("inventory_page");
-        testProduct = props.getProperty("product_to_test");
+        testProduct = props.getProperty("product_one_id");
 
         Log.info("Verifying if current page is "+expectedPage);
         Assert.assertEquals(expectedPage,loginPage.currentPage());
@@ -415,7 +415,7 @@ public class CatalogTests extends BaseTest {
         username = props.getProperty("valid_user");
         password = props.getProperty("pass");
         expectedPage = props.getProperty("inventory_page");
-        testProduct = props.getProperty("product_to_test");
+        testProduct = props.getProperty("product_one_id");
 
         Log.info("Going to "+URL);
         driver.get(URL);
@@ -455,7 +455,7 @@ public class CatalogTests extends BaseTest {
         CatalogPage catalogPage = new CatalogPage(driver);
 
         expectedPage = props.getProperty("inventory_page");
-        testProduct = props.getProperty("product_to_test");
+        testProduct = props.getProperty("product_one_id");
 
         Log.info("Verifying if current page is "+productName+"'s page");
         Assert.assertEquals(productName,catalogPage.currentPage());

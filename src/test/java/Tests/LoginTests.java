@@ -23,13 +23,13 @@ public class LoginTests extends BaseTest {
         Log.info("Going to "+URL);
         driver.get(URL);
 
-        Log.info("Validating Username Field");
+        Log.info("Verifying presence of Username Field");
         loginPage.isUserField();
 
-        Log.info("Validating Password Field");
+        Log.info("Verifying presence of Password Field");
         loginPage.isPassField();
 
-        Log.info("Validating Login Button");
+        Log.info("Verifying presence of Login Button");
         loginPage.isLoginButton();
     }
 

@@ -1,0 +1,29 @@
+2021-07-15 00:11:50 INFO  Log:20 - Starting Testing ...TestSuite is starting
+2021-07-15 00:11:50 INFO  Log:30 - Setting up test execution
+2021-07-15 00:11:53 INFO  Log:30 - Opening Browser
+2021-07-15 00:11:53 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-15 00:11:54 INFO  Log:30 - Logging into system
+2021-07-15 00:11:54 INFO  Log:30 - Filling up field 'username' with: standard_user
+2021-07-15 00:11:54 INFO  Log:30 - Filling up field 'password' with: secret_sauce
+2021-07-15 00:11:54 INFO  Log:30 - Clicking button 'login'
+2021-07-15 00:11:54 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-15 00:11:54 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-15 00:11:54 INFO  Log:30 - Clicking in product's 'add to cart' button
+2021-07-15 00:11:54 INFO  Log:30 - Product id: 0 - Sauce Labs Bike Light added to cart
+2021-07-15 00:11:54 INFO  Log:30 - Clicking in 'cart' button
+2021-07-15 00:11:54 INFO  Log:30 - cart button found
+2021-07-15 00:11:54 INFO  Log:30 - Getting how many products are in cart
+2021-07-15 00:11:54 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-15 00:11:54 INFO  Log:30 - Verifying if current page is YOUR CART
+2021-07-15 00:11:54 INFO  Log:30 - Current page is: YOUR CART
+2021-07-15 00:11:54 INFO  Log:30 - Verifying presence of quantity in all 1 elements in cart list
+2021-07-15 00:11:54 INFO  Log:30 - 1 'quantity' elements found
+2021-07-15 00:11:54 INFO  Log:30 - Verifying presence of product's name in all 1 elements in cart list
+2021-07-15 00:11:54 INFO  Log:30 - 1 'name' elements found
+2021-07-15 00:11:54 INFO  Log:30 - Verifying presence of product's description in all 1 elements in cart list
+2021-07-15 00:11:54 INFO  Log:30 - 1 'description' elements found
+2021-07-15 00:11:54 INFO  Log:30 - Verifying presence of product's price in all 1 elements in cart list
+2021-07-15 00:11:54 INFO  Log:30 - 1 'price' elements found
+2021-07-15 00:11:54 INFO  Log:30 - Verifying presence of 'remove button' in all 1 elements in cart list
+2021-07-15 00:11:54 INFO  Log:30 - 1 'remove' buttons found
+2021-07-15 00:11:55 INFO  Log:25 - Ending Testing ...TestSuite is closing

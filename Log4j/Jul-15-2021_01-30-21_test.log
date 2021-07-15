@@ -1,0 +1,33 @@
+2021-07-15 01:30:21 INFO  Log:20 - Starting Testing ...TestSuite is starting
+2021-07-15 01:30:21 INFO  Log:30 - Setting up test execution
+2021-07-15 01:30:24 INFO  Log:30 - Opening Browser
+2021-07-15 01:30:24 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-15 01:30:25 INFO  Log:30 - Logging into system
+2021-07-15 01:30:25 INFO  Log:30 - Filling up field 'username' with: standard_user
+2021-07-15 01:30:25 INFO  Log:30 - Filling up field 'password' with: secret_sauce
+2021-07-15 01:30:25 INFO  Log:30 - Clicking button 'login'
+2021-07-15 01:30:25 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-15 01:30:25 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-15 01:30:25 INFO  Log:30 - Clicking in product's 'add to cart' button
+2021-07-15 01:30:25 INFO  Log:30 - Product id: 0 - Sauce Labs Bike Light added to cart
+2021-07-15 01:30:25 INFO  Log:30 - Clicking in 'cart' button
+2021-07-15 01:30:25 INFO  Log:30 - going to cart page
+2021-07-15 01:30:25 INFO  Log:30 - Verifying if current page is YOUR CART
+2021-07-15 01:30:25 INFO  Log:30 - Current page is: YOUR CART
+2021-07-15 01:30:25 INFO  Log:30 - Verifying if at least 1 product in cart list
+2021-07-15 01:30:25 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-15 01:30:25 INFO  Log:30 - Clicking in 'checkout' button
+2021-07-15 01:30:26 INFO  Log:30 - going to checkout page
+2021-07-15 01:30:26 INFO  Log:30 - Verifying if current page is CHECKOUT: YOUR INFORMATION
+2021-07-15 01:30:26 INFO  Log:30 - Current page is: CHECKOUT: YOUR INFORMATION
+2021-07-15 01:30:26 INFO  Log:30 - Filling up login form with invalid user and password
+2021-07-15 01:30:26 INFO  Log:30 - Filling up field 'first name' with: 
+2021-07-15 01:30:26 INFO  Log:30 - Filling up field 'last name' with: Santos
+2021-07-15 01:30:26 INFO  Log:30 - Filling up field 'zip' with: 12345
+2021-07-15 01:30:26 INFO  Log:30 - Clicking button 'continue'
+2021-07-15 01:30:26 INFO  Log:30 - Verifying if current page is CHECKOUT: YOUR INFORMATION
+2021-07-15 01:30:31 FATAL Log:40 - Element is not found during execution org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class='login_logo'] (tried for 5 second(s) with 500 milliseconds interval)
+2021-07-15 01:30:31 INFO  Log:30 - Current page is: LOGIN FORM
+2021-07-15 01:30:31 INFO  Log:30 - Verifying if error message is: Error: First Name is required
+2021-07-15 01:30:31 INFO  Log:30 - Error message showed: Error: First Name is required
+2021-07-15 01:30:32 INFO  Log:25 - Ending Testing ...TestSuite is closing

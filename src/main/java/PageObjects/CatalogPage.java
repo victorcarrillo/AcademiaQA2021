@@ -24,10 +24,10 @@ public class CatalogPage extends BasePage{
     By locCardDescription = By.xpath(props.getProperty("card_description"));
     By locCardPrice = By.xpath(props.getProperty("card_price"));
     By locCardButton = By.xpath(props.getProperty("card_button"));
-    By locNameInCard = By.xpath(props.getProperty("link_to_page_1") + props.getProperty("product_to_test") + props.getProperty("link_to_page_2"));
+    By locNameInCard = By.xpath(props.getProperty("link_to_page_1") + props.getProperty("product_one_id") + props.getProperty("link_to_page_2"));
 
-    By locAddToCart = By.xpath(props.getProperty("add_to_cart_1")+props.getProperty("product_to_test_name")+props.getProperty("add_to_cart_2"));
-    By locRemoveFromCart = By.xpath(props.getProperty("remove_from_cart_1")+props.getProperty("product_to_test_name")+props.getProperty("remove_from_cart_2"));
+    By locAddToCart = By.xpath(props.getProperty("add_to_cart_1")+props.getProperty("product_one_name")+props.getProperty("add_to_cart_2"));
+    By locRemoveFromCart = By.xpath(props.getProperty("remove_from_cart_1")+props.getProperty("product_one_name")+props.getProperty("remove_from_cart_2"));
 
     By locNameInPage = By.xpath(props.getProperty("page_name"));
     By locImageInPage = By.xpath(props.getProperty("page_image"));
@@ -288,8 +288,8 @@ public class CatalogPage extends BasePage{
     }
 
     public void toInventoryFromProduct() {
-        Log.info("Clicking in 'back to products' button");
         getElement(locBackInPage,5).click();
+        Log.info("'back' button found");
     }
 
     public String currentPage() {
