@@ -1,0 +1,19 @@
+2021-07-14 15:10:39 INFO  Log:20 - Starting Testing ...TestSuite is starting
+2021-07-14 15:10:39 INFO  Log:30 - Setting up test execution
+2021-07-14 15:10:46 INFO  Log:30 - Opening Browser
+2021-07-14 15:10:46 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-14 15:10:47 INFO  Log:30 - Logging into system
+2021-07-14 15:10:47 INFO  Log:30 - Filling up field 'username' with: standard_user
+2021-07-14 15:10:47 INFO  Log:30 - Filling up field 'password' with: secret_sauce
+2021-07-14 15:10:47 INFO  Log:30 - Clicking button 'login'
+2021-07-14 15:10:47 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-14 15:10:47 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-14 15:10:47 INFO  Log:30 - Getting all product's prices in inventory BEFORE sorting
+2021-07-14 15:10:53 INFO  Log:30 - Products' prices in inventory: 6
+2021-07-14 15:11:12 INFO  Log:30 - Sorting list gotten BEFORE sorting
+2021-07-14 15:13:00 INFO  Log:30 - Sorting products in page by price from low to high
+2021-07-14 15:13:04 INFO  Log:30 - Opening sort options
+2021-07-14 15:13:04 INFO  Log:30 - Selecting 'low' to 'high' option
+2021-07-14 15:13:09 INFO  Log:30 - Getting all product's prices in inventory AFTER sorting
+2021-07-14 15:13:10 INFO  Log:30 - Products' prices in inventory: 6
+2021-07-14 15:21:47 INFO  Log:30 - Comparing both lists to check if have same sort order

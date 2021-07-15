@@ -1,0 +1,18 @@
+2021-07-14 19:45:45 INFO  Log:20 - Starting Testing ...TestSuite is starting
+2021-07-14 19:45:45 INFO  Log:30 - Setting up test execution
+2021-07-14 19:45:50 INFO  Log:30 - Opening Browser
+2021-07-14 19:45:50 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-14 19:45:50 INFO  Log:30 - Logging into system
+2021-07-14 19:45:50 INFO  Log:30 - Filling up field 'username' with: standard_user
+2021-07-14 19:45:51 INFO  Log:30 - Filling up field 'password' with: secret_sauce
+2021-07-14 19:45:51 INFO  Log:30 - Clicking button 'login'
+2021-07-14 19:45:51 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-14 19:45:51 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-14 19:45:51 INFO  Log:30 - Clicking in product's name
+2021-07-14 19:45:51 INFO  Log:30 - Product id: 0 - Sauce Labs Bike Light
+2021-07-14 19:45:51 INFO  Log:30 - Verifying if current page is Sauce Labs Bike Light's page
+2021-07-14 19:45:51 INFO  Log:30 - Current product's page is: Sauce Labs Bike Light
+2021-07-14 19:45:51 INFO  Log:30 - Getting how many products in cart BEFORE adding new product
+2021-07-14 19:45:51 INFO  Log:30 - No products in cart
+2021-07-14 19:45:51 INFO  Log:30 - Clicking in product's 'add to cart' button
+2021-07-14 19:46:55 FATAL Log:40 - Element is not found during execution org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a[@id='item_0_title_link']/div (tried for 5 second(s) with 500 milliseconds interval)

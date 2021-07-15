@@ -6,6 +6,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
@@ -18,7 +19,6 @@ public class BasePage {
 
     WebElement element;
     List<WebElement> listWebElement;
-    List<String> listString;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
@@ -53,6 +53,7 @@ public class BasePage {
     }
 
     public List<String> getListString(List<WebElement> listWeb) {
+        List<String> listString = new ArrayList<String>();
         for(int i = 0; i < listWeb.size(); i++) {
             listString.add(listWebElement.get(i).getText());
         }
