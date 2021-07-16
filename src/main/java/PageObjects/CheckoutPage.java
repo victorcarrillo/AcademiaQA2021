@@ -53,4 +53,11 @@ public class CheckoutPage extends BasePage {
         Assert.assertTrue(toLocate.isDisplayed(), "Checkout finish validation");
         Log.info("Finished checkout located");
     }
+
+    public void validateEmptyCheckout(){
+        Log.info("Validating empty cart checkout access");
+        toLocate = getElement(firstNameFieldLocator);
+        Assert.assertFalse(toLocate.isDisplayed(), "Empty checkout validation");
+        Log.info("Emtpy cart checkout access validation successful");
+    }
 }

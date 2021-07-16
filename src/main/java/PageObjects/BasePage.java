@@ -136,7 +136,7 @@ public class BasePage {
         }
        Arrays.sort(temporary);
         if(criteria.equals("hilo")){
-            //Collections.reverse(Arrays.asList(temporary));
+            Collections.reverse(Arrays.asList(temporary));
         }
         return temporary;
 

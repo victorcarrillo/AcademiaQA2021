@@ -10,6 +10,8 @@ public class NavbarPage extends BasePage{
     //Locators
     By cartLinkLocator = By.cssSelector(".shopping_cart_link");
     By notEmptyCartLocator = By.cssSelector(".shopping_cart_badge");
+    By burguerMenuLocator = By.id("react-burger-menu-btn");
+    By logoutButtonLocator = By.id("logout_sidebar_link");
 
     public NavbarPage(WebDriver driver){
 
@@ -28,7 +30,7 @@ public class NavbarPage extends BasePage{
         toLocate = null;
         try{
             toLocate = driver.findElement(notEmptyCartLocator);
-            Log.fatal("Cart could not be emptied.");
+            Log.fatal("Cart wasnt empty");
             Assert.assertNull(toLocate, "Empty cart validation");
         }catch(org.openqa.selenium.NoSuchElementException e){
             Log.info("Empty cart validation completed");
@@ -47,6 +49,12 @@ public class NavbarPage extends BasePage{
 
     public void goToCart(){
         clickOnElement(cartLinkLocator);
+    }
+
+    public void logout(){
+        clickOnElement(burguerMenuLocator);
+        clickOnElement(logoutButtonLocator);
+        System.out.println(logoutButtonLocator);
     }
 
 }

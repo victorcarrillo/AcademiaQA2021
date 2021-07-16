@@ -8,6 +8,7 @@ public class TestCases extends BaseTest {
     String URL = props.getProperty("webapp");
     /**Test data**/
     String VALID_USERNAME ;
+    String VALID_USERNAME2;
     String MASTER_PASSWORD ;
     String LOCKED_OUT_USER ;
     String INVALID_USERNAME ;
@@ -53,6 +54,9 @@ public class TestCases extends BaseTest {
         Log.info("Test completed: inventory page located");
         logger.info("Test completed: inventory page located");
     }
+
+
+
 
 
     @Test
@@ -132,19 +136,129 @@ public class TestCases extends BaseTest {
         navbarPage.validateCartAdded();
         logger.info("Items added");
         navbarPage.goToCart();
-
+        logger.info("Starting checkout process");
         CartPage cartPage = new CartPage(driver);
         cartPage.checkout();
 
         CheckoutPage checkoutPage = new CheckoutPage(driver);
+        logger.info("Validating checkout form elements");
+        checkoutPage.validateStepOne();
         checkoutPage.stepOneFormSubmit("abraham", "rueda", "45567");
+        logger.info("Validating checkout summary elements");
         checkoutPage.validateSummary();
         checkoutPage.finishCheckout();
+        logger.info("Validating checkout complete message");
         checkoutPage.validateCheckout();
+        logger.info("Message foung");
 
 
         Log.info("Test completed: checkout functionality");
         logger.info("Test completed: checkout functionality");
+    }
+
+    @Test
+    public void cartSessionCase()  {
+
+        Log.info("Cart session reset case started");
+        //html output initialization
+        logger = extent.createTest("Cart session test");
+
+        //data setup
+        VALID_USERNAME = props.getProperty("validUsername");
+        VALID_USERNAME2 = props.getProperty("validUsername2");
+        MASTER_PASSWORD = props.getProperty("masterPassword");
+        INVENTORY_PAGE_TITLE = props.getProperty("productsPageTitle");
+
+        //test run
+        logger.info("Opening "+URL);
+        driver.get(URL);
+        logger.info("Resource located");
+
+
+        logger.info("Locating login page elements");
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.validateLoginPage();
+        logger.info("Login elements located");
+        logger.info("Attempting login");
+        loginPage.login(VALID_USERNAME, MASTER_PASSWORD);
+        logger.info("Login attempt completed");
+        logger.info("Validating login");
+
+
+        InventoryPage inventoryPage = new InventoryPage(driver);
+        inventoryPage.validateLogin(INVENTORY_PAGE_TITLE);
+        logger.info("Login validation completed");
+
+        logger.info("Adding items to cart");
+        inventoryPage.addTestItem();
+        NavbarPage navbarPage = new NavbarPage(driver);
+        navbarPage.validateCartAdded();
+        logger.info("Items added");
+
+        Log.info("Switching user session");
+        navbarPage.logout();
+
+        loginPage = new LoginPage(driver);
+        logger.info("Attempting login with different user");
+        loginPage.login(VALID_USERNAME2, MASTER_PASSWORD);
+        logger.info("Login attempt completed");
+        logger.info("Validating login");
+        inventoryPage = new InventoryPage(driver);
+        inventoryPage.validateLogin(INVENTORY_PAGE_TITLE);
+        logger.info("Login validation completed");
+        logger.info("Starting cart session reset validation");
+        navbarPage = new NavbarPage(driver);
+        navbarPage.validateCartEmpty();
+        logger.info("Validation complete");
+        Log.info("Test completed: checkout functionality");
+        logger.info("Test completed: checkout functionality");
+
+    }
+
+
+    @Test
+    public void emptyCheckoutCase()  {
+
+        Log.info("Empty checkout case started");
+        //html output initialization
+        logger = extent.createTest("Empty checkout test");
+
+        //data setup
+        VALID_USERNAME = props.getProperty("validUsername");
+        MASTER_PASSWORD = props.getProperty("masterPassword");
+        INVENTORY_PAGE_TITLE = props.getProperty("productsPageTitle");
+
+        //test run
+        logger.info("Opening "+URL);
+        driver.get(URL);
+        logger.info("Resource located");
+
+
+        logger.info("Locating login page elements");
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.validateLoginPage();
+        logger.info("Login elements located");
+        logger.info("Attempting login");
+        loginPage.login(VALID_USERNAME, MASTER_PASSWORD);
+        logger.info("Login attempt completed");
+        logger.info("Validating login");
+        InventoryPage inventoryPage = new InventoryPage(driver);
+        inventoryPage.validateLogin(INVENTORY_PAGE_TITLE);
+        logger.info("Login validation completed");
+
+        NavbarPage navbarPage = new NavbarPage(driver);
+
+        navbarPage.goToCart();
+        logger.info("Starting checkout process");
+        CartPage cartPage = new CartPage(driver);
+        cartPage.checkout();
+
+        CheckoutPage checkoutPage = new CheckoutPage(driver);
+        checkoutPage.validateEmptyCheckout();
+
+
+        Log.info("Test completed: empty checkout alert functionality");
+        logger.info("Test completed: empty checkout alert functionality");
     }
 
     //@Test

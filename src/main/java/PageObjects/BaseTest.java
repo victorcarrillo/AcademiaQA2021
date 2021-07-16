@@ -54,11 +54,9 @@ public class BaseTest {
             throw new IllegalArgumentException("OS name not found");
         }
 
-
-
     }
 
-    @AfterMethod
+    //@AfterMethod
     public void cleanUp(ITestResult result){
 
         if(result.getStatus()==ITestResult.FAILURE){
