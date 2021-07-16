@@ -1,16 +1,23 @@
 package PageObjects;
 
 import Utilities.Log;
-import com.sun.media.jfxmedia.logging.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class InventoryPage extends BasePage{
 
     /**Locators**/
     By inventoryPageTitleLocator = By.cssSelector(".title");
     By inventoryPageImageLocator = By.cssSelector(".peek");
+
+    By listFiltersSelector = By.cssSelector(".product_sort_container");
+    By itemsNameLocator = By.cssSelector(".inventory_item_name");
+    By itemsPriceLocator = By.cssSelector(".inventory_item_price");
 
     public InventoryPage(WebDriver driver){
         super(driver);
@@ -42,6 +49,56 @@ public class InventoryPage extends BasePage{
         }
 
         Assert.assertEquals(expected, actual, "Inventory page title comparison");
+
+    }
+
+    public void validateSorting( String criteria ){
+        Log.info("Starting filter functionality verification");
+        List<WebElement> elementsList;
+
+        List<String> actualNameSorting;
+        List<String> expectedNameSorting;
+
+        Integer[] actualPriceSorting;
+        Integer[] expectedPriceSorting;
+
+        if( criteria.equals("az") || criteria.equals("za") ){
+            Log.info("Name filter type detected");
+            //sorted list in expected order
+            elementsList = getElements(itemsNameLocator);
+            expectedNameSorting = getSortedTextList(elementsList,criteria);
+
+            //applying filter
+            Log.info("Applying filter");
+            toggleSelect(listFiltersSelector, criteria);
+
+            //found list in actual order
+            elementsList = getElements(itemsNameLocator);
+            actualNameSorting = getTextList(elementsList);
+
+            //expected vs found comparison
+            Assert.assertTrue(expectedNameSorting.equals(actualNameSorting), "Expected filter results verification");
+            Log.info("Verification complete. Sorting results match expected order.");
+
+        }else{
+
+            Log.info("Price filter detected");
+            //sorted list in expected order
+            elementsList = getElements(itemsPriceLocator);
+            expectedPriceSorting = getSortedNumbersList(elementsList, criteria);
+
+            //applying filter
+            Log.info("Applying filter");
+            toggleSelect(listFiltersSelector, criteria);
+
+            //found list in actual order
+            elementsList = getElements(itemsPriceLocator);
+            actualPriceSorting = getNumbersList(elementsList);
+
+            //expected vs found comparison
+            Assert.assertTrue(Arrays.equals(expectedPriceSorting, actualPriceSorting), "Expected filter result verification");
+            Log.info("Verification complete. Sorting results match expected order.");
+        }
 
     }
 

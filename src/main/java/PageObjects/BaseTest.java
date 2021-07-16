@@ -61,7 +61,6 @@ public class BaseTest {
     @AfterMethod
     public void cleanUp(ITestResult result){
 
-        System.out.println(result.getStatus());
         if(result.getStatus()==ITestResult.FAILURE){
             logger.fail("Test "+ result.getMethod()+" failed.");
             extent.flush();
