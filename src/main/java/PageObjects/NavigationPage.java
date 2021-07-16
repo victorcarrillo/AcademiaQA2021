@@ -29,101 +29,146 @@ public class NavigationPage extends BasePage{
     public void isBurgerMenu() {
         try{
             getElement(locBurgerMenu,5);
-            Log.info("Burger menu found");
+            Log.info("burger menu found");
         } catch(Exception e) {
-            Log.fatal("Burger menu not found");
+            Log.fatal("burger menu not found");
         }
     }
 
     public void isAppLogo() {
         try {
             getElement(locAppLogo,5);
-            Log.info("App logo found");
+            Log.info("app logo found");
         } catch(Exception e) {
-            Log.fatal("App logo not found");
+            Log.fatal("app logo not found");
         }
     }
 
     public void isCartButton() {
         try {
             getElement(locCartButton,5);
-            Log.info("Cart button found");
+            Log.info("cart button found");
         } catch(Exception e) {
-            Log.fatal("Cart button not found");
+            Log.fatal("cart button not found");
         }
     }
 
     public void isTwitterLink() {
         try {
             getElement(locTwitterLink,5);
-            Log.info("Twitter link found");
+            Log.info("twitter link found");
         } catch(Exception e) {
-            Log.fatal("Twitter link not found");
+            Log.fatal("twitter link not found");
         }
     }
 
     public void isFacebookLink() {
         try {
             getElement(locFacebookLink,5);
-            Log.info("Facebook link found");
+            Log.info("facebook link found");
         } catch(Exception e) {
-            Log.fatal("Facebook link not found");
+            Log.fatal("facebook link not found");
         }
     }
 
     public void isLinkedinLink() {
         try {
             getElement(locLinkedInLink,5);
-            Log.info("LinkedIn link found");
+            Log.info("linkedIn link found");
         } catch(Exception e) {
-            Log.fatal("LinkedIn link not found");
+            Log.fatal("linkedIn link not found");
         }
     }
 
     public void isCopyright() {
         try {
             getElement(locCopyright,5);
-            Log.info("Copyright message found");
+            Log.info("copyright message found");
         } catch(Exception e) {
-            Log.fatal("Copyright message not found");
+            Log.fatal("copyright message not found");
         }
     }
 
     public void clickOnBurgerMenu() {
-        getButton(locBurgerMenu,5).click();
-        Log.info("opening burger menu");
+        try {
+            Log.info("clicking burger menu button");
+            getButton(locBurgerMenu,5).click();
+            Log.info("burger menu opened");
+        } catch (Exception e) {
+            Log.fatal("burger menu not found");
+        }
     }
 
     public void clickOnProductsOption() {
+        Log.info("waiting for burger menu to open");
         burgerVisible();
-        getButton(locProductsOption,5).click();
-        Log.info("going to inventory page");
+
+        try {
+            Log.info("clicking all products option");
+            getButton(locProductsOption,5).click();
+            Log.info("going to inventory page");
+        } catch (Exception e) {
+            Log.fatal("all products option not found");
+        }
     }
 
     public void clickOnAboutOption() {
+        Log.info("waiting for burger menu to open");
         burgerVisible();
-        getButton(locAboutOption,5).click();
-        Log.info("going to about page");
+
+        try {
+            Log.info("clicking about option");
+            getButton(locAboutOption,5).click();
+            Log.info("going to about page");
+        } catch (Exception e) {
+            Log.fatal("about option not found");
+        }
     }
 
     public void clickOnLogout() {
+        Log.info("waiting for burger menu to open");
         burgerVisible();
-        getButton(locLogoutOption,5).click();
-        Log.info("log out of system");
+
+        try {
+            Log.info("clicking logout option");
+            getButton(locLogoutOption,5).click();
+            Log.info("logging out");
+        } catch (Exception e) {
+            Log.fatal("logout option not found");
+        }
     }
 
     public void clickOnResetOption() {
+        Log.info("waiting for burger menu to open");
         burgerVisible();
-        getButton(locResetOption,5).click();
-        Log.info("resetting app data");
-        getButton(locCloseBurger,5).click();
-        Log.info("closing burger menu");
-        driver.navigate().refresh();
+
+        try {
+            Log.info("clicking reset option");
+            getButton(locResetOption,5).click();
+            Log.info("resetting app state");
+        } catch (Exception e) {
+            Log.fatal("reset option not found");
+        }
+
+
+        try {
+            Log.info("clicking close button");
+            getButton(locCloseBurger,5).click();
+            Log.info("burger menu closed");
+        } catch (Exception e) {
+            Log.fatal("close button not found");
+        }
+
         Log.info("refreshing page");
+        driver.navigate().refresh();
     }
 
     public void burgerVisible() {
-        getHiddenElement(locBurgerMenuContainer,5);
-        Log.info("burger menu opened");
+        try {
+            getHiddenElement(locBurgerMenuContainer,5);
+            Log.info("burger menu is visible");
+        } catch (Exception e) {
+            Log.fatal("burger menu is not visible");
+        }
     }
 }

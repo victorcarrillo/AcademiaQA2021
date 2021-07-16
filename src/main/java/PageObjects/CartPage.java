@@ -40,89 +40,101 @@ public class CartPage extends BasePage{
     }
 
     public void toCart() {
-        getButton(locCartButton,5).click();
-        Log.info("going to cart page");
+        try {
+            getButton(locCartButton,5).click();
+            Log.info("going to cart page");
+        } catch (Exception e) {
+            Log.fatal("cart button not found");
+        }
     }
 
     public void continueShopping() {
-        getButton(locBackButton,5).click();
-        Log.info("going to catalog page");
+        try {
+            getButton(locBackButton,5).click();
+            Log.info("going to catalog page");
+        } catch (Exception e) {
+            Log.fatal("continue shopping button not found");
+        }
     }
 
     public void checkoutBuy() {
-        getButton(locCheckoutButton,5).click();
-        Log.info("going to checkout page");
+        try {
+            getButton(locCheckoutButton,5).click();
+            Log.info("going to checkout page");
+        } catch (Exception e) {
+            Log.fatal("checkout button not found");
+        }
     }
 
     public void isCartList() {
         try{
-            WebElement cartList = getElement(locCartList,5);
-            Log.info("'cart list' found");
+            getElement(locCartList,5);
+            Log.info("cart list found");
         } catch(Exception e) {
-            Log.fatal("'cart list' not found");
+            Log.fatal("cart list not found");
         }
     }
 
     public void isBackButton() {
         try{
-            WebElement back = getElement(locBackButton,5);
-            Log.info("'back' button not found");
+            getElement(locBackButton,5);
+            Log.info("back button not found");
         } catch(Exception e) {
-            Log.fatal("'back' button not found");
+            Log.fatal("back button not found");
         }
     }
 
     public void isCheckoutButton() {
         try{
-            WebElement checkout = getElement(locCheckoutButton,5);
-            Log.info("'checkout' button found");
+            getElement(locCheckoutButton,5);
+            Log.info("checkout button found");
         } catch(Exception e) {
-            Log.fatal("'checkout' button not found");
+            Log.fatal("checkout button not found");
         }
     }
 
     public void isCheckoutFirstName() {
         try {
-            WebElement firstName = getElement(locCheckoutFirstName,5);
-            Log.info("'first name' field found");
+            getElement(locCheckoutFirstName,5);
+            Log.info("first name field found");
         } catch(Exception e){
-            Log.fatal("'first name' field not found");
+            Log.fatal("first name field not found");
         }
     }
 
     public void isCheckoutLastName() {
         try {
-            WebElement lastName = getElement(locCheckoutLastName,5);
-            Log.info("'last name' field found");
+            getElement(locCheckoutLastName,5);
+            Log.info("last name field found");
         } catch(Exception e){
-            Log.fatal("'last name' field not found");
+            Log.fatal("last name field not found");
         }
     }
 
     public void isCheckoutZip() {
         try {
-            WebElement zip = getElement(locCheckoutZip,5);
-            Log.info("'zip/postal code' field found");
+            getElement(locCheckoutZip,5);
+            Log.info("zip/postal code field found");
         } catch(Exception e){
-            Log.fatal("'zip/postal code' field not found");
+            Log.fatal("zip/postal code field not found");
         }
     }
 
     public void isCheckoutCancel() {
         try {
-            WebElement cancel = getElement(locCheckoutCancel,5);
-            Log.info("'cancel checkout' button found");
+            getElement(locCheckoutCancel,5);
+            Log.info("cancel checkout button found");
         } catch(Exception e){
-            Log.fatal("'cancel checkout' button not found");
+            Log.fatal("cancel checkout button not found");
         }
     }
 
     public void isCheckoutContinue() {
         try {
-            WebElement continueCheckout = getElement(locCheckoutContinue,5);
-            Log.info("'continue checkout' button found");
+            getElement(locCheckoutContinue,5);
+            Log.info("continue checkout button found");
         } catch(Exception e){
-            Log.fatal("'continue checkout' button not found");
+            Log.fatal("continue checkout button not found");
         }
     }
 
@@ -130,10 +142,10 @@ public class CartPage extends BasePage{
         try {
             List<WebElement> quantity = getListWebElement(locQuantitiesInCart,5);
             int n = quantity.size();
-            Log.info(n+" 'quantity' elements found");
+            Log.info(n+" quantity elements found");
             return n;
         } catch(Exception e) {
-            Log.fatal("elements 'quantity' were not found");
+            Log.fatal("elements quantity were not found");
         }
         return 0;
     }
@@ -142,10 +154,10 @@ public class CartPage extends BasePage{
         try {
             List<WebElement> names = getListWebElement(locNamesInCart,5);
             int n = names.size();
-            Log.info(n+" 'name' elements found");
+            Log.info(n+" name elements found");
             return n;
         } catch(Exception e) {
-            Log.fatal("elements 'name' were not found");
+            Log.fatal("elements name were not found");
         }
         return 0;
     }
@@ -154,10 +166,10 @@ public class CartPage extends BasePage{
         try {
             List<WebElement> desc = getListWebElement(locDescriptionsInCart,5);
             int n = desc.size();
-            Log.info(n+" 'description' elements found");
+            Log.info(n+" description elements found");
             return n;
         } catch(Exception e) {
-            Log.fatal("elements 'description' were not found");
+            Log.fatal("elements description were not found");
         }
         return 0;
     }
@@ -166,10 +178,10 @@ public class CartPage extends BasePage{
         try {
             List<WebElement> prices = getListWebElement(locPricesInCart,5);
             int n = prices.size();
-            Log.info(n+" 'price' elements found");
+            Log.info(n+" price elements found");
             return n;
         } catch(Exception e) {
-            Log.fatal("elements 'price' were not found");
+            Log.fatal("elements price were not found");
         }
         return 0;
     }
@@ -178,83 +190,123 @@ public class CartPage extends BasePage{
         try {
             List<WebElement> removes = getListWebElement(locRemovesInCart,5);
             int n = removes.size();
-            Log.info(n+" 'remove' buttons found");
+            Log.info(n+" remove buttons found");
             return n;
         } catch(Exception e) {
-            Log.fatal("button 'remove' were not found");
+            Log.fatal("button remove were not found");
         }
         return 0;
     }
 
     public String removeInCart(String p) {
-        String product = getElement(locNameInCart,5).getText();
-        Log.info("Product id: "+ p +" - "+product +" removed from cart");
-        getButton(locRemoveInCart,5).click();
-        return product;
+        String product;
+        try {
+            product = getElement(locNameInCart, 5).getText();
+            Log.info("product id: " + p + " - " + product + " removed from cart");
+        } catch (Exception e) {
+            Log.fatal("product name not found");
+            return null;
+        }
+
+        try {
+            getButton(locRemoveInCart, 5).click();
+            return product;
+        } catch (Exception e) {
+            Log.fatal("remove option not found");
+        }
+        return null;
     }
 
     public void fillCheckoutForm(String first, String last, String zip) {
-        Log.info("Filling up field 'first name' with: "+first);
-        getElement(locCheckoutFirstName,5).sendKeys(first);
+        try {
+            Log.info("filling up field first name with: "+first);
+            getElement(locCheckoutFirstName,5).sendKeys(first);
+        } catch (Exception e) {
+            Log.fatal("first name field not found");
+        }
 
-        Log.info("Filling up field 'last name' with: "+last);
-        getElement(locCheckoutLastName,5).sendKeys(last);
+        try {
+            Log.info("filling up field last name with: "+last);
+            getElement(locCheckoutLastName,5).sendKeys(last);
+        } catch (Exception e) {
+            Log.fatal("last name field not found");
+        }
 
-        Log.info("Filling up field 'zip' with: "+zip);
-        getElement(locCheckoutZip,5).sendKeys(zip);
+        try {
+            Log.info("filling up field zip with: "+zip);
+            getElement(locCheckoutZip,5).sendKeys(zip);
+        } catch (Exception e) {
+            Log.fatal("zip field not found");
+        }
 
-        Log.info("Clicking button 'continue'");
-        getButton(locCheckoutContinue,5).click();
+        try {
+            Log.info("clicking button continue");
+            getButton(locCheckoutContinue,5).click();
+        } catch (Exception e) {
+            Log.fatal("continue button not found");
+        }
     }
 
     public void cancelCheckout() {
-        getButton(locCheckoutCancel,5).click();
-        Log.info("going to cart page");
+        try {
+            getButton(locCheckoutCancel,5).click();
+            Log.info("going to cart page");
+        } catch (Exception e) {
+            Log.fatal("cancel button not found");
+        }
     }
 
     public void cancelOverview() {
-        getButton(locOverviewCancel,5).click();
-        Log.info("going to catalog page");
+        try {
+            getButton(locOverviewCancel,5).click();
+            Log.info("going to catalog page");
+        } catch (Exception e) {
+            Log.fatal("cancel button not found");
+        }
     }
 
     public void finishOverview() {
-        getButton(locOverviewFinish,5).click();
-        Log.info("going to checkout complete page");
+        try {
+            getButton(locOverviewFinish,5).click();
+            Log.info("going to checkout complete page");
+        } catch (Exception e) {
+            Log.fatal("finish button not found");
+        }
     }
 
     public void isOverviewCartList() {
         try{
-            WebElement cartList = getElement(locOverviewCartList,5);
-            Log.info("'cart list' found");
+            getElement(locOverviewCartList,5);
+            Log.info("cart list found");
         } catch(Exception e) {
-            Log.fatal("'cart list' not found");
+            Log.fatal("cart list not found");
         }
     }
 
     public void isOverviewSummaryInfo() {
         try{
-            WebElement summaryInfo = getElement(locOverviewSummaryInfo,5);
-            Log.info("'summary info' found");
+            getElement(locOverviewSummaryInfo,5);
+            Log.info("summary info found");
         } catch(Exception e) {
-            Log.fatal("'summary info' not found");
+            Log.fatal("summary info not found");
         }
     }
 
     public void isOverviewCancel() {
         try{
-            WebElement cancel = getElement(locOverviewCancel,5);
-            Log.info("'cancel' button found");
+            getElement(locOverviewCancel,5);
+            Log.info("cancel button found");
         } catch(Exception e) {
-            Log.fatal("'cancel' button not found");
+            Log.fatal("cancel button not found");
         }
     }
 
     public void isOverviewFinish() {
         try{
-            WebElement finish = getElement(locOverviewFinish,5);
-            Log.info("'finish' button found");
+            getElement(locOverviewFinish,5);
+            Log.info("finish button found");
         } catch(Exception e) {
-            Log.fatal("'finish' button not found");
+            Log.fatal("finish button not found");
         }
     }
 }

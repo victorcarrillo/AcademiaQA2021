@@ -1,0 +1,694 @@
+2021-07-16 16:34:21 INFO  Log:20 - Starting Testing ...TestSuite is starting
+2021-07-16 16:34:21 INFO  Log:30 - Setting up test execution
+2021-07-16 16:34:24 INFO  Log:30 - Opening Browser
+2021-07-16 16:34:24 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 16:34:24 INFO  Log:30 - Logging into system
+2021-07-16 16:34:24 INFO  Log:30 - filling up username field with: standard_user
+2021-07-16 16:34:24 INFO  Log:30 - filling up password field with: secret_sauce
+2021-07-16 16:34:25 INFO  Log:30 - clicking login button
+2021-07-16 16:34:25 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 16:34:25 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:25 INFO  Log:30 - current page is: PRODUCTS
+2021-07-16 16:34:25 INFO  Log:30 - Clicking in 'cart' button
+2021-07-16 16:34:25 INFO  Log:30 - going to cart page
+2021-07-16 16:34:25 INFO  Log:30 - Verifying if current page is YOUR CART
+2021-07-16 16:34:25 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:25 INFO  Log:30 - current page is: YOUR CART
+2021-07-16 16:34:25 INFO  Log:30 - Verifying presence of 'cart list'
+2021-07-16 16:34:25 INFO  Log:30 - cart list found
+2021-07-16 16:34:25 INFO  Log:30 - Verifying presence of 'continue shopping' button
+2021-07-16 16:34:25 INFO  Log:30 - back button not found
+2021-07-16 16:34:25 INFO  Log:30 - Verifying presence of 'checkout' button
+2021-07-16 16:34:25 INFO  Log:30 - checkout button found
+2021-07-16 16:34:26 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 16:34:26 INFO  Log:30 - Logging into system
+2021-07-16 16:34:26 INFO  Log:30 - filling up username field with: standard_user
+2021-07-16 16:34:26 INFO  Log:30 - filling up password field with: secret_sauce
+2021-07-16 16:34:26 INFO  Log:30 - clicking login button
+2021-07-16 16:34:26 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 16:34:26 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:27 INFO  Log:30 - current page is: PRODUCTS
+2021-07-16 16:34:27 INFO  Log:30 - Resetting app state
+2021-07-16 16:34:27 INFO  Log:30 - clicking burger menu button
+2021-07-16 16:34:27 INFO  Log:30 - burger menu opened
+2021-07-16 16:34:27 INFO  Log:30 - waiting for burger menu to open
+2021-07-16 16:34:27 INFO  Log:30 - burger menu is visible
+2021-07-16 16:34:27 INFO  Log:30 - clicking reset option
+2021-07-16 16:34:27 INFO  Log:30 - resetting app state
+2021-07-16 16:34:27 INFO  Log:30 - clicking close button
+2021-07-16 16:34:27 INFO  Log:30 - burger menu closed
+2021-07-16 16:34:27 INFO  Log:30 - refreshing page
+2021-07-16 16:34:27 INFO  Log:30 - Clicking in product's 'add to cart' button
+2021-07-16 16:34:27 INFO  Log:30 - getting product name
+2021-07-16 16:34:27 INFO  Log:30 - product name found
+2021-07-16 16:34:27 INFO  Log:30 - clicking add to car button
+2021-07-16 16:34:27 INFO  Log:30 - product id: 0 - Sauce Labs Bike Light added to cart
+2021-07-16 16:34:27 INFO  Log:30 - Clicking in 'cart' button
+2021-07-16 16:34:27 INFO  Log:30 - going to cart page
+2021-07-16 16:34:27 INFO  Log:30 - Getting how many products are in cart
+2021-07-16 16:34:27 INFO  Log:30 - getting number of products in cart
+2021-07-16 16:34:27 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-16 16:34:27 INFO  Log:30 - Verifying if current page is YOUR CART
+2021-07-16 16:34:27 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:27 INFO  Log:30 - current page is: YOUR CART
+2021-07-16 16:34:27 INFO  Log:30 - Verifying presence of quantity in all 1 elements in cart list
+2021-07-16 16:34:27 INFO  Log:30 - 1 quantity elements found
+2021-07-16 16:34:27 INFO  Log:30 - Verifying presence of product's name in all 1 elements in cart list
+2021-07-16 16:34:27 INFO  Log:30 - 1 name elements found
+2021-07-16 16:34:27 INFO  Log:30 - Verifying presence of product's description in all 1 elements in cart list
+2021-07-16 16:34:28 INFO  Log:30 - 1 description elements found
+2021-07-16 16:34:28 INFO  Log:30 - Verifying presence of product's price in all 1 elements in cart list
+2021-07-16 16:34:28 INFO  Log:30 - 1 price elements found
+2021-07-16 16:34:28 INFO  Log:30 - Verifying presence of 'remove button' in all 1 elements in cart list
+2021-07-16 16:34:28 INFO  Log:30 - 1 remove buttons found
+2021-07-16 16:34:28 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 16:34:28 INFO  Log:30 - Logging into system
+2021-07-16 16:34:28 INFO  Log:30 - filling up username field with: standard_user
+2021-07-16 16:34:28 INFO  Log:30 - filling up password field with: secret_sauce
+2021-07-16 16:34:28 INFO  Log:30 - clicking login button
+2021-07-16 16:34:28 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 16:34:28 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:28 INFO  Log:30 - current page is: PRODUCTS
+2021-07-16 16:34:28 INFO  Log:30 - Resetting app state
+2021-07-16 16:34:28 INFO  Log:30 - clicking burger menu button
+2021-07-16 16:34:28 INFO  Log:30 - burger menu opened
+2021-07-16 16:34:28 INFO  Log:30 - waiting for burger menu to open
+2021-07-16 16:34:28 INFO  Log:30 - burger menu is visible
+2021-07-16 16:34:28 INFO  Log:30 - clicking reset option
+2021-07-16 16:34:28 INFO  Log:30 - resetting app state
+2021-07-16 16:34:28 INFO  Log:30 - clicking close button
+2021-07-16 16:34:28 INFO  Log:30 - burger menu closed
+2021-07-16 16:34:28 INFO  Log:30 - refreshing page
+2021-07-16 16:34:29 INFO  Log:30 - Clicking in product's 'add to cart' button
+2021-07-16 16:34:29 INFO  Log:30 - getting product name
+2021-07-16 16:34:29 INFO  Log:30 - product name found
+2021-07-16 16:34:29 INFO  Log:30 - clicking add to car button
+2021-07-16 16:34:29 INFO  Log:30 - product id: 0 - Sauce Labs Bike Light added to cart
+2021-07-16 16:34:29 INFO  Log:30 - Clicking in 'cart' button
+2021-07-16 16:34:29 INFO  Log:30 - going to cart page
+2021-07-16 16:34:29 INFO  Log:30 - Verifying if current page is YOUR CART
+2021-07-16 16:34:29 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:29 INFO  Log:30 - current page is: YOUR CART
+2021-07-16 16:34:29 INFO  Log:30 - Getting how many products in cart BEFORE removing product
+2021-07-16 16:34:29 INFO  Log:30 - getting number of products in cart
+2021-07-16 16:34:29 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-16 16:34:29 INFO  Log:30 - Clicking in product's 'remove' button
+2021-07-16 16:34:29 INFO  Log:30 - product id: 0 - Sauce Labs Bike Light removed from cart
+2021-07-16 16:34:29 INFO  Log:30 - Getting how many products in cart AFTER removing product
+2021-07-16 16:34:29 INFO  Log:30 - getting number of products in cart
+2021-07-16 16:34:29 INFO  Log:30 - No products in cart
+2021-07-16 16:34:29 INFO  Log:30 - Verifying if Sauce Labs Bike Light removed from cart list
+2021-07-16 16:34:29 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 16:34:29 INFO  Log:30 - Logging into system
+2021-07-16 16:34:29 INFO  Log:30 - filling up username field with: standard_user
+2021-07-16 16:34:29 INFO  Log:30 - filling up password field with: secret_sauce
+2021-07-16 16:34:29 INFO  Log:30 - clicking login button
+2021-07-16 16:34:29 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 16:34:29 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:29 INFO  Log:30 - current page is: PRODUCTS
+2021-07-16 16:34:29 INFO  Log:30 - Clicking in 'cart' button
+2021-07-16 16:34:30 INFO  Log:30 - going to cart page
+2021-07-16 16:34:30 INFO  Log:30 - Verifying if current page is YOUR CART
+2021-07-16 16:34:30 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:30 INFO  Log:30 - current page is: YOUR CART
+2021-07-16 16:34:30 INFO  Log:30 - Clicking in 'continue shopping' button
+2021-07-16 16:34:30 INFO  Log:30 - going to catalog page
+2021-07-16 16:34:30 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 16:34:30 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:30 INFO  Log:30 - current page is: PRODUCTS
+2021-07-16 16:34:30 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 16:34:30 INFO  Log:30 - Logging into system
+2021-07-16 16:34:30 INFO  Log:30 - filling up username field with: standard_user
+2021-07-16 16:34:30 INFO  Log:30 - filling up password field with: secret_sauce
+2021-07-16 16:34:30 INFO  Log:30 - clicking login button
+2021-07-16 16:34:30 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 16:34:30 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:30 INFO  Log:30 - current page is: PRODUCTS
+2021-07-16 16:34:30 INFO  Log:30 - Resetting app state
+2021-07-16 16:34:30 INFO  Log:30 - clicking burger menu button
+2021-07-16 16:34:30 INFO  Log:30 - burger menu opened
+2021-07-16 16:34:30 INFO  Log:30 - waiting for burger menu to open
+2021-07-16 16:34:30 INFO  Log:30 - burger menu is visible
+2021-07-16 16:34:30 INFO  Log:30 - clicking reset option
+2021-07-16 16:34:30 INFO  Log:30 - resetting app state
+2021-07-16 16:34:30 INFO  Log:30 - clicking close button
+2021-07-16 16:34:31 INFO  Log:30 - burger menu closed
+2021-07-16 16:34:31 INFO  Log:30 - refreshing page
+2021-07-16 16:34:31 INFO  Log:30 - Clicking in product's 'add to cart' button
+2021-07-16 16:34:31 INFO  Log:30 - getting product name
+2021-07-16 16:34:31 INFO  Log:30 - product name found
+2021-07-16 16:34:31 INFO  Log:30 - clicking add to car button
+2021-07-16 16:34:31 INFO  Log:30 - product id: 0 - Sauce Labs Bike Light added to cart
+2021-07-16 16:34:31 INFO  Log:30 - Clicking in 'cart' button
+2021-07-16 16:34:31 INFO  Log:30 - going to cart page
+2021-07-16 16:34:31 INFO  Log:30 - Verifying if current page is YOUR CART
+2021-07-16 16:34:31 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:31 INFO  Log:30 - current page is: YOUR CART
+2021-07-16 16:34:31 INFO  Log:30 - Verifying if at least 1 product in cart list
+2021-07-16 16:34:31 INFO  Log:30 - getting number of products in cart
+2021-07-16 16:34:31 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-16 16:34:31 INFO  Log:30 - Clicking in 'checkout' button
+2021-07-16 16:34:31 INFO  Log:30 - going to checkout page
+2021-07-16 16:34:31 INFO  Log:30 - Verifying if current page is CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:31 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:31 INFO  Log:30 - current page is: CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:31 INFO  Log:30 - Verifying presence of 'first name' field
+2021-07-16 16:34:31 INFO  Log:30 - first name field found
+2021-07-16 16:34:31 INFO  Log:30 - Verifying presence of 'last name' field
+2021-07-16 16:34:31 INFO  Log:30 - last name field found
+2021-07-16 16:34:31 INFO  Log:30 - Verifying presence of 'zip/postal code' field
+2021-07-16 16:34:31 INFO  Log:30 - zip/postal code field found
+2021-07-16 16:34:31 INFO  Log:30 - Verifying presence of 'cancel checkout' button
+2021-07-16 16:34:31 INFO  Log:30 - cancel checkout button found
+2021-07-16 16:34:31 INFO  Log:30 - Verifying presence of 'continue checkout' button
+2021-07-16 16:34:31 INFO  Log:30 - continue checkout button found
+2021-07-16 16:34:31 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 16:34:31 INFO  Log:30 - Logging into system
+2021-07-16 16:34:31 INFO  Log:30 - filling up username field with: standard_user
+2021-07-16 16:34:31 INFO  Log:30 - filling up password field with: secret_sauce
+2021-07-16 16:34:32 INFO  Log:30 - clicking login button
+2021-07-16 16:34:32 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 16:34:32 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:32 INFO  Log:30 - current page is: PRODUCTS
+2021-07-16 16:34:32 INFO  Log:30 - Resetting app state
+2021-07-16 16:34:32 INFO  Log:30 - clicking burger menu button
+2021-07-16 16:34:32 INFO  Log:30 - burger menu opened
+2021-07-16 16:34:32 INFO  Log:30 - waiting for burger menu to open
+2021-07-16 16:34:32 INFO  Log:30 - burger menu is visible
+2021-07-16 16:34:32 INFO  Log:30 - clicking reset option
+2021-07-16 16:34:32 INFO  Log:30 - resetting app state
+2021-07-16 16:34:32 INFO  Log:30 - clicking close button
+2021-07-16 16:34:33 INFO  Log:30 - burger menu closed
+2021-07-16 16:34:33 INFO  Log:30 - refreshing page
+2021-07-16 16:34:33 INFO  Log:30 - Clicking in product's 'add to cart' button
+2021-07-16 16:34:33 INFO  Log:30 - getting product name
+2021-07-16 16:34:33 INFO  Log:30 - product name found
+2021-07-16 16:34:33 INFO  Log:30 - clicking add to car button
+2021-07-16 16:34:33 INFO  Log:30 - product id: 0 - Sauce Labs Bike Light added to cart
+2021-07-16 16:34:33 INFO  Log:30 - Clicking in 'cart' button
+2021-07-16 16:34:33 INFO  Log:30 - going to cart page
+2021-07-16 16:34:33 INFO  Log:30 - Verifying if current page is YOUR CART
+2021-07-16 16:34:33 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:33 INFO  Log:30 - current page is: YOUR CART
+2021-07-16 16:34:33 INFO  Log:30 - Verifying if at least 1 product in cart list
+2021-07-16 16:34:33 INFO  Log:30 - getting number of products in cart
+2021-07-16 16:34:33 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-16 16:34:33 INFO  Log:30 - Clicking in 'checkout' button
+2021-07-16 16:34:33 INFO  Log:30 - going to checkout page
+2021-07-16 16:34:33 INFO  Log:30 - Verifying if current page is CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:33 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:33 INFO  Log:30 - current page is: CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:33 INFO  Log:30 - Filling up checkout form missing first name
+2021-07-16 16:34:33 INFO  Log:30 - filling up field first name with: 
+2021-07-16 16:34:33 INFO  Log:30 - filling up field last name with: Santos
+2021-07-16 16:34:33 INFO  Log:30 - filling up field zip with: 12345
+2021-07-16 16:34:33 INFO  Log:30 - clicking button continue
+2021-07-16 16:34:33 INFO  Log:30 - Verifying if current page is CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:33 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:33 INFO  Log:30 - current page is: CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:33 INFO  Log:30 - Verifying if error message is: Error: First Name is required
+2021-07-16 16:34:33 INFO  Log:30 - getting error message
+2021-07-16 16:34:33 INFO  Log:30 - error message showed: Error: First Name is required
+2021-07-16 16:34:34 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 16:34:34 INFO  Log:30 - Logging into system
+2021-07-16 16:34:34 INFO  Log:30 - filling up username field with: standard_user
+2021-07-16 16:34:34 INFO  Log:30 - filling up password field with: secret_sauce
+2021-07-16 16:34:34 INFO  Log:30 - clicking login button
+2021-07-16 16:34:34 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 16:34:34 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:34 INFO  Log:30 - current page is: PRODUCTS
+2021-07-16 16:34:34 INFO  Log:30 - Resetting app state
+2021-07-16 16:34:34 INFO  Log:30 - clicking burger menu button
+2021-07-16 16:34:34 INFO  Log:30 - burger menu opened
+2021-07-16 16:34:34 INFO  Log:30 - waiting for burger menu to open
+2021-07-16 16:34:34 INFO  Log:30 - burger menu is visible
+2021-07-16 16:34:34 INFO  Log:30 - clicking reset option
+2021-07-16 16:34:35 INFO  Log:30 - resetting app state
+2021-07-16 16:34:35 INFO  Log:30 - clicking close button
+2021-07-16 16:34:35 INFO  Log:30 - burger menu closed
+2021-07-16 16:34:35 INFO  Log:30 - refreshing page
+2021-07-16 16:34:35 INFO  Log:30 - Clicking in product's 'add to cart' button
+2021-07-16 16:34:35 INFO  Log:30 - getting product name
+2021-07-16 16:34:35 INFO  Log:30 - product name found
+2021-07-16 16:34:35 INFO  Log:30 - clicking add to car button
+2021-07-16 16:34:35 INFO  Log:30 - product id: 0 - Sauce Labs Bike Light added to cart
+2021-07-16 16:34:35 INFO  Log:30 - Clicking in 'cart' button
+2021-07-16 16:34:35 INFO  Log:30 - going to cart page
+2021-07-16 16:34:35 INFO  Log:30 - Verifying if current page is YOUR CART
+2021-07-16 16:34:35 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:35 INFO  Log:30 - current page is: YOUR CART
+2021-07-16 16:34:35 INFO  Log:30 - Verifying if at least 1 product in cart list
+2021-07-16 16:34:35 INFO  Log:30 - getting number of products in cart
+2021-07-16 16:34:35 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-16 16:34:35 INFO  Log:30 - Clicking in 'checkout' button
+2021-07-16 16:34:35 INFO  Log:30 - going to checkout page
+2021-07-16 16:34:35 INFO  Log:30 - Verifying if current page is CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:35 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:35 INFO  Log:30 - current page is: CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:35 INFO  Log:30 - Filling up checkout form missing last name
+2021-07-16 16:34:35 INFO  Log:30 - filling up field first name with: Oscar
+2021-07-16 16:34:35 INFO  Log:30 - filling up field last name with: 
+2021-07-16 16:34:35 INFO  Log:30 - filling up field zip with: 12345
+2021-07-16 16:34:36 INFO  Log:30 - clicking button continue
+2021-07-16 16:34:36 INFO  Log:30 - Verifying if current page is CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:36 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:36 INFO  Log:30 - current page is: CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:36 INFO  Log:30 - Verifying if error message is: Error: Last Name is required
+2021-07-16 16:34:36 INFO  Log:30 - getting error message
+2021-07-16 16:34:36 INFO  Log:30 - error message showed: Error: Last Name is required
+2021-07-16 16:34:36 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 16:34:36 INFO  Log:30 - Logging into system
+2021-07-16 16:34:36 INFO  Log:30 - filling up username field with: standard_user
+2021-07-16 16:34:36 INFO  Log:30 - filling up password field with: secret_sauce
+2021-07-16 16:34:36 INFO  Log:30 - clicking login button
+2021-07-16 16:34:36 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 16:34:36 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:36 INFO  Log:30 - current page is: PRODUCTS
+2021-07-16 16:34:36 INFO  Log:30 - Resetting app state
+2021-07-16 16:34:36 INFO  Log:30 - clicking burger menu button
+2021-07-16 16:34:36 INFO  Log:30 - burger menu opened
+2021-07-16 16:34:36 INFO  Log:30 - waiting for burger menu to open
+2021-07-16 16:34:36 INFO  Log:30 - burger menu is visible
+2021-07-16 16:34:36 INFO  Log:30 - clicking reset option
+2021-07-16 16:34:36 INFO  Log:30 - resetting app state
+2021-07-16 16:34:36 INFO  Log:30 - clicking close button
+2021-07-16 16:34:36 INFO  Log:30 - burger menu closed
+2021-07-16 16:34:36 INFO  Log:30 - refreshing page
+2021-07-16 16:34:36 INFO  Log:30 - Clicking in product's 'add to cart' button
+2021-07-16 16:34:36 INFO  Log:30 - getting product name
+2021-07-16 16:34:36 INFO  Log:30 - product name found
+2021-07-16 16:34:36 INFO  Log:30 - clicking add to car button
+2021-07-16 16:34:37 INFO  Log:30 - product id: 0 - Sauce Labs Bike Light added to cart
+2021-07-16 16:34:37 INFO  Log:30 - Clicking in 'cart' button
+2021-07-16 16:34:37 INFO  Log:30 - going to cart page
+2021-07-16 16:34:37 INFO  Log:30 - Verifying if current page is YOUR CART
+2021-07-16 16:34:37 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:37 INFO  Log:30 - current page is: YOUR CART
+2021-07-16 16:34:37 INFO  Log:30 - Verifying if at least 1 product in cart list
+2021-07-16 16:34:37 INFO  Log:30 - getting number of products in cart
+2021-07-16 16:34:37 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-16 16:34:37 INFO  Log:30 - Clicking in 'checkout' button
+2021-07-16 16:34:37 INFO  Log:30 - going to checkout page
+2021-07-16 16:34:37 INFO  Log:30 - Verifying if current page is CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:37 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:37 INFO  Log:30 - current page is: CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:37 INFO  Log:30 - Filling up checkout form missing zip code
+2021-07-16 16:34:37 INFO  Log:30 - filling up field first name with: Oscar
+2021-07-16 16:34:37 INFO  Log:30 - filling up field last name with: Santos
+2021-07-16 16:34:37 INFO  Log:30 - filling up field zip with: 
+2021-07-16 16:34:37 INFO  Log:30 - clicking button continue
+2021-07-16 16:34:37 INFO  Log:30 - Verifying if current page is CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:37 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:37 INFO  Log:30 - current page is: CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:37 INFO  Log:30 - Verifying if error message is: Error: Postal Code is required
+2021-07-16 16:34:37 INFO  Log:30 - getting error message
+2021-07-16 16:34:37 INFO  Log:30 - error message showed: Error: Postal Code is required
+2021-07-16 16:34:37 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 16:34:37 INFO  Log:30 - Logging into system
+2021-07-16 16:34:37 INFO  Log:30 - filling up username field with: standard_user
+2021-07-16 16:34:37 INFO  Log:30 - filling up password field with: secret_sauce
+2021-07-16 16:34:38 INFO  Log:30 - clicking login button
+2021-07-16 16:34:38 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 16:34:38 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:38 INFO  Log:30 - current page is: PRODUCTS
+2021-07-16 16:34:38 INFO  Log:30 - Resetting app state
+2021-07-16 16:34:38 INFO  Log:30 - clicking burger menu button
+2021-07-16 16:34:38 INFO  Log:30 - burger menu opened
+2021-07-16 16:34:38 INFO  Log:30 - waiting for burger menu to open
+2021-07-16 16:34:38 INFO  Log:30 - burger menu is visible
+2021-07-16 16:34:38 INFO  Log:30 - clicking reset option
+2021-07-16 16:34:38 INFO  Log:30 - resetting app state
+2021-07-16 16:34:38 INFO  Log:30 - clicking close button
+2021-07-16 16:34:38 INFO  Log:30 - burger menu closed
+2021-07-16 16:34:38 INFO  Log:30 - refreshing page
+2021-07-16 16:34:39 INFO  Log:30 - Clicking in product's 'add to cart' button
+2021-07-16 16:34:39 INFO  Log:30 - getting product name
+2021-07-16 16:34:39 INFO  Log:30 - product name found
+2021-07-16 16:34:39 INFO  Log:30 - clicking add to car button
+2021-07-16 16:34:39 INFO  Log:30 - product id: 0 - Sauce Labs Bike Light added to cart
+2021-07-16 16:34:39 INFO  Log:30 - Clicking in 'cart' button
+2021-07-16 16:34:39 INFO  Log:30 - going to cart page
+2021-07-16 16:34:39 INFO  Log:30 - Verifying if current page is YOUR CART
+2021-07-16 16:34:39 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:39 INFO  Log:30 - current page is: YOUR CART
+2021-07-16 16:34:39 INFO  Log:30 - Verifying if at least 1 product in cart list
+2021-07-16 16:34:39 INFO  Log:30 - getting number of products in cart
+2021-07-16 16:34:39 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-16 16:34:39 INFO  Log:30 - Clicking in 'checkout' button
+2021-07-16 16:34:39 INFO  Log:30 - going to checkout page
+2021-07-16 16:34:39 INFO  Log:30 - Verifying if current page is CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:39 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:39 INFO  Log:30 - current page is: CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:39 INFO  Log:30 - Filling up checkout form with invalid first name
+2021-07-16 16:34:39 INFO  Log:30 - filling up field first name with: 123
+2021-07-16 16:34:39 INFO  Log:30 - filling up field last name with: Santos
+2021-07-16 16:34:39 INFO  Log:30 - filling up field zip with: 12345
+2021-07-16 16:34:39 INFO  Log:30 - clicking button continue
+2021-07-16 16:34:39 INFO  Log:30 - Verifying if current page is CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:39 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:39 INFO  Log:30 - current page is: CHECKOUT: OVERVIEW
+2021-07-16 16:34:39 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 16:34:40 INFO  Log:30 - Logging into system
+2021-07-16 16:34:40 INFO  Log:30 - filling up username field with: standard_user
+2021-07-16 16:34:40 INFO  Log:30 - filling up password field with: secret_sauce
+2021-07-16 16:34:40 INFO  Log:30 - clicking login button
+2021-07-16 16:34:40 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 16:34:40 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:40 INFO  Log:30 - current page is: PRODUCTS
+2021-07-16 16:34:40 INFO  Log:30 - Resetting app state
+2021-07-16 16:34:40 INFO  Log:30 - clicking burger menu button
+2021-07-16 16:34:40 INFO  Log:30 - burger menu opened
+2021-07-16 16:34:40 INFO  Log:30 - waiting for burger menu to open
+2021-07-16 16:34:40 INFO  Log:30 - burger menu is visible
+2021-07-16 16:34:40 INFO  Log:30 - clicking reset option
+2021-07-16 16:34:40 INFO  Log:30 - resetting app state
+2021-07-16 16:34:40 INFO  Log:30 - clicking close button
+2021-07-16 16:34:40 INFO  Log:30 - burger menu closed
+2021-07-16 16:34:40 INFO  Log:30 - refreshing page
+2021-07-16 16:34:40 INFO  Log:30 - Clicking in product's 'add to cart' button
+2021-07-16 16:34:40 INFO  Log:30 - getting product name
+2021-07-16 16:34:40 INFO  Log:30 - product name found
+2021-07-16 16:34:40 INFO  Log:30 - clicking add to car button
+2021-07-16 16:34:41 INFO  Log:30 - product id: 0 - Sauce Labs Bike Light added to cart
+2021-07-16 16:34:41 INFO  Log:30 - Clicking in 'cart' button
+2021-07-16 16:34:41 INFO  Log:30 - going to cart page
+2021-07-16 16:34:41 INFO  Log:30 - Verifying if current page is YOUR CART
+2021-07-16 16:34:41 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:41 INFO  Log:30 - current page is: YOUR CART
+2021-07-16 16:34:41 INFO  Log:30 - Verifying if at least 1 product in cart list
+2021-07-16 16:34:41 INFO  Log:30 - getting number of products in cart
+2021-07-16 16:34:41 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-16 16:34:41 INFO  Log:30 - Clicking in 'checkout' button
+2021-07-16 16:34:41 INFO  Log:30 - going to checkout page
+2021-07-16 16:34:41 INFO  Log:30 - Verifying if current page is CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:41 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:41 INFO  Log:30 - current page is: CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:41 INFO  Log:30 - Filling up checkout form with invalid first name
+2021-07-16 16:34:41 INFO  Log:30 - filling up field first name with: Oscar
+2021-07-16 16:34:41 INFO  Log:30 - filling up field last name with: 456
+2021-07-16 16:34:41 INFO  Log:30 - filling up field zip with: 12345
+2021-07-16 16:34:41 INFO  Log:30 - clicking button continue
+2021-07-16 16:34:41 INFO  Log:30 - Verifying if current page is CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:41 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:41 INFO  Log:30 - current page is: CHECKOUT: OVERVIEW
+2021-07-16 16:34:41 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 16:34:41 INFO  Log:30 - Logging into system
+2021-07-16 16:34:41 INFO  Log:30 - filling up username field with: standard_user
+2021-07-16 16:34:41 INFO  Log:30 - filling up password field with: secret_sauce
+2021-07-16 16:34:41 INFO  Log:30 - clicking login button
+2021-07-16 16:34:42 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 16:34:42 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:42 INFO  Log:30 - current page is: PRODUCTS
+2021-07-16 16:34:42 INFO  Log:30 - Resetting app state
+2021-07-16 16:34:42 INFO  Log:30 - clicking burger menu button
+2021-07-16 16:34:42 INFO  Log:30 - burger menu opened
+2021-07-16 16:34:42 INFO  Log:30 - waiting for burger menu to open
+2021-07-16 16:34:42 INFO  Log:30 - burger menu is visible
+2021-07-16 16:34:42 INFO  Log:30 - clicking reset option
+2021-07-16 16:34:42 INFO  Log:30 - resetting app state
+2021-07-16 16:34:42 INFO  Log:30 - clicking close button
+2021-07-16 16:34:42 INFO  Log:30 - burger menu closed
+2021-07-16 16:34:42 INFO  Log:30 - refreshing page
+2021-07-16 16:34:43 INFO  Log:30 - Clicking in product's 'add to cart' button
+2021-07-16 16:34:43 INFO  Log:30 - getting product name
+2021-07-16 16:34:43 INFO  Log:30 - product name found
+2021-07-16 16:34:43 INFO  Log:30 - clicking add to car button
+2021-07-16 16:34:43 INFO  Log:30 - product id: 0 - Sauce Labs Bike Light added to cart
+2021-07-16 16:34:43 INFO  Log:30 - Clicking in 'cart' button
+2021-07-16 16:34:43 INFO  Log:30 - going to cart page
+2021-07-16 16:34:43 INFO  Log:30 - Verifying if current page is YOUR CART
+2021-07-16 16:34:43 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:43 INFO  Log:30 - current page is: YOUR CART
+2021-07-16 16:34:43 INFO  Log:30 - Verifying if at least 1 product in cart list
+2021-07-16 16:34:43 INFO  Log:30 - getting number of products in cart
+2021-07-16 16:34:43 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-16 16:34:43 INFO  Log:30 - Clicking in 'checkout' button
+2021-07-16 16:34:43 INFO  Log:30 - going to checkout page
+2021-07-16 16:34:43 INFO  Log:30 - Verifying if current page is CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:43 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:43 INFO  Log:30 - current page is: CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:43 INFO  Log:30 - Filling up checkout form with invalid zip code
+2021-07-16 16:34:43 INFO  Log:30 - filling up field first name with: Oscar
+2021-07-16 16:34:43 INFO  Log:30 - filling up field last name with: Santos
+2021-07-16 16:34:43 INFO  Log:30 - filling up field zip with: abcde
+2021-07-16 16:34:43 INFO  Log:30 - clicking button continue
+2021-07-16 16:34:43 INFO  Log:30 - Verifying if current page is CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:43 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:43 INFO  Log:30 - current page is: CHECKOUT: OVERVIEW
+2021-07-16 16:34:43 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 16:34:43 INFO  Log:30 - Logging into system
+2021-07-16 16:34:43 INFO  Log:30 - filling up username field with: standard_user
+2021-07-16 16:34:43 INFO  Log:30 - filling up password field with: secret_sauce
+2021-07-16 16:34:44 INFO  Log:30 - clicking login button
+2021-07-16 16:34:44 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 16:34:44 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:44 INFO  Log:30 - current page is: PRODUCTS
+2021-07-16 16:34:44 INFO  Log:30 - Resetting app state
+2021-07-16 16:34:44 INFO  Log:30 - clicking burger menu button
+2021-07-16 16:34:44 INFO  Log:30 - burger menu opened
+2021-07-16 16:34:44 INFO  Log:30 - waiting for burger menu to open
+2021-07-16 16:34:44 INFO  Log:30 - burger menu is visible
+2021-07-16 16:34:44 INFO  Log:30 - clicking reset option
+2021-07-16 16:34:44 INFO  Log:30 - resetting app state
+2021-07-16 16:34:44 INFO  Log:30 - clicking close button
+2021-07-16 16:34:44 INFO  Log:30 - burger menu closed
+2021-07-16 16:34:44 INFO  Log:30 - refreshing page
+2021-07-16 16:34:44 INFO  Log:30 - Clicking in product's 'add to cart' button
+2021-07-16 16:34:44 INFO  Log:30 - getting product name
+2021-07-16 16:34:44 INFO  Log:30 - product name found
+2021-07-16 16:34:44 INFO  Log:30 - clicking add to car button
+2021-07-16 16:34:44 INFO  Log:30 - product id: 0 - Sauce Labs Bike Light added to cart
+2021-07-16 16:34:44 INFO  Log:30 - Clicking in 'cart' button
+2021-07-16 16:34:44 INFO  Log:30 - going to cart page
+2021-07-16 16:34:44 INFO  Log:30 - Verifying if current page is YOUR CART
+2021-07-16 16:34:44 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:44 INFO  Log:30 - current page is: YOUR CART
+2021-07-16 16:34:44 INFO  Log:30 - Verifying if at least 1 product in cart list
+2021-07-16 16:34:44 INFO  Log:30 - getting number of products in cart
+2021-07-16 16:34:44 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-16 16:34:44 INFO  Log:30 - Clicking in 'checkout' button
+2021-07-16 16:34:45 INFO  Log:30 - going to checkout page
+2021-07-16 16:34:45 INFO  Log:30 - Verifying if current page is CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:45 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:45 INFO  Log:30 - current page is: CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:45 INFO  Log:30 - Getting how many products in cart BEFORE canceling checkout
+2021-07-16 16:34:45 INFO  Log:30 - getting number of products in cart
+2021-07-16 16:34:45 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-16 16:34:45 INFO  Log:30 - Clicking in 'cancel' button
+2021-07-16 16:34:45 INFO  Log:30 - going to cart page
+2021-07-16 16:34:45 INFO  Log:30 - Verifying if current page is YOUR CART
+2021-07-16 16:34:45 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:45 INFO  Log:30 - current page is: YOUR CART
+2021-07-16 16:34:45 INFO  Log:30 - Getting how many products in cart AFTER canceling checkout
+2021-07-16 16:34:45 INFO  Log:30 - getting number of products in cart
+2021-07-16 16:34:45 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-16 16:34:45 INFO  Log:30 - Verifying if products kept in cart
+2021-07-16 16:34:45 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 16:34:45 INFO  Log:30 - Logging into system
+2021-07-16 16:34:45 INFO  Log:30 - filling up username field with: standard_user
+2021-07-16 16:34:45 INFO  Log:30 - filling up password field with: secret_sauce
+2021-07-16 16:34:45 INFO  Log:30 - clicking login button
+2021-07-16 16:34:45 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 16:34:45 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:45 INFO  Log:30 - current page is: PRODUCTS
+2021-07-16 16:34:45 INFO  Log:30 - Resetting app state
+2021-07-16 16:34:45 INFO  Log:30 - clicking burger menu button
+2021-07-16 16:34:45 INFO  Log:30 - burger menu opened
+2021-07-16 16:34:45 INFO  Log:30 - waiting for burger menu to open
+2021-07-16 16:34:45 INFO  Log:30 - burger menu is visible
+2021-07-16 16:34:45 INFO  Log:30 - clicking reset option
+2021-07-16 16:34:45 INFO  Log:30 - resetting app state
+2021-07-16 16:34:45 INFO  Log:30 - clicking close button
+2021-07-16 16:34:45 INFO  Log:30 - burger menu closed
+2021-07-16 16:34:45 INFO  Log:30 - refreshing page
+2021-07-16 16:34:46 INFO  Log:30 - Clicking in product's 'add to cart' button
+2021-07-16 16:34:46 INFO  Log:30 - getting product name
+2021-07-16 16:34:46 INFO  Log:30 - product name found
+2021-07-16 16:34:46 INFO  Log:30 - clicking add to car button
+2021-07-16 16:34:46 INFO  Log:30 - product id: 0 - Sauce Labs Bike Light added to cart
+2021-07-16 16:34:46 INFO  Log:30 - Clicking in 'cart' button
+2021-07-16 16:34:46 INFO  Log:30 - going to cart page
+2021-07-16 16:34:46 INFO  Log:30 - Verifying if current page is YOUR CART
+2021-07-16 16:34:46 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:46 INFO  Log:30 - current page is: YOUR CART
+2021-07-16 16:34:46 INFO  Log:30 - Verifying if at least 1 product in cart list
+2021-07-16 16:34:46 INFO  Log:30 - getting number of products in cart
+2021-07-16 16:34:46 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-16 16:34:46 INFO  Log:30 - Clicking in 'checkout' button
+2021-07-16 16:34:46 INFO  Log:30 - going to checkout page
+2021-07-16 16:34:46 INFO  Log:30 - Verifying if current page is CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:46 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:46 INFO  Log:30 - current page is: CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:46 INFO  Log:30 - Filling up checkout form with valid data
+2021-07-16 16:34:46 INFO  Log:30 - filling up field first name with: Oscar
+2021-07-16 16:34:46 INFO  Log:30 - filling up field last name with: Santos
+2021-07-16 16:34:46 INFO  Log:30 - filling up field zip with: 12345
+2021-07-16 16:34:46 INFO  Log:30 - clicking button continue
+2021-07-16 16:34:46 INFO  Log:30 - Verifying if current page is CHECKOUT: OVERVIEW
+2021-07-16 16:34:46 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:46 INFO  Log:30 - current page is: CHECKOUT: OVERVIEW
+2021-07-16 16:34:46 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 16:34:46 INFO  Log:30 - Logging into system
+2021-07-16 16:34:46 INFO  Log:30 - filling up username field with: standard_user
+2021-07-16 16:34:47 INFO  Log:30 - filling up password field with: secret_sauce
+2021-07-16 16:34:47 INFO  Log:30 - clicking login button
+2021-07-16 16:34:47 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 16:34:47 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:47 INFO  Log:30 - current page is: PRODUCTS
+2021-07-16 16:34:47 INFO  Log:30 - Resetting app state
+2021-07-16 16:34:47 INFO  Log:30 - clicking burger menu button
+2021-07-16 16:34:47 INFO  Log:30 - burger menu opened
+2021-07-16 16:34:47 INFO  Log:30 - waiting for burger menu to open
+2021-07-16 16:34:47 INFO  Log:30 - burger menu is visible
+2021-07-16 16:34:47 INFO  Log:30 - clicking reset option
+2021-07-16 16:34:47 INFO  Log:30 - resetting app state
+2021-07-16 16:34:47 INFO  Log:30 - clicking close button
+2021-07-16 16:34:47 INFO  Log:30 - burger menu closed
+2021-07-16 16:34:47 INFO  Log:30 - refreshing page
+2021-07-16 16:34:47 INFO  Log:30 - Clicking in product's 'add to cart' button
+2021-07-16 16:34:47 INFO  Log:30 - getting product name
+2021-07-16 16:34:47 INFO  Log:30 - product name found
+2021-07-16 16:34:47 INFO  Log:30 - clicking add to car button
+2021-07-16 16:34:47 INFO  Log:30 - product id: 0 - Sauce Labs Bike Light added to cart
+2021-07-16 16:34:47 INFO  Log:30 - Clicking in 'cart' button
+2021-07-16 16:34:47 INFO  Log:30 - going to cart page
+2021-07-16 16:34:47 INFO  Log:30 - Verifying if current page is YOUR CART
+2021-07-16 16:34:47 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:47 INFO  Log:30 - current page is: YOUR CART
+2021-07-16 16:34:47 INFO  Log:30 - Verifying if at least 1 product in cart list
+2021-07-16 16:34:47 INFO  Log:30 - getting number of products in cart
+2021-07-16 16:34:47 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-16 16:34:47 INFO  Log:30 - Clicking in 'checkout' button
+2021-07-16 16:34:48 INFO  Log:30 - going to checkout page
+2021-07-16 16:34:48 INFO  Log:30 - Verifying if current page is CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:48 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:48 INFO  Log:30 - current page is: CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:48 INFO  Log:30 - Filling up checkout form with valid data
+2021-07-16 16:34:48 INFO  Log:30 - filling up field first name with: Oscar
+2021-07-16 16:34:48 INFO  Log:30 - filling up field last name with: Santos
+2021-07-16 16:34:48 INFO  Log:30 - filling up field zip with: 12345
+2021-07-16 16:34:48 INFO  Log:30 - clicking button continue
+2021-07-16 16:34:48 INFO  Log:30 - Verifying if current page is CHECKOUT: OVERVIEW
+2021-07-16 16:34:48 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:48 INFO  Log:30 - current page is: CHECKOUT: OVERVIEW
+2021-07-16 16:34:48 INFO  Log:30 - Verifying presence of 'cart list' element in checkout overview
+2021-07-16 16:34:48 INFO  Log:30 - cart list found
+2021-07-16 16:34:48 INFO  Log:30 - Verifying presence of 'summary info' element in checkout overview
+2021-07-16 16:34:48 INFO  Log:30 - summary info found
+2021-07-16 16:34:48 INFO  Log:30 - Verifying presence of 'cancel' button in checkout overview
+2021-07-16 16:34:48 INFO  Log:30 - cancel button found
+2021-07-16 16:34:48 INFO  Log:30 - Verifying presence of 'finish' button in checkout overview
+2021-07-16 16:34:48 INFO  Log:30 - finish button found
+2021-07-16 16:34:48 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 16:34:48 INFO  Log:30 - Logging into system
+2021-07-16 16:34:48 INFO  Log:30 - filling up username field with: standard_user
+2021-07-16 16:34:48 INFO  Log:30 - filling up password field with: secret_sauce
+2021-07-16 16:34:48 INFO  Log:30 - clicking login button
+2021-07-16 16:34:48 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 16:34:48 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:48 INFO  Log:30 - current page is: PRODUCTS
+2021-07-16 16:34:48 INFO  Log:30 - Resetting app state
+2021-07-16 16:34:48 INFO  Log:30 - clicking burger menu button
+2021-07-16 16:34:49 INFO  Log:30 - burger menu opened
+2021-07-16 16:34:49 INFO  Log:30 - waiting for burger menu to open
+2021-07-16 16:34:49 INFO  Log:30 - burger menu is visible
+2021-07-16 16:34:49 INFO  Log:30 - clicking reset option
+2021-07-16 16:34:49 INFO  Log:30 - resetting app state
+2021-07-16 16:34:49 INFO  Log:30 - clicking close button
+2021-07-16 16:34:49 INFO  Log:30 - burger menu closed
+2021-07-16 16:34:49 INFO  Log:30 - refreshing page
+2021-07-16 16:34:49 INFO  Log:30 - Clicking in product's 'add to cart' button
+2021-07-16 16:34:49 INFO  Log:30 - getting product name
+2021-07-16 16:34:49 INFO  Log:30 - product name found
+2021-07-16 16:34:49 INFO  Log:30 - clicking add to car button
+2021-07-16 16:34:49 INFO  Log:30 - product id: 0 - Sauce Labs Bike Light added to cart
+2021-07-16 16:34:49 INFO  Log:30 - Clicking in 'cart' button
+2021-07-16 16:34:49 INFO  Log:30 - going to cart page
+2021-07-16 16:34:49 INFO  Log:30 - Verifying if current page is YOUR CART
+2021-07-16 16:34:49 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:49 INFO  Log:30 - current page is: YOUR CART
+2021-07-16 16:34:49 INFO  Log:30 - Verifying if at least 1 product in cart list
+2021-07-16 16:34:49 INFO  Log:30 - getting number of products in cart
+2021-07-16 16:34:49 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-16 16:34:49 INFO  Log:30 - Clicking in 'checkout' button
+2021-07-16 16:34:49 INFO  Log:30 - going to checkout page
+2021-07-16 16:34:49 INFO  Log:30 - Verifying if current page is CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:49 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:49 INFO  Log:30 - current page is: CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:49 INFO  Log:30 - Filling up checkout form with valid data
+2021-07-16 16:34:49 INFO  Log:30 - filling up field first name with: Oscar
+2021-07-16 16:34:49 INFO  Log:30 - filling up field last name with: Santos
+2021-07-16 16:34:49 INFO  Log:30 - filling up field zip with: 12345
+2021-07-16 16:34:49 INFO  Log:30 - clicking button continue
+2021-07-16 16:34:50 INFO  Log:30 - Verifying if current page is CHECKOUT: OVERVIEW
+2021-07-16 16:34:50 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:50 INFO  Log:30 - current page is: CHECKOUT: OVERVIEW
+2021-07-16 16:34:50 INFO  Log:30 - Getting how many products in cart BEFORE canceling buy
+2021-07-16 16:34:50 INFO  Log:30 - getting number of products in cart
+2021-07-16 16:34:50 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-16 16:34:50 INFO  Log:30 - Clicking in 'cancel' button
+2021-07-16 16:34:50 INFO  Log:30 - going to catalog page
+2021-07-16 16:34:50 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 16:34:50 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:50 INFO  Log:30 - current page is: PRODUCTS
+2021-07-16 16:34:50 INFO  Log:30 - Getting how many products in cart AFTER canceling checkout
+2021-07-16 16:34:50 INFO  Log:30 - getting number of products in cart
+2021-07-16 16:34:50 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-16 16:34:50 INFO  Log:30 - Verifying if products kept in cart
+2021-07-16 16:34:50 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 16:34:50 INFO  Log:30 - Logging into system
+2021-07-16 16:34:50 INFO  Log:30 - filling up username field with: standard_user
+2021-07-16 16:34:50 INFO  Log:30 - filling up password field with: secret_sauce
+2021-07-16 16:34:50 INFO  Log:30 - clicking login button
+2021-07-16 16:34:50 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 16:34:50 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:50 INFO  Log:30 - current page is: PRODUCTS
+2021-07-16 16:34:50 INFO  Log:30 - Resetting app state
+2021-07-16 16:34:50 INFO  Log:30 - clicking burger menu button
+2021-07-16 16:34:50 INFO  Log:30 - burger menu opened
+2021-07-16 16:34:50 INFO  Log:30 - waiting for burger menu to open
+2021-07-16 16:34:50 INFO  Log:30 - burger menu is visible
+2021-07-16 16:34:50 INFO  Log:30 - clicking reset option
+2021-07-16 16:34:50 INFO  Log:30 - resetting app state
+2021-07-16 16:34:50 INFO  Log:30 - clicking close button
+2021-07-16 16:34:50 INFO  Log:30 - burger menu closed
+2021-07-16 16:34:50 INFO  Log:30 - refreshing page
+2021-07-16 16:34:51 INFO  Log:30 - Clicking in product's 'add to cart' button
+2021-07-16 16:34:51 INFO  Log:30 - getting product name
+2021-07-16 16:34:51 INFO  Log:30 - product name found
+2021-07-16 16:34:51 INFO  Log:30 - clicking add to car button
+2021-07-16 16:34:51 INFO  Log:30 - product id: 0 - Sauce Labs Bike Light added to cart
+2021-07-16 16:34:51 INFO  Log:30 - Clicking in 'cart' button
+2021-07-16 16:34:51 INFO  Log:30 - going to cart page
+2021-07-16 16:34:51 INFO  Log:30 - Verifying if current page is YOUR CART
+2021-07-16 16:34:51 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:51 INFO  Log:30 - current page is: YOUR CART
+2021-07-16 16:34:51 INFO  Log:30 - Verifying if at least 1 product in cart list
+2021-07-16 16:34:51 INFO  Log:30 - getting number of products in cart
+2021-07-16 16:34:51 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-16 16:34:51 INFO  Log:30 - Clicking in 'checkout' button
+2021-07-16 16:34:51 INFO  Log:30 - going to checkout page
+2021-07-16 16:34:51 INFO  Log:30 - Verifying if current page is CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:51 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:51 INFO  Log:30 - current page is: CHECKOUT: YOUR INFORMATION
+2021-07-16 16:34:51 INFO  Log:30 - Filling up checkout form with valid data
+2021-07-16 16:34:51 INFO  Log:30 - filling up field first name with: Oscar
+2021-07-16 16:34:51 INFO  Log:30 - filling up field last name with: Santos
+2021-07-16 16:34:51 INFO  Log:30 - filling up field zip with: 12345
+2021-07-16 16:34:51 INFO  Log:30 - clicking button continue
+2021-07-16 16:34:51 INFO  Log:30 - Verifying if current page is CHECKOUT: OVERVIEW
+2021-07-16 16:34:51 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:51 INFO  Log:30 - current page is: CHECKOUT: OVERVIEW
+2021-07-16 16:34:51 INFO  Log:30 - Getting how many products in cart BEFORE completing buy
+2021-07-16 16:34:51 INFO  Log:30 - getting number of products in cart
+2021-07-16 16:34:51 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-16 16:34:51 INFO  Log:30 - Clicking in 'finish' button
+2021-07-16 16:34:51 INFO  Log:30 - going to checkout complete page
+2021-07-16 16:34:51 INFO  Log:30 - Verifying if current page is CHECKOUT: COMPLETE!
+2021-07-16 16:34:51 INFO  Log:30 - getting current's page title
+2021-07-16 16:34:51 INFO  Log:30 - current page is: CHECKOUT: COMPLETE!
+2021-07-16 16:34:51 INFO  Log:30 - Getting how many products in cart AFTER completing checkout
+2021-07-16 16:34:51 INFO  Log:30 - getting number of products in cart
+2021-07-16 16:34:51 INFO  Log:30 - No products in cart
+2021-07-16 16:34:51 INFO  Log:30 - Verifying if products kept in cart
+2021-07-16 16:34:51 INFO  Log:25 - Ending Testing ...TestSuite is closing

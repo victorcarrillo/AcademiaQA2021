@@ -43,19 +43,19 @@ public class CatalogPage extends BasePage{
     public void productsInInventory() {
         try{
             List<WebElement> products = getListWebElement(locInventory,5);
-            Log.info("Products in inventory: "+products.size());
+            Log.info("products in inventory: "+products.size());
         } catch(Exception e) {
-            Log.fatal("Inventory is empty");
+            Log.fatal("inventory is empty");
         }
     }
 
     public List<String> getNamesInInventory() {
         try {
             List<WebElement> names = getListWebElement(locCardName,5);
-            Log.info("Products' names in inventory: "+names.size());
+            Log.info("products' names in inventory: "+names.size());
             return getListString(names);
         } catch(Exception e) {
-            Log.fatal("Product's names not found");
+            Log.fatal("product's names not found");
         }
         return null;
     }
@@ -63,22 +63,22 @@ public class CatalogPage extends BasePage{
     public List<Float> getPricesInInventory() {
         try {
             List<WebElement> prices = getListWebElement(locCardPrice,5);
-            Log.info("Products' prices in inventory: "+prices.size());
+            Log.info("products' prices in inventory: "+prices.size());
             List<String> pricesString = getListString(prices);
             return cleanPriceList(pricesString);
         } catch(Exception e) {
-            Log.fatal("Product's prices not found");
+            Log.fatal("product's prices not found");
         }
         return null;
     }
 
     public List<Float> cleanPriceList(List<String> pList) {
-        List<Float> floatPrice = new ArrayList<Float>();
+        List<Float> floatPrice = new ArrayList<>();
         String dirtyPrice;
         String cleanPrice;
         String currentPrice;
         try {
-            Log.info("Cleaning '$' from price lists");
+            Log.info("cleaning '$' from price lists");
             for(int i = 0; i < pList.size(); i++) {
                 dirtyPrice = pList.get(i);
                 cleanPrice = "";
@@ -87,189 +87,334 @@ public class CatalogPage extends BasePage{
                 }
                 pList.set(i,cleanPrice);
             }
-            Log.info("Converting String List to Float List");
+            Log.info("converting String List to Float List");
             for(int i = 0; i < pList.size(); i++) {
                 currentPrice = pList.get(i);
                 floatPrice.add(Float.parseFloat(currentPrice));
             }
             return floatPrice;
         } catch(Exception e) {
-            Log.fatal("Error getting prices");
+            Log.fatal("error getting prices");
         }
         return null;
     }
 
     public void productsCardsHaveName() {
-        List<WebElement> products = getListWebElement(locInventory,5);
-        List<WebElement> name = getListWebElement(locCardName,5);
+        List<WebElement> products = new ArrayList<>();
+        List<WebElement> name = new ArrayList<>();
+
+        try {
+            Log.info("getting products in inventory");
+            products = getListWebElement(locInventory,5);
+        } catch (Exception e) {
+            Log.fatal("products in inventory not found");
+        }
+
+        try {
+            Log.info("getting names of products in inventory");
+            name = getListWebElement(locCardName,5);
+        } catch (Exception e) {
+            Log.fatal("names in inventory not found");
+        }
+
+        Log.info("comparing products against names");
         if(products.size() == name.size()) {
-            Log.info("All products' cards in inventory have a name");
+            Log.info("all products' cards in inventory have a name");
         } else if(products.size() > name.size()) {
-            Log.fatal("Not all products' cards in inventory have a name");
+            Log.fatal("not all products' cards in inventory have a name");
         } else {
-            Log.fatal("More names were found");
+            Log.fatal("more names were found");
         }
     }
 
     public void productsCardsHaveImage() {
-        List<WebElement> products = getListWebElement(locInventory,5);
-        List<WebElement> image = getListWebElement(locCardImage,5);
+        List<WebElement> products = new ArrayList<>();
+        List<WebElement> image = new ArrayList<>();
+
+        try {
+            Log.info("getting products in inventory");
+            products = getListWebElement(locInventory,5);
+        } catch (Exception e) {
+            Log.fatal("products in inventory not found");
+        }
+
+        try {
+            Log.info("getting images of products in inventory");
+            image = getListWebElement(locCardImage,5);
+        } catch (Exception e) {
+            Log.fatal("images in inventory not found");
+        }
+
+        Log.info("comparing products against images");
         if(products.size() == image.size()) {
-            Log.info("All products' cards in inventory have an image");
+            Log.info("all products' cards in inventory have an image");
         } else if(products.size() > image.size()) {
-            Log.fatal("Not all products' cards in inventory have an image");
+            Log.fatal("not all products' cards in inventory have an image");
         } else {
-            Log.fatal("More images were found");
+            Log.fatal("more images were found");
         }
     }
 
     public void productsCardsHaveDescription() {
-        List<WebElement> products = getListWebElement(locInventory,5);
-        List<WebElement> description = getListWebElement(locCardDescription,5);
+        List<WebElement> products = new ArrayList<>();
+        List<WebElement> description = new ArrayList<>();
+
+        try {
+            Log.info("getting products in inventory");
+            products = getListWebElement(locInventory,5);
+        } catch (Exception e) {
+            Log.fatal("products in inventory not found");
+        }
+
+        try {
+            Log.info("getting descriptions of products in inventory");
+            description = getListWebElement(locCardDescription,5);
+        } catch (Exception e) {
+            Log.fatal("descriptions not found");
+        }
+
+        Log.info("comparing products against descriptions");
         if(products.size() == description.size()) {
-            Log.info("All products' cards in inventory have a description");
+            Log.info("all products' cards in inventory have a description");
         } else if(products.size() > description.size()) {
-            Log.fatal("Not all products' cards in inventory have a description");
+            Log.fatal("not all products' cards in inventory have a description");
         } else {
-            Log.fatal("More descriptions were found");
+            Log.fatal("more descriptions were found");
         }
     }
 
     public void productsCardsHavePrice() {
-        List<WebElement> products = getListWebElement(locInventory,5);
-        List<WebElement> price = getListWebElement(locCardPrice,5);
+        List<WebElement> products = new ArrayList<>();
+        List<WebElement> price = new ArrayList<>();
+
+        try {
+            Log.info("getting products in inventory");
+            products = getListWebElement(locInventory,5);
+        } catch (Exception e) {
+            Log.fatal("products in inventory not found");
+        }
+
+        try {
+            Log.info("getting prices of products in inventory");
+            price = getListWebElement(locCardPrice,5);
+        } catch (Exception e) {
+            Log.fatal("prices in inventory not found");
+        }
+
+        Log.info("comparing products against prices");
         if(products.size() == price.size()) {
-            Log.info("All products' cards in inventory have a price");
+            Log.info("all products' cards in inventory have a price");
         } else if(products.size() > price.size()) {
-            Log.fatal("Not all products' cards in inventory have a price");
+            Log.fatal("not all products' cards in inventory have a price");
         } else {
-            Log.fatal("More prices were found");
+            Log.fatal("more prices were found");
         }
     }
 
     public void productsCardsHaveButton() {
-        List<WebElement> products = getListWebElement(locInventory,5);
-        List<WebElement> button = getListWebElement(locCardButton,5);
+        List<WebElement> products = new ArrayList<>();
+        List<WebElement> button = new ArrayList<>();
+
+        try {
+            Log.info("getting products in inventory");
+            products = getListWebElement(locInventory,5);
+        } catch (Exception e) {
+            Log.fatal("products in inventory not found");
+        }
+
+        try {
+            Log.info("getting buttons of products in inventory");
+            button = getListWebElement(locCardButton,5);
+        } catch (Exception e) {
+            Log.fatal("buttons in inventory not found");
+        }
+
+        Log.info("comparing products against buttons");
         if(products.size() == button.size()) {
-            Log.info("All products' cards in inventory have a cart button");
+            Log.info("all products' cards in inventory have a cart button");
         } else if(products.size() > button.size()) {
-            Log.fatal("Not all products' cards in inventory have a cart button");
+            Log.fatal("not all products' cards in inventory have a cart button");
         } else {
-            Log.fatal("More cart buttons were found");
+            Log.fatal("more cart buttons were found");
         }
     }
 
+    public String getProductName(By l) {
+        String name;
+        try {
+            name = getElement(l,5).getText();
+            Log.info("product name found");
+            return name;
+        } catch (Exception e) {
+            Log.fatal("product name not found");
+        }
+        return null;
+    }
+
     public void isAddTo(String p) {
-        String product = getElement(locNameInCard,5).getText();
-        Log.info("Looking for 'add to cart' button in product id: "+ p +" - "+product);
+        Log.info("getting product name");
+        String product = getProductName(locNameInCard);
+
+        Log.info("looking for add to cart button in product id: "+ p +" - "+product);
         try {
             getElement(locAddToCart,5);
-            Log.info("Button 'add to cart' found");
+            Log.info("button add to cart found");
         } catch(Exception e) {
-            Log.fatal("Button 'add to cart' not found");
+            Log.fatal("button add to cart not found");
         }
     }
 
     public void isRemove(String p) {
-        String product = getElement(locNameInCard,5).getText();
-        Log.info("Looking for 'remove' button in product id: "+ p +" - "+product);
+        Log.info("getting product name");
+        String product = getProductName(locCardName);
+
+        Log.info("looking for remove button in product id: "+ p +" - "+product);
         try {
             getElement(locRemoveFromCart,5);
-            Log.info("Button 'remove' found");
+            Log.info("button remove found");
         } catch(Exception e) {
-            Log.fatal("Button 'remove' not found");
+            Log.fatal("button remove not found");
         }
     }
 
     public void isAddToPage(String p) {
-        String product = getElement(locNameInPage,5).getText();
-        Log.info("Looking for 'add to cart' button in product id: "+ p +" - "+product);
+        Log.info("getting product name");
+        String product = getProductName(locCardName);
+
+        Log.info("looking for add to cart button in product id: "+ p +" - "+product);
         try {
             getElement(locAddToCart,5);
-            Log.info("Button 'add to cart' found");
+            Log.info("button add to cart found");
         } catch(Exception e) {
-            Log.fatal("Button 'add to cart' not found");
+            Log.fatal("button add to cart not found");
         }
     }
 
     public void isRemovePage(String p) {
-        String product = getElement(locNameInPage,5).getText();
-        Log.info("Looking for 'remove' button in product id: "+ p +" - "+product);
+        Log.info("getting product name");
+        String product = getProductName(locCardName);
+
+        Log.info("looking for remove button in product id: "+ p +" - "+product);
         try {
             getElement(locRemoveFromCart,5);
-            Log.info("Button 'remove' found");
+            Log.info("button remove found");
         } catch(Exception e) {
-            Log.fatal("Button 'remove' not found");
+            Log.fatal("button remove not found");
         }
     }
 
     public void isSortOption() {
         try{
-            WebElement sortOption = getElement(locSortOption,5);
-            Log.info("Sort option found");
+            getElement(locSortOption,5);
+            Log.info("sort option found");
         } catch(Exception e) {
-            Log.fatal("Sort option not found");
+            Log.fatal("sort option not found");
         }
     }
 
     public void sortProducts(String op) {
         try {
-            Log.info("Opening sort options");
+            Log.info("opening sort menu");
             getButton(locSortOption,5).click();
+        } catch (Exception e) {
+            Log.fatal("sort menu not found");
+        }
+
+        try {
             switch(op) {
                 case "az":
-                    Log.info("Selecting 'a' to 'z' option");
+                    Log.info("selecting a to z option");
                     getButton(locSortAZ,5).click();
                     break;
                 case "za":
-                    Log.info("Selecting 'z' to 'a' option");
+                    Log.info("selecting z to a option");
                     getButton(locSortZA,5).click();
                     break;
                 case "lohi":
-                    Log.info("Selecting 'low' to 'high' option");
+                    Log.info("selecting low to high option");
                     getButton(locSortLoHi,5).click();
                     break;
                 case "hilo":
-                    Log.info("Selecting 'high' to 'low' option");
+                    Log.info("selecting high to low option");
                     getButton(locSortHiLo,5).click();
                     break;
             }
         } catch(Exception e) {
-            Log.fatal("Not options in sort button found");
+            Log.fatal("not options in sort button found");
         }
     }
 
     public String addToCart(String p) {
-        String product = getElement(locNameInCard,5).getText();
-        Log.info("Product id: "+ p +" - "+product +" added to cart");
-        getButton(locAddToCart,5).click();
-        return product;
+        Log.info("getting product name");
+        String product = getProductName(locNameInCard);
+
+        try {
+            Log.info("clicking add to car button");
+            getButton(locAddToCart,5).click();
+            Log.info("product id: "+ p +" - "+product +" added to cart");
+            return product;
+        } catch (Exception e) {
+            Log.fatal("add to cart button not found");
+        }
+        return null;
     }
 
     public String removeFromCart(String p) {
-        String product = getElement(locNameInCard,5).getText();
-        Log.info("Product id: "+ p +" - "+product +" removed from cart");
-        getButton(locRemoveFromCart,5).click();
-        return product;
+        Log.info("getting product name");
+        String product = getProductName(locNameInCard);
+
+        try {
+            Log.info("clicking remove button");
+            getButton(locRemoveFromCart,5).click();
+            Log.info("product id: "+ p +" - "+product +" removed from cart");
+            return product;
+        } catch (Exception e) {
+            Log.fatal("remove button not found");
+        }
+        return null;
     }
 
     public String addToCartPage(String p) {
-        String product = getElement(locNameInPage,5).getText();
-        Log.info("Product id: "+ p +" - "+product +" added to cart");
-        getButton(locAddToCart,5).click();
-        return product;
+        Log.info("getting product name");
+        String product = getProductName(locNameInPage);
+
+        try {
+            Log.info("clicking add to car button");
+            getButton(locAddToCart,5).click();
+            Log.info("Product id: "+ p +" - "+product +" added to cart");
+            return product;
+        } catch (Exception e) {
+            Log.fatal("add to cart button not found");
+        }
+        return null;
     }
 
     public String removeFromCartPage(String p) {
+        Log.info("getting product name");
         String product = getElement(locNameInPage,5).getText();
-        Log.info("Product id: "+ p +" - "+product +" removed from cart");
-        getButton(locRemoveFromCart,5).click();
-        return product;
+
+        try {
+            Log.info("clicking remove button");
+            getButton(locRemoveFromCart,5).click();
+            Log.info("product id: "+ p +" - "+product +" removed from cart");
+            return product;
+        } catch (Exception e) {
+            Log.fatal("remove button not found");
+        }
+        return null;
     }
 
     public int productsInButtonCart() {
-        String inCart = getElement(locCartContainer,5).getText();
+        String inCart = "";
         int n;
+
+        try {
+            Log.info("getting number of products in cart");
+            inCart = getElement(locCartContainer,5).getText();
+        } catch (Exception e) {
+            Log.fatal("products in cart container not found");
+        }
+
         if(inCart.isEmpty()) {
             Log.info("No products in cart");
             return 0;
@@ -281,80 +426,93 @@ public class CatalogPage extends BasePage{
     }
 
     public String toProductPage(String p) {
-        String product = getElement(locNameInCard,5).getText();
+        Log.info("getting product name");
+        String product = getProductName(locNameInCard);
+
         Log.info("Product id: "+ p +" - "+product);
-        getButton(locNameInCard,5).click();
-        return product;
+        try {
+            Log.info("clicking product name");
+            getButton(locNameInCard,5).click();
+            return product;
+        } catch (Exception e) {
+            Log.fatal("product name not found");
+        }
+        return null;
     }
 
     public void toInventoryFromProduct() {
-        getButton(locBackInPage,5).click();
-        Log.info("'back' button found");
+        try {
+            Log.info("clicking back button");
+            getButton(locBackInPage,5).click();
+        } catch (Exception e) {
+            Log.fatal("back button not found");
+        }
     }
 
     public String currentPage() {
-        String page = getElement(locNameInPage,5).getText();
-        Log.info("Current product's page is: "+page);
-        return page;
+        String page;
+        try {
+            Log.info("getting name of current page");
+            page = getElement(locNameInPage,5).getText();
+            Log.info("current page is: "+page);
+            return page;
+        } catch (Exception e) {
+            Log.fatal("page name not found");
+        }
+        return null;
     }
 
     public void isNameInPage() {
         try{
-            WebElement name = getElement(locNameInPage,5);
-            Log.info("Product's name found");
+            getElement(locNameInPage,5);
+            Log.info("product name found");
         } catch(Exception e) {
-            Log.fatal("Product's name not found");
+            Log.fatal("product name not found");
         }
     }
 
     public void isImageInPage() {
         try{
-            WebElement image = getElement(locImageInPage,5);
-            Log.info("Product's image found");
+            getElement(locImageInPage,5);
+            Log.info("product image found");
         } catch(Exception e) {
-            Log.fatal("Product's image not found");
+            Log.fatal("product image not found");
         }
     }
 
     public void isDescriptionInPage() {
         try{
-            WebElement description = getElement(locDescriptionInPage,5);
-            Log.info("Product's description found");
+            getElement(locDescriptionInPage,5);
+            Log.info("product description found");
         } catch(Exception e) {
-            Log.fatal("Product's description not found");
+            Log.fatal("product description not found");
         }
     }
 
     public void isPriceInPage() {
         try{
-            WebElement price = getElement(locPriceInPage,5);
-            Log.info("Product's price found");
+            getElement(locPriceInPage,5);
+            Log.info("product's price found");
         } catch(Exception e) {
-            Log.fatal("Product's price not found");
+            Log.fatal("product price not found");
         }
     }
 
     public void isButtonInPage() {
         try{
-            WebElement button = getElement(locButtonInPage,5);
-            Log.info("Product's 'add to cart' button found");
+            getElement(locButtonInPage,5);
+            Log.info("add to cart button found");
         } catch(Exception e) {
-            Log.fatal("Product's 'add to cart' button not found");
+            Log.fatal("add to cart button not found");
         }
     }
 
     public void isBackInPage() {
         try{
-            WebElement back = getElement(locBackInPage,5);
-            Log.info("Product's 'back to products' button found");
+            getElement(locBackInPage,5);
+            Log.info("back to products button found");
         } catch(Exception e) {
-            Log.fatal("Product's 'back to products' button not found");
-        }
-    }
-
-    public void showMeTheList(List<String> list) {
-        for(int i = 0; i < list.size(); i++) {
-            Log.info("Product "+ (i+1) +" is "+ list.get(i));
+            Log.fatal("back to products button not found");
         }
     }
 }

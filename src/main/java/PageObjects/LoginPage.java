@@ -3,7 +3,6 @@ package PageObjects;
 import Utilities.Log;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 public class LoginPage extends BasePage {
     /* LOCATORS */
@@ -22,51 +21,70 @@ public class LoginPage extends BasePage {
     public void isUserField() {
         try{
             getElement(locUserField,5);
-            Log.info("Field 'username' found");
+            Log.info("username field found");
         } catch(Exception e) {
-            Log.fatal("Field 'username' not found");
+            Log.fatal("username field not found");
         }
     }
 
     public void isPassField() {
         try{
             getElement(locPassField,5);
-            Log.info("Field 'password' found");
+            Log.info("password field found");
         } catch(Exception e) {
-            Log.fatal("Field 'password' not found");
+            Log.fatal("password field not found");
         }
     }
 
     public void isLoginButton() {
         try{
             getElement(locLoginButton,5);
-            Log.info("Button 'login' found");
+            Log.info("login button found");
         } catch(Exception e) {
-            Log.fatal("Button 'login' not found");
+            Log.fatal("login button not found");
         }
     }
 
     public void fillLoginForm(String user, String pass) {
-        Log.info("Filling up field 'username' with: "+user);
-        getElement(locUserField,5).sendKeys(user);
+        try {
+            Log.info("filling up username field with: "+user);
+            getElement(locUserField,5).sendKeys(user);
+        } catch (Exception e) {
+            Log.fatal("username field not found");
+        }
 
-        Log.info("Filling up field 'password' with: "+pass);
-        getElement(locPassField,5).sendKeys(pass);
+        try {
+            Log.info("filling up password field with: "+pass);
+            getElement(locPassField,5).sendKeys(pass);
+        } catch (Exception e) {
+            Log.fatal("password field not found");
+        }
 
-        Log.info("Clicking button 'login'");
-        getButton(locLoginButton,5).click();
+        try {
+            Log.info("clicking login button");
+            getButton(locLoginButton,5).click();
+        } catch (Exception e) {
+            Log.fatal("login button not found");
+        }
     }
 
     public String currentPage() {
-        String page = getElement(locPageTitle,5).getText();
-        Log.info("Current page is: "+page);
-        return page;
+        String page;
+        try {
+            Log.info("getting current's page title");
+            page = getElement(locPageTitle,5).getText();
+            Log.info("current page is: "+page);
+            return page;
+        } catch (Exception e) {
+            Log.fatal("page title not found");
+        }
+        return null;
     }
 
     public boolean currentPageIsLogin() {
         try {
             getElement(locLoginLogo,5);
-            Log.info("Current page is: LOGIN FORM");
+            Log.info("current page is: LOGIN FORM");
             return true;
         } catch(Exception e) {
             Log.fatal("Not in LOGIN FORM page");
@@ -75,13 +93,25 @@ public class LoginPage extends BasePage {
     }
 
     public String errorMessage() {
-        String error = getElement(locErrorMessage,5).getText();
-        Log.info("Error message showed: "+error);
-        return error;
+        String error;
+        try {
+            Log.info("getting error message");
+            error = getElement(locErrorMessage,5).getText();
+            Log.info("error message showed: "+error);
+            return error;
+        } catch (Exception e) {
+            Log.fatal("error message not found");
+        }
+        return null;
     }
 
     public void closeErrorMessage() {
-        Log.info("Clicking message's button 'close'");
-        getButton(locCloseError,5).click();
+        try {
+            Log.info("clicking error's close button");
+            getButton(locCloseError,5).click();
+            Log.info("error message closed");
+        } catch (Exception e) {
+            Log.fatal("error's close button not found");
+        }
     }
 }
