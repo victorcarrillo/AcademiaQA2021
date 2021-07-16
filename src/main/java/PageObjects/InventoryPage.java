@@ -19,6 +19,10 @@ public class InventoryPage extends BasePage{
     By itemsNameLocator = By.cssSelector(".inventory_item_name");
     By itemsPriceLocator = By.cssSelector(".inventory_item_price");
 
+    By addItemButtonLocator = By.cssSelector("*[data-test=\"add-to-cart-sauce-labs-bike-light\"]");
+    By deleteItemButtonLocator = By.cssSelector("*[data-test=\"remove-sauce-labs-bike-light\"]");
+
+
     public InventoryPage(WebDriver driver){
         super(driver);
     }
@@ -101,5 +105,14 @@ public class InventoryPage extends BasePage{
         }
 
     }
+
+    public void addTestItem(){
+        clickOnElement(addItemButtonLocator);
+    }
+
+    public void deleteTestItem(){
+        clickOnElement(deleteItemButtonLocator);
+    }
+
 
 }

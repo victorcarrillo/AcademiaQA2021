@@ -110,7 +110,7 @@ public class BasePage {
         }
         Collections.sort(temporary);
         if(criteria.equals("za")){
-            //Collections.reverse(temporary);
+            Collections.reverse(temporary);
         }
         return temporary;
 

@@ -3,7 +3,7 @@
 <suite name="Demo maven cmd" verbose="1" parallel="false" thread-count="1">
 <test name="Login tests">
     <classes>
-        <class name="Tests.LoginTests"/>
+        <class name="Tests.TestCases"/>
     </classes>
 </test> <!-- Test -->
 

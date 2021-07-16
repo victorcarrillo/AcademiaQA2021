@@ -1,12 +1,10 @@
 package Tests;
 
-import PageObjects.BaseTest;
-import PageObjects.LoginPage;
-import PageObjects.InventoryPage;
+import PageObjects.*;
 import Utilities.Log;
 import org.testng.annotations.Test;
 
-public class LoginTests extends BaseTest {
+public class TestCases extends BaseTest {
     String URL = props.getProperty("webapp");
     /**Test data**/
     String VALID_USERNAME ;
@@ -53,6 +51,137 @@ public class LoginTests extends BaseTest {
         logger.info("Login validation completed");
 
         Log.info("Test completed: inventory page located");
+        logger.info("Test completed: inventory page located");
+    }
+
+
+    @Test
+    public void cartFunctionalityCase()  {
+
+        Log.info("Cart functionality case started");
+        //html output initialization
+        logger = extent.createTest("Valid login test");
+
+        //data setup
+        VALID_USERNAME = props.getProperty("validUsername");
+        MASTER_PASSWORD = props.getProperty("masterPassword");
+        INVENTORY_PAGE_TITLE = props.getProperty("productsPageTitle");
+
+        //test run
+        logger.info("Opening "+URL);
+        driver.get(URL);
+        logger.info("Resource located");
+
+
+        logger.info("Locating login page elements");
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.validateLoginPage();
+        logger.info("Login elements located");
+        logger.info("Attempting login");
+        loginPage.login(VALID_USERNAME, MASTER_PASSWORD);
+        logger.info("Login attempt completed");
+        logger.info("Validating login");
+        InventoryPage inventoryPage = new InventoryPage(driver);
+        inventoryPage.validateLogin(INVENTORY_PAGE_TITLE);
+        logger.info("Login validation completed");
+
+        logger.info("Cart functionality verification started");
+        inventoryPage.addTestItem();
+        NavbarPage navbarPage = new NavbarPage(driver);
+        navbarPage.validateCartAdded();
+        inventoryPage.deleteTestItem();
+        navbarPage.validateCartEmpty();
+
+        Log.info("Test completed: cart functionality");
+        logger.info("Test completed: cart functionality");
+    }
+
+    @Test
+    public void checkoutCase()  {
+
+        Log.info("Checkout functionality case started");
+        //html output initialization
+        logger = extent.createTest("Checkout test");
+
+        //data setup
+        VALID_USERNAME = props.getProperty("validUsername");
+        MASTER_PASSWORD = props.getProperty("masterPassword");
+        INVENTORY_PAGE_TITLE = props.getProperty("productsPageTitle");
+
+        //test run
+        logger.info("Opening "+URL);
+        driver.get(URL);
+        logger.info("Resource located");
+
+
+        logger.info("Locating login page elements");
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.validateLoginPage();
+        logger.info("Login elements located");
+        logger.info("Attempting login");
+        loginPage.login(VALID_USERNAME, MASTER_PASSWORD);
+        logger.info("Login attempt completed");
+        logger.info("Validating login");
+        InventoryPage inventoryPage = new InventoryPage(driver);
+        inventoryPage.validateLogin(INVENTORY_PAGE_TITLE);
+        logger.info("Login validation completed");
+
+        logger.info("Adding items to cart");
+        inventoryPage.addTestItem();
+        NavbarPage navbarPage = new NavbarPage(driver);
+        navbarPage.validateCartAdded();
+        logger.info("Items added");
+        navbarPage.goToCart();
+
+        CartPage cartPage = new CartPage(driver);
+        cartPage.checkout();
+
+        CheckoutPage checkoutPage = new CheckoutPage(driver);
+        checkoutPage.stepOneFormSubmit("abraham", "rueda", "45567");
+        checkoutPage.validateSummary();
+        checkoutPage.finishCheckout();
+        checkoutPage.validateCheckout();
+
+
+        Log.info("Test completed: checkout functionality");
+        logger.info("Test completed: checkout functionality");
+    }
+
+    //@Test
+    public void sessionTimeoutFeatureCase() throws Exception {
+
+        Log.info("Session timeout feature case started");
+        //html output initialization
+        logger = extent.createTest("Timeout feature test");
+
+        //data setup
+        VALID_USERNAME = props.getProperty("validUsername");
+        MASTER_PASSWORD = props.getProperty("masterPassword");
+        INVENTORY_PAGE_TITLE = props.getProperty("productsPageTitle");
+
+        //test run
+        logger.info("Opening "+URL);
+        driver.get(URL);
+        logger.info("Resource located");
+
+
+        logger.info("Locating login page elements");
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.validateLoginPage();
+        logger.info("Login elements located");
+        logger.info("Attempting login");
+        loginPage.login(VALID_USERNAME, MASTER_PASSWORD);
+        logger.info("Login attempt completed");
+
+
+        logger.info("Starting timeout validation");
+        Thread.sleep(400000);
+        driver.navigate().refresh();
+        loginPage.validateLoginPage();
+        logger.info("Login validation completed");
+
+
+        Log.info("Test completed: timeout functionality verified");
         logger.info("Test completed: inventory page located");
     }
 
