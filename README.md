@@ -17,8 +17,8 @@ These cases are described in the document "CasosPrueba" and were made on based o
 The following description is for a Windows OS, if you have any questions, please contact the author.
 
 ## Getting Started
-   *Download and decompress this project
-   *Installing [Intellij Idea](https://www.jetbrains.com/es-es/idea/) 
+   * Download and decompress this project
+   * Installing [Intellij Idea](https://www.jetbrains.com/es-es/idea/) 
    * Installing [Java 8](https://www.oracle.com/mx/java/technologies/javase/javase-jdk8-downloads.html
    * Download and decompress[Maven 3.8] (https://maven.apache.org/download.cgi)
    * Installing Selenium Dev
@@ -78,13 +78,13 @@ Now the project could be opened, edited and run by using Intellij or run through
 
 ## Setup and Run
 To execute a test, do the following:
-*Execute one test case by Intellij, click on the next icon.
+* Execute one test case by Intellij, click on the next icon.
  ![Execute one case](/img/im1.JPG)
 
-*Execute the completed class, click on the next icon.
+* Execute the completed class, click on the next icon.
  ![Execute completed class](/img/im2.JPG)
 
-*Execute by using the terminal, with the following command.
+* Execute by using the terminal, with the following command.
 ```
 mvn clean test -DsuiteXmlFile=testSuiteDemo.xml
 ```
