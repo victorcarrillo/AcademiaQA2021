@@ -1,0 +1,127 @@
+2021-07-16 13:42:55 INFO  Log:20 - Starting Testing ...Suite de pruebas inicializando
+2021-07-16 13:42:55 INFO  Log:30 - Iniciando ejecuciÃ³n de pruebas
+2021-07-16 13:42:57 INFO  Log:30 - Opening Browser
+2021-07-16 13:42:57 INFO  Log:20 - Starting Testing ...Caso de prueba 14: agregar multiples productos a carrito desde inventario y luego eliminarlos
+2021-07-16 13:42:58 INFO  Log:30 - Ingresando usuario
+2021-07-16 13:42:58 INFO  Log:30 - Ingresando contraseña
+2021-07-16 13:42:58 INFO  Log:30 - Agregando producto al carrito de compra
+2021-07-16 13:42:58 INFO  Log:30 - Encontrando producto para accion: ADD
+2021-07-16 13:42:59 INFO  Log:30 - Acción, ADD, exitosa
+2021-07-16 13:42:59 INFO  Log:30 - Encontrando producto para accion: ADD
+2021-07-16 13:42:59 INFO  Log:30 - Acción, ADD, exitosa
+2021-07-16 13:42:59 INFO  Log:30 - Encontrando producto para accion: ADD
+2021-07-16 13:42:59 INFO  Log:30 - Acción, ADD, exitosa
+2021-07-16 13:42:59 INFO  Log:30 - Agregando producto al carrito de compra
+2021-07-16 13:42:59 INFO  Log:30 - Encontrando producto para accion: REMOVE
+2021-07-16 13:42:59 INFO  Log:30 - Acción, REMOVE, exitosa
+2021-07-16 13:42:59 INFO  Log:30 - Encontrando producto para accion: REMOVE
+2021-07-16 13:42:59 INFO  Log:30 - Acción, REMOVE, exitosa
+2021-07-16 13:42:59 INFO  Log:30 - Encontrando producto para accion: REMOVE
+2021-07-16 13:42:59 INFO  Log:30 - Acción, REMOVE, exitosa
+2021-07-16 13:42:59 INFO  Log:30 - Accesando carrito de compra
+2021-07-16 13:42:59 INFO  Log:30 - Recuperando productos en el carrito
+2021-07-16 13:43:04 INFO  Log:30 - El carrito está vacío
+2021-07-16 13:43:04 INFO  Log:30 - Limpiando
+2021-07-16 13:43:05 INFO  Log:25 - Ending Testing ...Finalizando ejecuciÃ³n
+2021-07-16 13:43:05 INFO  Log:20 - Starting Testing ...Suite de pruebas inicializando
+2021-07-16 13:43:05 INFO  Log:30 - Iniciando ejecuciÃ³n de pruebas
+2021-07-16 13:43:06 INFO  Log:30 - Opening Browser
+2021-07-16 13:43:06 INFO  Log:20 - Starting Testing ...Caso de prueba 13: agregar un producto a carrito desde inventario y eliminarlo
+2021-07-16 13:43:07 INFO  Log:30 - Ingresando usuario
+2021-07-16 13:43:07 INFO  Log:30 - Ingresando contraseña
+2021-07-16 13:43:07 INFO  Log:30 - Agregando producto al carrito de compra
+2021-07-16 13:43:07 INFO  Log:30 - Encontrando producto para accion: ADD
+2021-07-16 13:43:07 INFO  Log:30 - Acción, ADD, exitosa
+2021-07-16 13:43:07 INFO  Log:30 - Agregando producto al carrito de compra
+2021-07-16 13:43:07 INFO  Log:30 - Encontrando producto para accion: REMOVE
+2021-07-16 13:43:07 INFO  Log:30 - Acción, REMOVE, exitosa
+2021-07-16 13:43:07 INFO  Log:30 - Accesando carrito de compra
+2021-07-16 13:43:07 INFO  Log:30 - Recuperando productos en el carrito
+2021-07-16 13:43:13 INFO  Log:30 - El carrito está vacío
+2021-07-16 13:43:13 INFO  Log:30 - Limpiando
+2021-07-16 13:43:13 INFO  Log:25 - Ending Testing ...Finalizando ejecuciÃ³n
+2021-07-16 13:43:13 INFO  Log:20 - Starting Testing ...Suite de pruebas inicializando
+2021-07-16 13:43:13 INFO  Log:30 - Iniciando ejecuciÃ³n de pruebas
+2021-07-16 13:43:15 INFO  Log:30 - Opening Browser
+2021-07-16 13:43:15 INFO  Log:20 - Starting Testing ...Caso de prueba 12: agregar varios producto a carrito desde inventario
+2021-07-16 13:43:15 INFO  Log:30 - Ingresando usuario
+2021-07-16 13:43:15 INFO  Log:30 - Ingresando contraseña
+2021-07-16 13:43:15 INFO  Log:30 - Agregando producto al carrito de compra
+2021-07-16 13:43:15 INFO  Log:30 - Encontrando producto para accion: ADD
+2021-07-16 13:43:15 INFO  Log:30 - Acción, ADD, exitosa
+2021-07-16 13:43:15 INFO  Log:30 - Encontrando producto para accion: ADD
+2021-07-16 13:43:16 INFO  Log:30 - Acción, ADD, exitosa
+2021-07-16 13:43:16 INFO  Log:30 - Encontrando producto para accion: ADD
+2021-07-16 13:43:16 INFO  Log:30 - Acción, ADD, exitosa
+2021-07-16 13:43:16 INFO  Log:30 - Accesando carrito de compra
+2021-07-16 13:43:16 INFO  Log:30 - Recuperando productos en el carrito
+2021-07-16 13:43:16 INFO  Log:30 - Verificando cantidad de productos
+2021-07-16 13:43:16 INFO  Log:30 - Número de productos correcto
+2021-07-16 13:43:16 INFO  Log:30 - Limpiando
+2021-07-16 13:43:16 INFO  Log:25 - Ending Testing ...Finalizando ejecuciÃ³n
+2021-07-16 13:43:16 INFO  Log:20 - Starting Testing ...Suite de pruebas inicializando
+2021-07-16 13:43:16 INFO  Log:30 - Iniciando ejecuciÃ³n de pruebas
+2021-07-16 13:43:18 INFO  Log:30 - Opening Browser
+2021-07-16 13:43:18 INFO  Log:20 - Starting Testing ...Caso de prueba 11: agregar un producto a carrito desde inventario
+2021-07-16 13:43:18 INFO  Log:30 - Ingresando usuario
+2021-07-16 13:43:18 INFO  Log:30 - Ingresando contraseña
+2021-07-16 13:43:18 INFO  Log:30 - Agregando producto al carrito de compra
+2021-07-16 13:43:18 INFO  Log:30 - Encontrando producto para accion: ADD
+2021-07-16 13:43:18 INFO  Log:30 - Acción, ADD, exitosa
+2021-07-16 13:43:18 INFO  Log:30 - Accesando carrito de compra
+2021-07-16 13:43:19 INFO  Log:30 - Recuperando productos en el carrito
+2021-07-16 13:43:19 INFO  Log:30 - Verificando cantidad de productos
+2021-07-16 13:43:19 INFO  Log:30 - Número de productos correcto
+2021-07-16 13:43:19 INFO  Log:30 - Limpiando
+2021-07-16 13:43:19 INFO  Log:25 - Ending Testing ...Finalizando ejecuciÃ³n
+2021-07-16 13:43:19 INFO  Log:20 - Starting Testing ...Suite de pruebas inicializando
+2021-07-16 13:43:19 INFO  Log:30 - Iniciando ejecuciÃ³n de pruebas
+2021-07-16 13:43:20 INFO  Log:30 - Opening Browser
+2021-07-16 13:43:20 INFO  Log:20 - Starting Testing ...Caso de prueba 7: verificacion de inventario
+2021-07-16 13:43:21 INFO  Log:30 - Ingresando usuario
+2021-07-16 13:43:21 INFO  Log:30 - Ingresando contraseña
+2021-07-16 13:43:21 INFO  Log:30 - Productos encontrados
+2021-07-16 13:43:21 INFO  Log:30 - Limpiando
+2021-07-16 13:43:22 INFO  Log:25 - Ending Testing ...Finalizando ejecuciÃ³n
+2021-07-16 13:43:22 INFO  Log:20 - Starting Testing ...Suite de pruebas inicializando
+2021-07-16 13:43:22 INFO  Log:30 - Iniciando ejecuciÃ³n de pruebas
+2021-07-16 13:43:23 INFO  Log:30 - Opening Browser
+2021-07-16 13:43:23 INFO  Log:20 - Starting Testing ...Caso de prueba 8: filtro alfabÃ©tico descendente
+2021-07-16 13:43:24 INFO  Log:30 - Ingresando usuario
+2021-07-16 13:43:24 INFO  Log:30 - Ingresando contraseña
+2021-07-16 13:43:24 INFO  Log:30 - Buscando productos en orden alfabetico
+2021-07-16 13:43:24 INFO  Log:30 - Productos encontrados
+2021-07-16 13:43:24 INFO  Log:30 - Filtrando objetos en orden alfabético descendente
+2021-07-16 13:43:24 INFO  Log:30 - Buscando productos en orden alfabetico descendente
+2021-07-16 13:43:24 INFO  Log:30 - Productos encontrados
+2021-07-16 13:43:24 INFO  Log:30 - Productos en orden correcto
+2021-07-16 13:43:24 INFO  Log:30 - Limpiando
+2021-07-16 13:43:26 INFO  Log:25 - Ending Testing ...Finalizando ejecuciÃ³n
+2021-07-16 13:43:26 INFO  Log:20 - Starting Testing ...Suite de pruebas inicializando
+2021-07-16 13:43:26 INFO  Log:30 - Iniciando ejecuciÃ³n de pruebas
+2021-07-16 13:43:28 INFO  Log:30 - Opening Browser
+2021-07-16 13:43:28 INFO  Log:20 - Starting Testing ...Caso de prueba 9: filtro precio ascendente
+2021-07-16 13:43:28 INFO  Log:30 - Ingresando usuario
+2021-07-16 13:43:28 INFO  Log:30 - Ingresando contraseña
+2021-07-16 13:43:28 INFO  Log:30 - Buscando productos en orden regular
+2021-07-16 13:43:28 INFO  Log:30 - Precios encontrados
+2021-07-16 13:43:28 INFO  Log:30 - Filtrando objetos en orden de precio ascendente
+2021-07-16 13:43:29 INFO  Log:30 - Buscando productos en orden de precio ascendente
+2021-07-16 13:43:29 INFO  Log:30 - Precios encontrados
+2021-07-16 13:43:29 INFO  Log:30 - Precios en orden correcto
+2021-07-16 13:43:29 INFO  Log:30 - Limpiando
+2021-07-16 13:43:29 INFO  Log:25 - Ending Testing ...Finalizando ejecuciÃ³n
+2021-07-16 13:43:29 INFO  Log:20 - Starting Testing ...Suite de pruebas inicializando
+2021-07-16 13:43:29 INFO  Log:30 - Iniciando ejecuciÃ³n de pruebas
+2021-07-16 13:43:31 INFO  Log:30 - Opening Browser
+2021-07-16 13:43:31 INFO  Log:20 - Starting Testing ...Caso de prueba 10: filtro precio descendente
+2021-07-16 13:43:31 INFO  Log:30 - Ingresando usuario
+2021-07-16 13:43:31 INFO  Log:30 - Ingresando contraseña
+2021-07-16 13:43:31 INFO  Log:30 - Buscando productos en orden regular
+2021-07-16 13:43:31 INFO  Log:30 - Precios encontrados
+2021-07-16 13:43:31 INFO  Log:30 - Filtrando objetos en orden de precio descendente
+2021-07-16 13:43:31 INFO  Log:30 - Buscando productos en orden de precio descendente
+2021-07-16 13:43:32 INFO  Log:30 - Precios encontrados
+2021-07-16 13:43:32 INFO  Log:30 - Precios en orden correcto
+2021-07-16 13:43:32 INFO  Log:30 - Limpiando
+2021-07-16 13:43:32 INFO  Log:25 - Ending Testing ...Finalizando ejecuciÃ³n

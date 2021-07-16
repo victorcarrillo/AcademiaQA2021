@@ -150,7 +150,7 @@ public class InventoryTests extends BaseTest{
 
     @Test
     public void addAndRemoveOneProductFromInventoryTest(){
-        Log.startLog("Caso de prueba 11: agregar un producto a carrito desde inventario");
+        Log.startLog("Caso de prueba 13: agregar un producto a carrito desde inventario y eliminarlo");
 
         URL = prop.getProperty("webApp");
         username = prop.getProperty("username");
@@ -174,7 +174,7 @@ public class InventoryTests extends BaseTest{
 
     @Test
     public void addAndRemoveMultipleProductFromInventoryTest(){
-        Log.startLog("Caso de prueba 11: agregar un producto a carrito desde inventario");
+        Log.startLog("Caso de prueba 14: agregar multiples productos a carrito desde inventario y luego eliminarlos");
 
         URL = prop.getProperty("webApp");
         username = prop.getProperty("username");

@@ -1,0 +1,8 @@
+PageObjects\InventoryPage.class
+PageObjects\ProductDetailPage.class
+PageObjects\LoginPage.class
+utilities\Log.class
+PageObjects\BasePage.class
+PageObjects\ShoppingCartPage.class
+utilities\CommonUtilities.class
+PageObjects\PurchaseFlowPages.class

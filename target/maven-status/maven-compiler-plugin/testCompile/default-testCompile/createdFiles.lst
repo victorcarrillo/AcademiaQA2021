@@ -1,0 +1,6 @@
+Tests\InventoryTests.class
+Tests\LoginTests.class
+Tests\ProductDetailTests.class
+Tests\ShoppingCartTests.class
+Tests\PurchaseFlowTests.class
+Tests\BaseTest.class

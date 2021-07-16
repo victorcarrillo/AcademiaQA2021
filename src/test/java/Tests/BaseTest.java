@@ -8,7 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.opera.OperaDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import utilities.CommonUtilities;
 import utilities.Log;
@@ -29,9 +31,10 @@ public class BaseTest {
     ExtentReports extent;
     ExtentTest logger;
 
-    @BeforeTest
+    @BeforeMethod
     public void setUp(){
         Log.startLog("Suite de pruebas inicializando");
+        Log.info("");
         Log.info("Iniciando ejecución de pruebas");
 
         if(osEnv.contains("Mac")){
@@ -56,7 +59,17 @@ public class BaseTest {
 
             System.setProperty("webdriver.chrome.driver",projectPath + "\\drivers\\chromedriver.exe");
             prop = CommonUtilities.loadProperties(projectPath+ "\\src\\main\\resources\\testData.properties");
-            driver = new ChromeDriver();
+
+            ChromeOptions op = new ChromeOptions();
+
+            if(prop.getProperty("webapp.incognito").equals("true")) {
+                op.addArguments("--incognito");
+            }
+            if(prop.getProperty("webapp.headlessExecution").equals("true")){
+                op.addArguments("--headless");
+            }
+
+            driver = new ChromeDriver(op);
             Log.info("Opening Browser");
 
         } else {
@@ -67,7 +80,7 @@ public class BaseTest {
 
     }
 
-    @AfterTest
+    @AfterMethod
     public void cleanUp(){
         Log.info("Limpiando");
         driver.close();
