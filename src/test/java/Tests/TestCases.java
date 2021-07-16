@@ -196,6 +196,7 @@ public class TestCases extends BaseTest {
         logger.info("Items added");
 
         Log.info("Switching user session");
+
         navbarPage.logout();
 
         loginPage = new LoginPage(driver);
@@ -435,12 +436,6 @@ public class TestCases extends BaseTest {
         logger.info("Test completed: message matches expected result");
     }
 
-//    @Test(dependsOnMethods = "validLoginCase")
-//    public void loginImage(){
-//        ProductsPage productsPage = new ProductsPage(driver);
-//        Assert.assertEquals(productsPage.validateLogin(),true, "Login image not found");
-//        System.out.println("Login image found");
-//    }
 
 }
 

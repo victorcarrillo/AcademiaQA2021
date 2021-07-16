@@ -51,8 +51,13 @@ public class NavbarPage extends BasePage{
         clickOnElement(cartLinkLocator);
     }
 
-    public void logout(){
+    public void logout() {
         clickOnElement(burguerMenuLocator);
+        try{
+            Thread.sleep(5000);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         clickOnElement(logoutButtonLocator);
         System.out.println(logoutButtonLocator);
     }

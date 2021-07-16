@@ -56,7 +56,7 @@ public class BaseTest {
 
     }
 
-    //@AfterMethod
+    @AfterMethod
     public void cleanUp(ITestResult result){
 
         if(result.getStatus()==ITestResult.FAILURE){
