@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import utilities.CommonUtilities;
 import utilities.Log;
 
@@ -16,7 +16,7 @@ public class BaseTest {
     private String projectPath= System.getProperty("user.dir");
     String osEnv = System.getProperty("os.name");
 
-    @BeforeMethod
+    @BeforeTest
     public void setUp(){
         String driverPath;
         String propertiesPath;
