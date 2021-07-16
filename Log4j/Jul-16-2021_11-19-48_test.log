@@ -1,0 +1,76 @@
+2021-07-16 11:19:49 INFO  Log:20 - Starting Testing ...TestSuite is starting
+2021-07-16 11:19:49 INFO  Log:30 - Setting up test execution
+2021-07-16 11:19:51 INFO  Log:30 - Opening Browser
+2021-07-16 11:19:51 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 11:19:52 INFO  Log:30 - Logging into system
+2021-07-16 11:19:52 INFO  Log:30 - Filling up field 'username' with: standard_user
+2021-07-16 11:19:52 INFO  Log:30 - Filling up field 'password' with: secret_sauce
+2021-07-16 11:19:52 INFO  Log:30 - Clicking button 'login'
+2021-07-16 11:19:52 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 11:19:52 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-16 11:19:52 INFO  Log:30 - Verifying presence of twitter link
+2021-07-16 11:19:52 INFO  Log:30 - Twitter link found
+2021-07-16 11:19:52 INFO  Log:30 - Verifying presence of facebook link
+2021-07-16 11:19:52 INFO  Log:30 - Facebook link found
+2021-07-16 11:19:52 INFO  Log:30 - Verifying presence of linkedin link
+2021-07-16 11:19:52 INFO  Log:30 - LinkedIn link found
+2021-07-16 11:19:52 INFO  Log:30 - Verifying presence of copyright message
+2021-07-16 11:19:52 INFO  Log:30 - Copyright message found
+2021-07-16 11:19:53 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 11:19:53 INFO  Log:30 - Logging into system
+2021-07-16 11:19:53 INFO  Log:30 - Filling up field 'username' with: standard_user
+2021-07-16 11:19:53 INFO  Log:30 - Filling up field 'password' with: secret_sauce
+2021-07-16 11:19:53 INFO  Log:30 - Clicking button 'login'
+2021-07-16 11:19:54 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 11:19:54 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-16 11:19:54 INFO  Log:30 - Verifying presence of 'burger' menu
+2021-07-16 11:19:54 INFO  Log:30 - Burger menu found
+2021-07-16 11:19:54 INFO  Log:30 - Verifying presence of app logo
+2021-07-16 11:19:54 INFO  Log:30 - App logo found
+2021-07-16 11:19:54 INFO  Log:30 - Verifying presence of 'cart' button
+2021-07-16 11:19:54 INFO  Log:30 - Cart button found
+2021-07-16 11:19:54 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 11:19:54 INFO  Log:30 - Logging into system
+2021-07-16 11:19:54 INFO  Log:30 - Filling up field 'username' with: standard_user
+2021-07-16 11:19:54 INFO  Log:30 - Filling up field 'password' with: secret_sauce
+2021-07-16 11:19:54 INFO  Log:30 - Clicking button 'login'
+2021-07-16 11:19:54 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 11:19:54 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-16 11:19:54 INFO  Log:30 - Clicking in burger menu
+2021-07-16 11:19:54 INFO  Log:30 - opening burger menu
+2021-07-16 11:19:54 INFO  Log:30 - Clicking in about option
+2021-07-16 11:19:54 INFO  Log:30 - burger menu opened
+2021-07-16 11:19:58 INFO  Log:30 - going to about page
+2021-07-16 11:19:58 INFO  Log:30 - Verifying if current webpage is https://saucelabs.com/
+2021-07-16 11:19:58 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 11:19:58 INFO  Log:30 - Logging into system
+2021-07-16 11:19:58 INFO  Log:30 - Filling up field 'username' with: standard_user
+2021-07-16 11:19:58 INFO  Log:30 - Filling up field 'password' with: secret_sauce
+2021-07-16 11:19:58 INFO  Log:30 - Clicking button 'login'
+2021-07-16 11:19:59 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 11:19:59 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-16 11:19:59 INFO  Log:30 - Clicking in burger menu
+2021-07-16 11:19:59 INFO  Log:30 - opening burger menu
+2021-07-16 11:19:59 INFO  Log:30 - Clicking in logout option
+2021-07-16 11:19:59 INFO  Log:30 - burger menu opened
+2021-07-16 11:19:59 INFO  Log:30 - log out of system
+2021-07-16 11:19:59 INFO  Log:30 - Verifying if current page is LOGIN
+2021-07-16 11:19:59 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 11:19:59 INFO  Log:30 - Logging into system
+2021-07-16 11:19:59 INFO  Log:30 - Filling up field 'username' with: standard_user
+2021-07-16 11:19:59 INFO  Log:30 - Filling up field 'password' with: secret_sauce
+2021-07-16 11:19:59 INFO  Log:30 - Clicking button 'login'
+2021-07-16 11:20:00 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 11:20:00 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-16 11:20:00 INFO  Log:30 - Clicking in 'cart' button
+2021-07-16 11:20:00 INFO  Log:30 - going to cart page
+2021-07-16 11:20:00 INFO  Log:30 - Verifying if current page is YOUR CART
+2021-07-16 11:20:00 INFO  Log:30 - Current page is: YOUR CART
+2021-07-16 11:20:00 INFO  Log:30 - Clicking in burger menu
+2021-07-16 11:20:00 INFO  Log:30 - opening burger menu
+2021-07-16 11:20:00 INFO  Log:30 - Clicking in all products option
+2021-07-16 11:20:00 INFO  Log:30 - burger menu opened
+2021-07-16 11:20:00 INFO  Log:30 - going to inventory page
+2021-07-16 11:20:00 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 11:20:00 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-16 11:20:00 INFO  Log:25 - Ending Testing ...TestSuite is closing

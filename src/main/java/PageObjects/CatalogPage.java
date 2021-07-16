@@ -215,23 +215,23 @@ public class CatalogPage extends BasePage{
     public void sortProducts(String op) {
         try {
             Log.info("Opening sort options");
-            getElement(locSortOption,5).click();
+            getButton(locSortOption,5).click();
             switch(op) {
                 case "az":
                     Log.info("Selecting 'a' to 'z' option");
-                    getElement(locSortAZ,5).click();
+                    getButton(locSortAZ,5).click();
                     break;
                 case "za":
                     Log.info("Selecting 'z' to 'a' option");
-                    getElement(locSortZA,5).click();
+                    getButton(locSortZA,5).click();
                     break;
                 case "lohi":
                     Log.info("Selecting 'low' to 'high' option");
-                    getElement(locSortLoHi,5).click();
+                    getButton(locSortLoHi,5).click();
                     break;
                 case "hilo":
                     Log.info("Selecting 'high' to 'low' option");
-                    getElement(locSortHiLo,5).click();
+                    getButton(locSortHiLo,5).click();
                     break;
             }
         } catch(Exception e) {
@@ -242,28 +242,28 @@ public class CatalogPage extends BasePage{
     public String addToCart(String p) {
         String product = getElement(locNameInCard,5).getText();
         Log.info("Product id: "+ p +" - "+product +" added to cart");
-        getElement(locAddToCart,5).click();
+        getButton(locAddToCart,5).click();
         return product;
     }
 
     public String removeFromCart(String p) {
         String product = getElement(locNameInCard,5).getText();
         Log.info("Product id: "+ p +" - "+product +" removed from cart");
-        getElement(locRemoveFromCart,5).click();
+        getButton(locRemoveFromCart,5).click();
         return product;
     }
 
     public String addToCartPage(String p) {
         String product = getElement(locNameInPage,5).getText();
         Log.info("Product id: "+ p +" - "+product +" added to cart");
-        getElement(locAddToCart,5).click();
+        getButton(locAddToCart,5).click();
         return product;
     }
 
     public String removeFromCartPage(String p) {
         String product = getElement(locNameInPage,5).getText();
         Log.info("Product id: "+ p +" - "+product +" removed from cart");
-        getElement(locRemoveFromCart,5).click();
+        getButton(locRemoveFromCart,5).click();
         return product;
     }
 
@@ -283,12 +283,12 @@ public class CatalogPage extends BasePage{
     public String toProductPage(String p) {
         String product = getElement(locNameInCard,5).getText();
         Log.info("Product id: "+ p +" - "+product);
-        getElement(locNameInCard,5).click();
+        getButton(locNameInCard,5).click();
         return product;
     }
 
     public void toInventoryFromProduct() {
-        getElement(locBackInPage,5).click();
+        getButton(locBackInPage,5).click();
         Log.info("'back' button found");
     }
 

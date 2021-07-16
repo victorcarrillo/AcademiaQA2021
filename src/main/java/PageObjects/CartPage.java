@@ -40,17 +40,17 @@ public class CartPage extends BasePage{
     }
 
     public void toCart() {
-        getElement(locCartButton,5).click();
+        getButton(locCartButton,5).click();
         Log.info("going to cart page");
     }
 
     public void continueShopping() {
-        getElement(locBackButton,5).click();
+        getButton(locBackButton,5).click();
         Log.info("going to catalog page");
     }
 
     public void checkoutBuy() {
-        getElement(locCheckoutButton,5).click();
+        getButton(locCheckoutButton,5).click();
         Log.info("going to checkout page");
     }
 
@@ -189,7 +189,7 @@ public class CartPage extends BasePage{
     public String removeInCart(String p) {
         String product = getElement(locNameInCart,5).getText();
         Log.info("Product id: "+ p +" - "+product +" removed from cart");
-        getElement(locRemoveInCart,5).click();
+        getButton(locRemoveInCart,5).click();
         return product;
     }
 
@@ -204,21 +204,21 @@ public class CartPage extends BasePage{
         getElement(locCheckoutZip,5).sendKeys(zip);
 
         Log.info("Clicking button 'continue'");
-        getElement(locCheckoutContinue,5).click();
+        getButton(locCheckoutContinue,5).click();
     }
 
     public void cancelCheckout() {
-        getElement(locCheckoutCancel,5).click();
+        getButton(locCheckoutCancel,5).click();
         Log.info("going to cart page");
     }
 
     public void cancelOverview() {
-        getElement(locOverviewCancel,5).click();
+        getButton(locOverviewCancel,5).click();
         Log.info("going to catalog page");
     }
 
     public void finishOverview() {
-        getElement(locOverviewFinish,5).click();
+        getButton(locOverviewFinish,5).click();
         Log.info("going to checkout complete page");
     }
 

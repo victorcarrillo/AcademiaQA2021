@@ -1,0 +1,36 @@
+2021-07-16 10:19:50 INFO  Log:20 - Starting Testing ...TestSuite is starting
+2021-07-16 10:19:50 INFO  Log:30 - Setting up test execution
+2021-07-16 10:19:53 INFO  Log:30 - Opening Browser
+2021-07-16 10:19:53 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 10:19:54 INFO  Log:30 - Logging into system
+2021-07-16 10:19:54 INFO  Log:30 - Filling up field 'username' with: standard_user
+2021-07-16 10:19:54 INFO  Log:30 - Filling up field 'password' with: secret_sauce
+2021-07-16 10:19:54 INFO  Log:30 - Clicking button 'login'
+2021-07-16 10:19:54 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 10:19:54 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-16 10:19:54 INFO  Log:30 - Resetting app state
+2021-07-16 10:19:55 INFO  Log:30 - opening burger menu
+2021-07-16 10:19:55 INFO  Log:30 - burger menu opened
+2021-07-16 10:19:55 INFO  Log:30 - resetting app data
+2021-07-16 10:19:55 INFO  Log:30 - closing burger menu
+2021-07-16 10:19:55 INFO  Log:30 - refreshing page
+2021-07-16 10:19:55 INFO  Log:30 - Clicking in product's 'add to cart' button
+2021-07-16 10:19:56 INFO  Log:30 - Product id: 0 - Sauce Labs Bike Light added to cart
+2021-07-16 10:19:56 INFO  Log:30 - Clicking in 'cart' button
+2021-07-16 10:19:56 INFO  Log:30 - going to cart page
+2021-07-16 10:19:56 INFO  Log:30 - Verifying if current page is YOUR CART
+2021-07-16 10:19:56 INFO  Log:30 - Current page is: YOUR CART
+2021-07-16 10:19:56 INFO  Log:30 - Verifying if at least 1 product in cart list
+2021-07-16 10:19:56 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-16 10:19:56 INFO  Log:30 - Clicking in 'checkout' button
+2021-07-16 10:19:56 INFO  Log:30 - going to checkout page
+2021-07-16 10:19:56 INFO  Log:30 - Verifying if current page is CHECKOUT: YOUR INFORMATION
+2021-07-16 10:19:56 INFO  Log:30 - Current page is: CHECKOUT: YOUR INFORMATION
+2021-07-16 10:19:56 INFO  Log:30 - Filling up checkout form with invalid first name
+2021-07-16 10:19:56 INFO  Log:30 - Filling up field 'first name' with: Oscar
+2021-07-16 10:19:56 INFO  Log:30 - Filling up field 'last name' with: 456
+2021-07-16 10:19:56 INFO  Log:30 - Filling up field 'zip' with: 12345
+2021-07-16 10:19:56 INFO  Log:30 - Clicking button 'continue'
+2021-07-16 10:19:56 INFO  Log:30 - Verifying if current page is CHECKOUT: YOUR INFORMATION
+2021-07-16 10:19:56 INFO  Log:30 - Current page is: CHECKOUT: OVERVIEW
+2021-07-16 10:19:57 INFO  Log:25 - Ending Testing ...TestSuite is closing

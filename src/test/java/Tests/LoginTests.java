@@ -13,7 +13,7 @@ public class LoginTests extends BaseTest {
     String expectedPage;
     String errorMessage;
 
-    @Test(testName = "TestCase 1")
+    @Test(testName = "TestCase 1", priority = 1)
     public void loginForm() {
         logger = extent.createTest("Test Case 1");
         LoginPage loginPage = new LoginPage(driver);
@@ -33,7 +33,7 @@ public class LoginTests extends BaseTest {
         loginPage.isLoginButton();
     }
 
-    @Test(testName = "TestCase 2")
+    @Test(testName = "TestCase 2", priority = 2)
     public void successLogin() {
         logger = extent.createTest("Test Case 2");
         LoginPage loginPage = new LoginPage(driver);
@@ -53,7 +53,7 @@ public class LoginTests extends BaseTest {
         Assert.assertEquals(expectedPage,loginPage.currentPage());
     }
 
-    @Test(testName = "TestCase 3")
+    @Test(testName = "TestCase 3", priority = 3)
     public void failLoginUser() {
         logger = extent.createTest("Test Case 3");
         LoginPage loginPage = new LoginPage(driver);
@@ -77,7 +77,7 @@ public class LoginTests extends BaseTest {
         Assert.assertEquals(errorMessage,loginPage.errorMessage());
     }
 
-    @Test(testName = "TestCase 4")
+    @Test(testName = "TestCase 4", priority = 4)
     public void failLoginPassword() {
         logger = extent.createTest("Test Case 4");
         LoginPage loginPage = new LoginPage(driver);
@@ -101,7 +101,7 @@ public class LoginTests extends BaseTest {
         Assert.assertEquals(errorMessage,loginPage.errorMessage());
     }
 
-    @Test(testName = "TestCase 5")
+    @Test(testName = "TestCase 5", priority = 5)
     public void failLoginBlockedUser() {
         logger = extent.createTest("Test Case 5");
         LoginPage loginPage = new LoginPage(driver);
@@ -125,7 +125,7 @@ public class LoginTests extends BaseTest {
         Assert.assertEquals(errorMessage,loginPage.errorMessage());
     }
 
-    @Test(testName = "TestCase 6")
+    @Test(testName = "TestCase 6", priority = 6)
     public void incompleteLoginUser() {
         logger = extent.createTest("Test Case 6");
         LoginPage loginPage = new LoginPage(driver);
@@ -149,7 +149,7 @@ public class LoginTests extends BaseTest {
         Assert.assertEquals(errorMessage,loginPage.errorMessage());
     }
 
-    @Test(testName = "TestCase 7")
+    @Test(testName = "TestCase 7", priority = 7)
     public void incompleteLoginPassword() {
         logger = extent.createTest("Test Case 7");
         LoginPage loginPage = new LoginPage(driver);
@@ -173,7 +173,7 @@ public class LoginTests extends BaseTest {
         Assert.assertEquals(errorMessage,loginPage.errorMessage());
     }
 
-    @Test(testName = "TestCase 8")
+    @Test(testName = "TestCase 8", priority = 8)
     public void closeMessageError() {
         logger = extent.createTest("Test Case 8");
         LoginPage loginPage = new LoginPage(driver);

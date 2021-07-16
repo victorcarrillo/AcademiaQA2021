@@ -40,6 +40,30 @@ public class BasePage {
         return null;
     }
 
+    public WebElement getHiddenElement(By by, int s) {
+        try {
+            element = wait(s)
+                    .ignoring(TimeoutException.class, NoSuchElementException.class)
+                    .until(ExpectedConditions.visibilityOfElementLocated(by));
+            return element;
+        } catch(TimeoutException | NoSuchElementException e) {
+            Log.fatal("Element is not found during execution "+e);
+        }
+        return null;
+    }
+
+    public WebElement getButton(By by, int s) {
+        try {
+            element = wait(s)
+                    .ignoring(TimeoutException.class, NoSuchElementException.class)
+                    .until(ExpectedConditions.elementToBeClickable(by));
+            return element;
+        } catch(TimeoutException | NoSuchElementException e) {
+            Log.fatal("Element is not found during execution "+e);
+        }
+        return null;
+    }
+
     public List<WebElement> getListWebElement(By by, int s) {
         try {
             listWebElement = wait(s)

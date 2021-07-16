@@ -3,6 +3,7 @@ package Tests;
 import PageObjects.BaseTest;
 import PageObjects.CatalogPage;
 import PageObjects.LoginPage;
+import PageObjects.NavigationPage;
 import Utilities.Log;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -25,7 +26,7 @@ public class CatalogTests extends BaseTest {
     List<Float> listBeforeSortPrice;
     List<Float> listAfterSortPrice;
 
-    @Test(testName = "TestCase 9")
+    @Test(testName = "TestCase 9", priority = 1)
     public void catalogPage() {
         logger = extent.createTest("Test Case 9");
         LoginPage loginPage = new LoginPage(driver);
@@ -52,11 +53,12 @@ public class CatalogTests extends BaseTest {
         catalogPage.isSortOption();
     }
 
-    @Test(testName = "TestCase 10")
+    @Test(testName = "TestCase 10", priority = 2)
     public void productCardElements() {
         logger = extent.createTest("Test Case 10");
         LoginPage loginPage = new LoginPage(driver);
         CatalogPage catalogPage = new CatalogPage(driver);
+        NavigationPage navigationPage = new NavigationPage(driver);
 
         URL = props.getProperty("webapp");
         username = props.getProperty("valid_user");
@@ -71,6 +73,10 @@ public class CatalogTests extends BaseTest {
 
         Log.info("Verifying if current page is "+expectedPage);
         Assert.assertEquals(expectedPage,loginPage.currentPage());
+
+        Log.info("Resetting app state");
+        navigationPage.clickOnBurgerMenu();
+        navigationPage.clickOnResetOption();
 
         Log.info("Validating if name in products' cards");
         catalogPage.productsCardsHaveName();
@@ -88,7 +94,7 @@ public class CatalogTests extends BaseTest {
         catalogPage.productsCardsHaveButton();
     }
 
-    @Test(testName = "TestCase 11")
+    @Test(testName = "TestCase 11", priority = 3)
     public void productCardNavigation() {
         logger = extent.createTest("Test Case 11");
         LoginPage loginPage = new LoginPage(driver);
@@ -116,11 +122,12 @@ public class CatalogTests extends BaseTest {
         Assert.assertEquals(productName,catalogPage.currentPage());
     }
 
-    @Test(testName = "TestCase 12")
+    @Test(testName = "TestCase 12", priority = 4)
     public void productPageElements() {
         logger = extent.createTest("Test Case 12");
         LoginPage loginPage = new LoginPage(driver);
         CatalogPage catalogPage = new CatalogPage(driver);
+        NavigationPage navigationPage = new NavigationPage(driver);
 
         URL = props.getProperty("webapp");
         username = props.getProperty("valid_user");
@@ -136,6 +143,10 @@ public class CatalogTests extends BaseTest {
 
         Log.info("Verifying if current page is "+expectedPage);
         Assert.assertEquals(expectedPage,loginPage.currentPage());
+
+        Log.info("Resetting app state");
+        navigationPage.clickOnBurgerMenu();
+        navigationPage.clickOnResetOption();
 
         Log.info("Clicking in product's name");
         productName = catalogPage.toProductPage(testProduct);
@@ -159,7 +170,7 @@ public class CatalogTests extends BaseTest {
         catalogPage.isBackInPage();
     }
 
-    @Test(testName = "TestCase 13")
+    @Test(testName = "TestCase 13", priority = 5)
     public void productPageNavigation() {
         logger = extent.createTest("Test Case 13");
         LoginPage loginPage = new LoginPage(driver);
@@ -190,7 +201,7 @@ public class CatalogTests extends BaseTest {
         Assert.assertEquals(expectedPage,loginPage.currentPage());
     }
 
-    @Test(testName = "TestCase 14")
+    @Test(testName = "TestCase 14", priority = 6)
     public void sortNameAToZ() {
         logger = extent.createTest("Test Case 14");
         LoginPage loginPage = new LoginPage(driver);
@@ -227,7 +238,7 @@ public class CatalogTests extends BaseTest {
         Assert.assertEquals(listBeforeSortName,listAfterSortName);
     }
 
-    @Test(testName = "TestCase 15")
+    @Test(testName = "TestCase 15", priority = 7)
     public void sortNameZToA() {
         logger = extent.createTest("Test Case 15");
         LoginPage loginPage = new LoginPage(driver);
@@ -265,7 +276,7 @@ public class CatalogTests extends BaseTest {
         Assert.assertEquals(listBeforeSortName,listAfterSortName);
     }
 
-    @Test(testName = "TestCase 16")
+    @Test(testName = "TestCase 16", priority = 8)
     public void sortPriceLowToHigh() {
         logger = extent.createTest("Test Case 16");
         LoginPage loginPage = new LoginPage(driver);
@@ -302,7 +313,7 @@ public class CatalogTests extends BaseTest {
         Assert.assertEquals(listBeforeSortPrice,listAfterSortPrice);
     }
 
-    @Test(testName = "TestCase 17")
+    @Test(testName = "TestCase 17", priority = 9)
     public void sortPriceHighToLow() {
         logger = extent.createTest("Test Case 17");
         LoginPage loginPage = new LoginPage(driver);
@@ -340,11 +351,12 @@ public class CatalogTests extends BaseTest {
         Assert.assertEquals(listBeforeSortPrice,listAfterSortPrice);
     }
 
-    @Test(testName = "TestCase 18")
+    @Test(testName = "TestCase 18", priority = 10)
     public void productCardAddToCart() {
         logger = extent.createTest("Test Case 18");
         LoginPage loginPage = new LoginPage(driver);
         CatalogPage catalogPage = new CatalogPage(driver);
+        NavigationPage navigationPage = new NavigationPage(driver);
 
         URL = props.getProperty("webapp");
         username = props.getProperty("valid_user");
@@ -360,6 +372,10 @@ public class CatalogTests extends BaseTest {
 
         Log.info("Verifying if current page is "+expectedPage);
         Assert.assertEquals(expectedPage,loginPage.currentPage());
+
+        Log.info("Resetting app state");
+        navigationPage.clickOnBurgerMenu();
+        navigationPage.clickOnResetOption();
 
         Log.info("Getting how many products in cart BEFORE adding new product");
         numberOfBefore = catalogPage.productsInButtonCart();
@@ -377,7 +393,7 @@ public class CatalogTests extends BaseTest {
         catalogPage.isRemove(testProduct);
     }
 
-    @Test(testName = "TestCase 19",dependsOnMethods = "productCardAddToCart")
+    @Test(testName = "TestCase 19", dependsOnMethods = "productCardAddToCart", priority = 11)
     public void productCardRemoveFromCart() {
         logger = extent.createTest("Test Case 19");
         LoginPage loginPage = new LoginPage(driver);
@@ -405,11 +421,12 @@ public class CatalogTests extends BaseTest {
         catalogPage.isAddTo(testProduct);
     }
 
-    @Test(testName = "TestCase 20")
+    @Test(testName = "TestCase 20", priority = 12)
     public void productPageAddToCart() {
         logger = extent.createTest("Test Case 20");
         LoginPage loginPage = new LoginPage(driver);
         CatalogPage catalogPage = new CatalogPage(driver);
+        NavigationPage navigationPage = new NavigationPage(driver);
 
         URL = props.getProperty("webapp");
         username = props.getProperty("valid_user");
@@ -425,6 +442,10 @@ public class CatalogTests extends BaseTest {
 
         Log.info("Verifying if current page is "+expectedPage);
         Assert.assertEquals(expectedPage,loginPage.currentPage());
+
+        Log.info("Resetting app state");
+        navigationPage.clickOnBurgerMenu();
+        navigationPage.clickOnResetOption();
 
         Log.info("Clicking in product's name");
         productName = catalogPage.toProductPage(testProduct);
@@ -448,7 +469,7 @@ public class CatalogTests extends BaseTest {
         catalogPage.isRemovePage(testProduct);
     }
 
-    @Test(testName = "TestCase 21",dependsOnMethods = "productPageAddToCart")
+    @Test(testName = "TestCase 21",dependsOnMethods = "productPageAddToCart", priority = 13)
     public void productPageRemoveFromCart() {
         logger = extent.createTest("Test Case 21");
         LoginPage loginPage = new LoginPage(driver);

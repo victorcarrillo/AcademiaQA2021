@@ -1,0 +1,235 @@
+2021-07-16 11:18:25 INFO  Log:20 - Starting Testing ...TestSuite is starting
+2021-07-16 11:18:25 INFO  Log:30 - Setting up test execution
+2021-07-16 11:18:28 INFO  Log:30 - Opening Browser
+2021-07-16 11:18:28 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 11:18:29 INFO  Log:30 - Logging into system
+2021-07-16 11:18:29 INFO  Log:30 - Filling up field 'username' with: standard_user
+2021-07-16 11:18:29 INFO  Log:30 - Filling up field 'password' with: secret_sauce
+2021-07-16 11:18:29 INFO  Log:30 - Clicking button 'login'
+2021-07-16 11:18:29 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 11:18:29 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-16 11:18:29 INFO  Log:30 - Validating if products in inventory
+2021-07-16 11:18:29 INFO  Log:30 - Products in inventory: 6
+2021-07-16 11:18:29 INFO  Log:30 - Validating if 'sort option' in inventory
+2021-07-16 11:18:29 INFO  Log:30 - Sort option found
+2021-07-16 11:18:30 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 11:18:30 INFO  Log:30 - Logging into system
+2021-07-16 11:18:30 INFO  Log:30 - Filling up field 'username' with: standard_user
+2021-07-16 11:18:30 INFO  Log:30 - Filling up field 'password' with: secret_sauce
+2021-07-16 11:18:30 INFO  Log:30 - Clicking button 'login'
+2021-07-16 11:18:30 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 11:18:31 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-16 11:18:31 INFO  Log:30 - Resetting app state
+2021-07-16 11:18:31 INFO  Log:30 - opening burger menu
+2021-07-16 11:18:31 INFO  Log:30 - burger menu opened
+2021-07-16 11:18:31 INFO  Log:30 - resetting app data
+2021-07-16 11:18:31 INFO  Log:30 - closing burger menu
+2021-07-16 11:18:31 INFO  Log:30 - refreshing page
+2021-07-16 11:18:31 INFO  Log:30 - Validating if name in products' cards
+2021-07-16 11:18:31 INFO  Log:30 - All products' cards in inventory have a name
+2021-07-16 11:18:31 INFO  Log:30 - Validating if image in products' cards
+2021-07-16 11:18:31 INFO  Log:30 - All products' cards in inventory have an image
+2021-07-16 11:18:31 INFO  Log:30 - Validating if description in products' cards
+2021-07-16 11:18:31 INFO  Log:30 - All products' cards in inventory have a description
+2021-07-16 11:18:31 INFO  Log:30 - Validating if price in products' cards
+2021-07-16 11:18:32 INFO  Log:30 - All products' cards in inventory have a price
+2021-07-16 11:18:32 INFO  Log:30 - Validating if 'add to cart' button in products' cards
+2021-07-16 11:18:32 INFO  Log:30 - All products' cards in inventory have a cart button
+2021-07-16 11:18:32 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 11:18:32 INFO  Log:30 - Logging into system
+2021-07-16 11:18:32 INFO  Log:30 - Filling up field 'username' with: standard_user
+2021-07-16 11:18:32 INFO  Log:30 - Filling up field 'password' with: secret_sauce
+2021-07-16 11:18:32 INFO  Log:30 - Clicking button 'login'
+2021-07-16 11:18:32 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 11:18:32 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-16 11:18:32 INFO  Log:30 - Clicking in product's name
+2021-07-16 11:18:32 INFO  Log:30 - Product id: 0 - Sauce Labs Bike Light
+2021-07-16 11:18:32 INFO  Log:30 - Verifying if current page is Sauce Labs Bike Light's page
+2021-07-16 11:18:32 INFO  Log:30 - Current product's page is: Sauce Labs Bike Light
+2021-07-16 11:18:32 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 11:18:33 INFO  Log:30 - Logging into system
+2021-07-16 11:18:33 INFO  Log:30 - Filling up field 'username' with: standard_user
+2021-07-16 11:18:33 INFO  Log:30 - Filling up field 'password' with: secret_sauce
+2021-07-16 11:18:33 INFO  Log:30 - Clicking button 'login'
+2021-07-16 11:18:33 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 11:18:33 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-16 11:18:33 INFO  Log:30 - Resetting app state
+2021-07-16 11:18:33 INFO  Log:30 - opening burger menu
+2021-07-16 11:18:33 INFO  Log:30 - burger menu opened
+2021-07-16 11:18:33 INFO  Log:30 - resetting app data
+2021-07-16 11:18:33 INFO  Log:30 - closing burger menu
+2021-07-16 11:18:33 INFO  Log:30 - refreshing page
+2021-07-16 11:18:33 INFO  Log:30 - Clicking in product's name
+2021-07-16 11:18:33 INFO  Log:30 - Product id: 0 - Sauce Labs Bike Light
+2021-07-16 11:18:34 INFO  Log:30 - Verifying presence of name in Sauce Labs Bike Light's page
+2021-07-16 11:18:34 INFO  Log:30 - Product's name found
+2021-07-16 11:18:34 INFO  Log:30 - Verifying presence of image in Sauce Labs Bike Light's page
+2021-07-16 11:18:34 INFO  Log:30 - Product's image found
+2021-07-16 11:18:34 INFO  Log:30 - Verifying presence of description in Sauce Labs Bike Light's page
+2021-07-16 11:18:34 INFO  Log:30 - Product's description found
+2021-07-16 11:18:34 INFO  Log:30 - Verifying presence of price in Sauce Labs Bike Light's page
+2021-07-16 11:18:34 INFO  Log:30 - Product's price found
+2021-07-16 11:18:34 INFO  Log:30 - Verifying presence of 'add to cart' button in Sauce Labs Bike Light's page
+2021-07-16 11:18:34 INFO  Log:30 - Product's 'add to cart' button found
+2021-07-16 11:18:34 INFO  Log:30 - Verifying presence of 'back to products' button in Sauce Labs Bike Light's page
+2021-07-16 11:18:34 INFO  Log:30 - Product's 'back to products' button found
+2021-07-16 11:18:34 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 11:18:34 INFO  Log:30 - Logging into system
+2021-07-16 11:18:34 INFO  Log:30 - Filling up field 'username' with: standard_user
+2021-07-16 11:18:34 INFO  Log:30 - Filling up field 'password' with: secret_sauce
+2021-07-16 11:18:34 INFO  Log:30 - Clicking button 'login'
+2021-07-16 11:18:34 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 11:18:34 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-16 11:18:34 INFO  Log:30 - Clicking in product's name
+2021-07-16 11:18:34 INFO  Log:30 - Product id: 0 - Sauce Labs Bike Light
+2021-07-16 11:18:34 INFO  Log:30 - Clicking in 'back to products' button from Sauce Labs Bike Light's page
+2021-07-16 11:18:34 INFO  Log:30 - 'back' button found
+2021-07-16 11:18:34 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 11:18:34 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-16 11:18:35 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 11:18:35 INFO  Log:30 - Logging into system
+2021-07-16 11:18:35 INFO  Log:30 - Filling up field 'username' with: standard_user
+2021-07-16 11:18:35 INFO  Log:30 - Filling up field 'password' with: secret_sauce
+2021-07-16 11:18:35 INFO  Log:30 - Clicking button 'login'
+2021-07-16 11:18:35 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 11:18:35 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-16 11:18:35 INFO  Log:30 - Getting all product's names in inventory BEFORE sorting
+2021-07-16 11:18:35 INFO  Log:30 - Products' names in inventory: 6
+2021-07-16 11:18:35 INFO  Log:30 - Sorting list gotten BEFORE sorting
+2021-07-16 11:18:35 INFO  Log:30 - Sorting products in page by name from 'a' to 'z'
+2021-07-16 11:18:35 INFO  Log:30 - Opening sort options
+2021-07-16 11:18:35 INFO  Log:30 - Selecting 'a' to 'z' option
+2021-07-16 11:18:35 INFO  Log:30 - Getting all product's names in inventory AFTER sorting
+2021-07-16 11:18:35 INFO  Log:30 - Products' names in inventory: 6
+2021-07-16 11:18:35 INFO  Log:30 - Comparing both lists to check if have same sort order
+2021-07-16 11:18:35 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 11:18:35 INFO  Log:30 - Logging into system
+2021-07-16 11:18:35 INFO  Log:30 - Filling up field 'username' with: standard_user
+2021-07-16 11:18:36 INFO  Log:30 - Filling up field 'password' with: secret_sauce
+2021-07-16 11:18:36 INFO  Log:30 - Clicking button 'login'
+2021-07-16 11:18:36 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 11:18:36 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-16 11:18:36 INFO  Log:30 - Getting all product's names in inventory BEFORE sorting
+2021-07-16 11:18:36 INFO  Log:30 - Products' names in inventory: 6
+2021-07-16 11:18:36 INFO  Log:30 - Sorting list gotten BEFORE sorting
+2021-07-16 11:18:36 INFO  Log:30 - Sorting products in page by name from 'z' to 'a'
+2021-07-16 11:18:36 INFO  Log:30 - Opening sort options
+2021-07-16 11:18:36 INFO  Log:30 - Selecting 'z' to 'a' option
+2021-07-16 11:18:36 INFO  Log:30 - Getting all product's names in inventory AFTER sorting
+2021-07-16 11:18:36 INFO  Log:30 - Products' names in inventory: 6
+2021-07-16 11:18:36 INFO  Log:30 - Comparing both lists to check if have same sort order
+2021-07-16 11:18:36 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 11:18:36 INFO  Log:30 - Logging into system
+2021-07-16 11:18:36 INFO  Log:30 - Filling up field 'username' with: standard_user
+2021-07-16 11:18:36 INFO  Log:30 - Filling up field 'password' with: secret_sauce
+2021-07-16 11:18:36 INFO  Log:30 - Clicking button 'login'
+2021-07-16 11:18:37 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 11:18:37 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-16 11:18:37 INFO  Log:30 - Getting all product's prices in inventory BEFORE sorting
+2021-07-16 11:18:37 INFO  Log:30 - Products' prices in inventory: 6
+2021-07-16 11:18:37 INFO  Log:30 - Cleaning '$' from price lists
+2021-07-16 11:18:37 INFO  Log:30 - Converting String List to Float List
+2021-07-16 11:18:37 INFO  Log:30 - Sorting list gotten BEFORE sorting
+2021-07-16 11:18:37 INFO  Log:30 - Sorting products in page by price from low to high
+2021-07-16 11:18:37 INFO  Log:30 - Opening sort options
+2021-07-16 11:18:37 INFO  Log:30 - Selecting 'low' to 'high' option
+2021-07-16 11:18:37 INFO  Log:30 - Getting all product's prices in inventory AFTER sorting
+2021-07-16 11:18:37 INFO  Log:30 - Products' prices in inventory: 6
+2021-07-16 11:18:37 INFO  Log:30 - Cleaning '$' from price lists
+2021-07-16 11:18:37 INFO  Log:30 - Converting String List to Float List
+2021-07-16 11:18:37 INFO  Log:30 - Comparing both lists to check if have same sort order
+2021-07-16 11:18:37 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 11:18:37 INFO  Log:30 - Logging into system
+2021-07-16 11:18:37 INFO  Log:30 - Filling up field 'username' with: standard_user
+2021-07-16 11:18:37 INFO  Log:30 - Filling up field 'password' with: secret_sauce
+2021-07-16 11:18:37 INFO  Log:30 - Clicking button 'login'
+2021-07-16 11:18:37 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 11:18:37 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-16 11:18:37 INFO  Log:30 - Getting all product's prices in inventory BEFORE sorting
+2021-07-16 11:18:37 INFO  Log:30 - Products' prices in inventory: 6
+2021-07-16 11:18:37 INFO  Log:30 - Cleaning '$' from price lists
+2021-07-16 11:18:37 INFO  Log:30 - Converting String List to Float List
+2021-07-16 11:18:37 INFO  Log:30 - Sorting list gotten BEFORE sorting
+2021-07-16 11:18:37 INFO  Log:30 - Sorting products in page by price from high to low
+2021-07-16 11:18:37 INFO  Log:30 - Opening sort options
+2021-07-16 11:18:38 INFO  Log:30 - Selecting 'high' to 'low' option
+2021-07-16 11:18:38 INFO  Log:30 - Getting all product's prices in inventory AFTER sorting
+2021-07-16 11:18:38 INFO  Log:30 - Products' prices in inventory: 6
+2021-07-16 11:18:38 INFO  Log:30 - Cleaning '$' from price lists
+2021-07-16 11:18:38 INFO  Log:30 - Converting String List to Float List
+2021-07-16 11:18:38 INFO  Log:30 - Comparing both lists to check if have same sort order
+2021-07-16 11:18:38 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 11:18:38 INFO  Log:30 - Logging into system
+2021-07-16 11:18:38 INFO  Log:30 - Filling up field 'username' with: standard_user
+2021-07-16 11:18:38 INFO  Log:30 - Filling up field 'password' with: secret_sauce
+2021-07-16 11:18:38 INFO  Log:30 - Clicking button 'login'
+2021-07-16 11:18:38 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 11:18:38 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-16 11:18:38 INFO  Log:30 - Resetting app state
+2021-07-16 11:18:38 INFO  Log:30 - opening burger menu
+2021-07-16 11:18:38 INFO  Log:30 - burger menu opened
+2021-07-16 11:18:38 INFO  Log:30 - resetting app data
+2021-07-16 11:18:38 INFO  Log:30 - closing burger menu
+2021-07-16 11:18:39 INFO  Log:30 - refreshing page
+2021-07-16 11:18:39 INFO  Log:30 - Getting how many products in cart BEFORE adding new product
+2021-07-16 11:18:39 INFO  Log:30 - No products in cart
+2021-07-16 11:18:39 INFO  Log:30 - Clicking in product's 'add to cart' button
+2021-07-16 11:18:39 INFO  Log:30 - Product id: 0 - Sauce Labs Bike Light added to cart
+2021-07-16 11:18:39 INFO  Log:30 - Getting how many products in cart AFTER adding new product
+2021-07-16 11:18:39 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-16 11:18:39 INFO  Log:30 - Verifying if Sauce Labs Bike Light added to cart
+2021-07-16 11:18:39 INFO  Log:30 - Verifying if Sauce Labs Bike Light's button changed to 'remove'
+2021-07-16 11:18:39 INFO  Log:30 - Looking for 'remove' button in product id: 0 - Sauce Labs Bike Light
+2021-07-16 11:18:39 INFO  Log:30 - Button 'remove' found
+2021-07-16 11:18:39 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 11:18:39 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-16 11:18:39 INFO  Log:30 - Getting how many products in cart BEFORE removing product
+2021-07-16 11:18:39 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-16 11:18:39 INFO  Log:30 - Clicking in product's 'remove' button
+2021-07-16 11:18:39 INFO  Log:30 - Product id: 0 - Sauce Labs Bike Light removed from cart
+2021-07-16 11:18:39 INFO  Log:30 - Getting how many products in cart AFTER removing product
+2021-07-16 11:18:39 INFO  Log:30 - No products in cart
+2021-07-16 11:18:39 INFO  Log:30 - Verifying if Sauce Labs Bike Light added to cart
+2021-07-16 11:18:39 INFO  Log:30 - Verifying if Sauce Labs Bike Light's button changed to 'add to cart'
+2021-07-16 11:18:39 INFO  Log:30 - Looking for 'add to cart' button in product id: 0 - Sauce Labs Bike Light
+2021-07-16 11:18:39 INFO  Log:30 - Button 'add to cart' found
+2021-07-16 11:18:39 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 11:18:39 INFO  Log:30 - Logging into system
+2021-07-16 11:18:39 INFO  Log:30 - Filling up field 'username' with: standard_user
+2021-07-16 11:18:39 INFO  Log:30 - Filling up field 'password' with: secret_sauce
+2021-07-16 11:18:39 INFO  Log:30 - Clicking button 'login'
+2021-07-16 11:18:40 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 11:18:40 INFO  Log:30 - Current page is: PRODUCTS
+2021-07-16 11:18:40 INFO  Log:30 - Resetting app state
+2021-07-16 11:18:40 INFO  Log:30 - opening burger menu
+2021-07-16 11:18:40 INFO  Log:30 - burger menu opened
+2021-07-16 11:18:40 INFO  Log:30 - resetting app data
+2021-07-16 11:18:40 INFO  Log:30 - closing burger menu
+2021-07-16 11:18:40 INFO  Log:30 - refreshing page
+2021-07-16 11:18:40 INFO  Log:30 - Clicking in product's name
+2021-07-16 11:18:40 INFO  Log:30 - Product id: 0 - Sauce Labs Bike Light
+2021-07-16 11:18:40 INFO  Log:30 - Verifying if current page is Sauce Labs Bike Light's page
+2021-07-16 11:18:40 INFO  Log:30 - Current product's page is: Sauce Labs Bike Light
+2021-07-16 11:18:40 INFO  Log:30 - Getting how many products in cart BEFORE adding new product
+2021-07-16 11:18:40 INFO  Log:30 - No products in cart
+2021-07-16 11:18:40 INFO  Log:30 - Clicking in product's 'add to cart' button
+2021-07-16 11:18:40 INFO  Log:30 - Product id: 0 - Sauce Labs Bike Light added to cart
+2021-07-16 11:18:40 INFO  Log:30 - Getting how many products in cart AFTER adding new product
+2021-07-16 11:18:40 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-16 11:18:40 INFO  Log:30 - Verifying if Sauce Labs Bike Light added to cart
+2021-07-16 11:18:40 INFO  Log:30 - Verifying if Sauce Labs Bike Light's button changed to 'remove'
+2021-07-16 11:18:40 INFO  Log:30 - Looking for 'remove' button in product id: 0 - Sauce Labs Bike Light
+2021-07-16 11:18:40 INFO  Log:30 - Button 'remove' found
+2021-07-16 11:18:41 INFO  Log:30 - Verifying if current page is Sauce Labs Bike Light's page
+2021-07-16 11:18:41 INFO  Log:30 - Current product's page is: Sauce Labs Bike Light
+2021-07-16 11:18:41 INFO  Log:30 - Getting how many products in cart BEFORE removing product
+2021-07-16 11:18:41 INFO  Log:30 - Currently 1 product(s) in cart
+2021-07-16 11:18:41 INFO  Log:30 - Clicking in product's 'remove' button
+2021-07-16 11:18:41 INFO  Log:30 - Product id: 0 - Sauce Labs Bike Light removed from cart
+2021-07-16 11:18:41 INFO  Log:30 - Getting how many products in cart AFTER removing product
+2021-07-16 11:18:41 INFO  Log:30 - No products in cart
+2021-07-16 11:18:41 INFO  Log:30 - Verifying if Sauce Labs Bike Light added to cart
+2021-07-16 11:18:41 INFO  Log:30 - Verifying if Sauce Labs Bike Light's button changed to 'add to cart'
+2021-07-16 11:18:41 INFO  Log:30 - Looking for 'add to cart' button in product id: 0 - Sauce Labs Bike Light
+2021-07-16 11:18:41 INFO  Log:30 - Button 'add to cart' found
+2021-07-16 11:18:41 INFO  Log:25 - Ending Testing ...TestSuite is closing

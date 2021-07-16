@@ -1,9 +1,6 @@
 package Tests;
 
-import PageObjects.BaseTest;
-import PageObjects.CartPage;
-import PageObjects.CatalogPage;
-import PageObjects.LoginPage;
+import PageObjects.*;
 import Utilities.Log;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -23,7 +20,7 @@ public class CartTests extends BaseTest {
     int numberOfBefore;
     int numberOfAfter;
 
-    @Test(testName = "TestCase 22")
+    @Test(testName = "TestCase 22", priority = 1)
     public void catalogPage() {
         logger = extent.createTest("Test Case 22");
         LoginPage loginPage = new LoginPage(driver);
@@ -62,12 +59,13 @@ public class CartTests extends BaseTest {
         cartPage.isCheckoutButton();
     }
 
-    @Test(testName = "TestCase 23")
+    @Test(testName = "TestCase 23", priority = 2)
     public void cartListElements() {
         logger = extent.createTest("Test Case 23");
         LoginPage loginPage = new LoginPage(driver);
         CatalogPage catalogPage = new CatalogPage(driver);
         CartPage cartPage = new CartPage(driver);
+        NavigationPage navigationPage = new NavigationPage(driver);
 
         URL = props.getProperty("webapp");
         username = props.getProperty("valid_user");
@@ -83,6 +81,10 @@ public class CartTests extends BaseTest {
 
         Log.info("Verifying if current page is "+expectedPage);
         Assert.assertEquals(expectedPage,loginPage.currentPage());
+
+        Log.info("Resetting app state");
+        navigationPage.clickOnBurgerMenu();
+        navigationPage.clickOnResetOption();
 
         Log.info("Clicking in product's 'add to cart' button");
         productName = catalogPage.addToCart(testProduct);
@@ -113,12 +115,13 @@ public class CartTests extends BaseTest {
         Assert.assertEquals(numberOfProducts,cartPage.howManyRemovesInCart());
     }
 
-    @Test(testName = "TestCase 24")
+    @Test(testName = "TestCase 24", priority = 3)
     public void cartListRemove() {
         logger = extent.createTest("Test Case 24");
         LoginPage loginPage = new LoginPage(driver);
         CatalogPage catalogPage = new CatalogPage(driver);
         CartPage cartPage = new CartPage(driver);
+        NavigationPage navigationPage = new NavigationPage(driver);
 
         URL = props.getProperty("webapp");
         username = props.getProperty("valid_user");
@@ -134,6 +137,10 @@ public class CartTests extends BaseTest {
 
         Log.info("Verifying if current page is "+expectedPage);
         Assert.assertEquals(expectedPage,loginPage.currentPage());
+
+        Log.info("Resetting app state");
+        navigationPage.clickOnBurgerMenu();
+        navigationPage.clickOnResetOption();
 
         Log.info("Clicking in product's 'add to cart' button");
         productName = catalogPage.addToCart(testProduct);
@@ -158,7 +165,7 @@ public class CartTests extends BaseTest {
         Assert.assertTrue(numberOfProducts < numberOfBefore);
     }
 
-    @Test(testName = "TestCase 25")
+    @Test(testName = "TestCase 25", priority = 4)
     public void continueShopping() {
         logger = extent.createTest("Test Case 25");
         LoginPage loginPage = new LoginPage(driver);
@@ -195,12 +202,13 @@ public class CartTests extends BaseTest {
         Assert.assertEquals(expectedPage, loginPage.currentPage());
     }
 
-    @Test(testName = "TestCase 26")
+    @Test(testName = "TestCase 26", priority = 5)
     public void checkoutForm() {
         logger = extent.createTest("Test Case 26");
         LoginPage loginPage = new LoginPage(driver);
         CatalogPage catalogPage = new CatalogPage(driver);
         CartPage cartPage = new CartPage(driver);
+        NavigationPage navigationPage = new NavigationPage(driver);
 
         URL = props.getProperty("webapp");
         username = props.getProperty("valid_user");
@@ -216,6 +224,10 @@ public class CartTests extends BaseTest {
 
         Log.info("Verifying if current page is "+expectedPage);
         Assert.assertEquals(expectedPage,loginPage.currentPage());
+
+        Log.info("Resetting app state");
+        navigationPage.clickOnBurgerMenu();
+        navigationPage.clickOnResetOption();
 
         Log.info("Clicking in product's 'add to cart' button");
         productName = catalogPage.addToCart(testProduct);
@@ -254,12 +266,13 @@ public class CartTests extends BaseTest {
         cartPage.isCheckoutContinue();
     }
 
-    @Test(testName = "TestCase 27")
+    @Test(testName = "TestCase 27", priority = 6)
     public void checkoutIncompleteFirstName() {
         logger = extent.createTest("Test Case 27");
         LoginPage loginPage = new LoginPage(driver);
         CatalogPage catalogPage = new CatalogPage(driver);
         CartPage cartPage = new CartPage(driver);
+        NavigationPage navigationPage = new NavigationPage(driver);
 
         URL = props.getProperty("webapp");
         username = props.getProperty("valid_user");
@@ -279,6 +292,10 @@ public class CartTests extends BaseTest {
 
         Log.info("Verifying if current page is "+expectedPage);
         Assert.assertEquals(expectedPage,loginPage.currentPage());
+
+        Log.info("Resetting app state");
+        navigationPage.clickOnBurgerMenu();
+        navigationPage.clickOnResetOption();
 
         Log.info("Clicking in product's 'add to cart' button");
         productName = catalogPage.addToCart(testProduct);
@@ -311,12 +328,13 @@ public class CartTests extends BaseTest {
         Assert.assertEquals(errorMessage,loginPage.errorMessage());
     }
 
-    @Test(testName = "TestCase 28")
+    @Test(testName = "TestCase 28", priority = 7)
     public void checkoutIncompleteLastName() {
         logger = extent.createTest("Test Case 28");
         LoginPage loginPage = new LoginPage(driver);
         CatalogPage catalogPage = new CatalogPage(driver);
         CartPage cartPage = new CartPage(driver);
+        NavigationPage navigationPage = new NavigationPage(driver);
 
         URL = props.getProperty("webapp");
         username = props.getProperty("valid_user");
@@ -336,6 +354,10 @@ public class CartTests extends BaseTest {
 
         Log.info("Verifying if current page is "+expectedPage);
         Assert.assertEquals(expectedPage,loginPage.currentPage());
+
+        Log.info("Resetting app state");
+        navigationPage.clickOnBurgerMenu();
+        navigationPage.clickOnResetOption();
 
         Log.info("Clicking in product's 'add to cart' button");
         productName = catalogPage.addToCart(testProduct);
@@ -368,12 +390,13 @@ public class CartTests extends BaseTest {
         Assert.assertEquals(errorMessage,loginPage.errorMessage());
     }
 
-    @Test(testName = "TestCase 29")
+    @Test(testName = "TestCase 29", priority = 8)
     public void checkoutIncompleteZip() {
         logger = extent.createTest("Test Case 29");
         LoginPage loginPage = new LoginPage(driver);
         CatalogPage catalogPage = new CatalogPage(driver);
         CartPage cartPage = new CartPage(driver);
+        NavigationPage navigationPage = new NavigationPage(driver);
 
         URL = props.getProperty("webapp");
         username = props.getProperty("valid_user");
@@ -393,6 +416,10 @@ public class CartTests extends BaseTest {
 
         Log.info("Verifying if current page is "+expectedPage);
         Assert.assertEquals(expectedPage,loginPage.currentPage());
+
+        Log.info("Resetting app state");
+        navigationPage.clickOnBurgerMenu();
+        navigationPage.clickOnResetOption();
 
         Log.info("Clicking in product's 'add to cart' button");
         productName = catalogPage.addToCart(testProduct);
@@ -425,12 +452,13 @@ public class CartTests extends BaseTest {
         Assert.assertEquals(errorMessage,loginPage.errorMessage());
     }
 
-    @Test(testName = "TestCase 30")
+    @Test(testName = "TestCase 30", priority = 9)
     public void checkoutFailureFirstName() {
         logger = extent.createTest("Test Case 30");
         LoginPage loginPage = new LoginPage(driver);
         CatalogPage catalogPage = new CatalogPage(driver);
         CartPage cartPage = new CartPage(driver);
+        NavigationPage navigationPage = new NavigationPage(driver);
 
         URL = props.getProperty("webapp");
         username = props.getProperty("valid_user");
@@ -451,6 +479,10 @@ public class CartTests extends BaseTest {
         Log.info("Verifying if current page is "+expectedPage);
         Assert.assertEquals(expectedPage,loginPage.currentPage());
 
+        Log.info("Resetting app state");
+        navigationPage.clickOnBurgerMenu();
+        navigationPage.clickOnResetOption();
+
         Log.info("Clicking in product's 'add to cart' button");
         productName = catalogPage.addToCart(testProduct);
 
@@ -482,12 +514,13 @@ public class CartTests extends BaseTest {
         Assert.assertEquals(errorMessage,loginPage.errorMessage());
     }
 
-    @Test(testName = "TestCase 31")
+    @Test(testName = "TestCase 31", priority = 10)
     public void checkoutFailureLastName() {
         logger = extent.createTest("Test Case 31");
         LoginPage loginPage = new LoginPage(driver);
         CatalogPage catalogPage = new CatalogPage(driver);
         CartPage cartPage = new CartPage(driver);
+        NavigationPage navigationPage = new NavigationPage(driver);
 
         URL = props.getProperty("webapp");
         username = props.getProperty("valid_user");
@@ -508,6 +541,10 @@ public class CartTests extends BaseTest {
         Log.info("Verifying if current page is "+expectedPage);
         Assert.assertEquals(expectedPage,loginPage.currentPage());
 
+        Log.info("Resetting app state");
+        navigationPage.clickOnBurgerMenu();
+        navigationPage.clickOnResetOption();
+
         Log.info("Clicking in product's 'add to cart' button");
         productName = catalogPage.addToCart(testProduct);
 
@@ -539,12 +576,13 @@ public class CartTests extends BaseTest {
         Assert.assertEquals(errorMessage,loginPage.errorMessage());
     }
 
-    @Test(testName = "TestCase 32")
+    @Test(testName = "TestCase 32", priority = 11)
     public void checkoutFailureZip() {
         logger = extent.createTest("Test Case 32");
         LoginPage loginPage = new LoginPage(driver);
         CatalogPage catalogPage = new CatalogPage(driver);
         CartPage cartPage = new CartPage(driver);
+        NavigationPage navigationPage = new NavigationPage(driver);
 
         URL = props.getProperty("webapp");
         username = props.getProperty("valid_user");
@@ -564,6 +602,10 @@ public class CartTests extends BaseTest {
 
         Log.info("Verifying if current page is "+expectedPage);
         Assert.assertEquals(expectedPage,loginPage.currentPage());
+
+        Log.info("Resetting app state");
+        navigationPage.clickOnBurgerMenu();
+        navigationPage.clickOnResetOption();
 
         Log.info("Clicking in product's 'add to cart' button");
         productName = catalogPage.addToCart(testProduct);
@@ -596,12 +638,13 @@ public class CartTests extends BaseTest {
         Assert.assertEquals(errorMessage,loginPage.errorMessage());
     }
 
-    @Test(testName = "TestCase 33")
+    @Test(testName = "TestCase 33", priority = 12)
     public void checkoutCancel() {
         logger = extent.createTest("Test Case 33");
         LoginPage loginPage = new LoginPage(driver);
         CatalogPage catalogPage = new CatalogPage(driver);
         CartPage cartPage = new CartPage(driver);
+        NavigationPage navigationPage = new NavigationPage(driver);
 
         URL = props.getProperty("webapp");
         username = props.getProperty("valid_user");
@@ -617,6 +660,10 @@ public class CartTests extends BaseTest {
 
         Log.info("Verifying if current page is "+expectedPage);
         Assert.assertEquals(expectedPage,loginPage.currentPage());
+
+        Log.info("Resetting app state");
+        navigationPage.clickOnBurgerMenu();
+        navigationPage.clickOnResetOption();
 
         Log.info("Clicking in product's 'add to cart' button");
         productName = catalogPage.addToCart(testProduct);
@@ -656,12 +703,13 @@ public class CartTests extends BaseTest {
         Assert.assertEquals(numberOfAfter, numberOfBefore);
     }
 
-    @Test(testName = "TestCase 34")
+    @Test(testName = "TestCase 34", priority = 13)
     public void checkoutSuccess() {
         logger = extent.createTest("Test Case 34");
         LoginPage loginPage = new LoginPage(driver);
         CatalogPage catalogPage = new CatalogPage(driver);
         CartPage cartPage = new CartPage(driver);
+        NavigationPage navigationPage = new NavigationPage(driver);
 
         URL = props.getProperty("webapp");
         username = props.getProperty("valid_user");
@@ -680,6 +728,10 @@ public class CartTests extends BaseTest {
 
         Log.info("Verifying if current page is "+expectedPage);
         Assert.assertEquals(expectedPage,loginPage.currentPage());
+
+        Log.info("Resetting app state");
+        navigationPage.clickOnBurgerMenu();
+        navigationPage.clickOnResetOption();
 
         Log.info("Clicking in product's 'add to cart' button");
         productName = catalogPage.addToCart(testProduct);
@@ -710,12 +762,13 @@ public class CartTests extends BaseTest {
         Assert.assertEquals(expectedPage,loginPage.currentPage());
     }
 
-    @Test(testName = "TestCase 35")
+    @Test(testName = "TestCase 35", priority = 14)
     public void checkoutOverview() {
         logger = extent.createTest("Test Case 35");
         LoginPage loginPage = new LoginPage(driver);
         CatalogPage catalogPage = new CatalogPage(driver);
         CartPage cartPage = new CartPage(driver);
+        NavigationPage navigationPage = new NavigationPage(driver);
 
         URL = props.getProperty("webapp");
         username = props.getProperty("valid_user");
@@ -734,6 +787,10 @@ public class CartTests extends BaseTest {
 
         Log.info("Verifying if current page is "+expectedPage);
         Assert.assertEquals(expectedPage,loginPage.currentPage());
+
+        Log.info("Resetting app state");
+        navigationPage.clickOnBurgerMenu();
+        navigationPage.clickOnResetOption();
 
         Log.info("Clicking in product's 'add to cart' button");
         productName = catalogPage.addToCart(testProduct);
@@ -776,12 +833,13 @@ public class CartTests extends BaseTest {
         cartPage.isOverviewFinish();
     }
 
-    @Test(testName = "TestCase 36")
+    @Test(testName = "TestCase 36", priority = 15)
     public void finishBuyCancel() {
         logger = extent.createTest("Test Case 36");
         LoginPage loginPage = new LoginPage(driver);
         CatalogPage catalogPage = new CatalogPage(driver);
         CartPage cartPage = new CartPage(driver);
+        NavigationPage navigationPage = new NavigationPage(driver);
 
         URL = props.getProperty("webapp");
         username = props.getProperty("valid_user");
@@ -800,6 +858,10 @@ public class CartTests extends BaseTest {
 
         Log.info("Verifying if current page is "+expectedPage);
         Assert.assertEquals(expectedPage,loginPage.currentPage());
+
+        Log.info("Resetting app state");
+        navigationPage.clickOnBurgerMenu();
+        navigationPage.clickOnResetOption();
 
         Log.info("Clicking in product's 'add to cart' button");
         productName = catalogPage.addToCart(testProduct);
@@ -846,12 +908,13 @@ public class CartTests extends BaseTest {
         Assert.assertEquals(numberOfAfter, numberOfBefore);
     }
 
-    @Test(testName = "TestCase 37")
+    @Test(testName = "TestCase 37", priority = 16)
     public void finishBuySuccess() {
         logger = extent.createTest("Test Case 37");
         LoginPage loginPage = new LoginPage(driver);
         CatalogPage catalogPage = new CatalogPage(driver);
         CartPage cartPage = new CartPage(driver);
+        NavigationPage navigationPage = new NavigationPage(driver);
 
         URL = props.getProperty("webapp");
         username = props.getProperty("valid_user");
@@ -870,6 +933,10 @@ public class CartTests extends BaseTest {
 
         Log.info("Verifying if current page is "+expectedPage);
         Assert.assertEquals(expectedPage,loginPage.currentPage());
+
+        Log.info("Resetting app state");
+        navigationPage.clickOnBurgerMenu();
+        navigationPage.clickOnResetOption();
 
         Log.info("Clicking in product's 'add to cart' button");
         productName = catalogPage.addToCart(testProduct);
