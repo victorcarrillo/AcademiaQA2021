@@ -14,7 +14,7 @@
 This project is a test suite with several cases for https://www.saucedemo.com/ <br>
 These cases are described in the document "CasosPrueba" and were made on based of the document "Requerimientos".
 
-The following description is for a Windows OS, if you have any questions, please contact to the author.
+The following description is for a Windows OS, if you have any questions, please contact the author.
 
 ##Getting Started
    *Download and decompress this project
@@ -23,7 +23,7 @@ The following description is for a Windows OS, if you have any questions, please
    * Download and decompress[Maven 3.8] (https://maven.apache.org/download.cgi)
    * Installing Selenium Dev
 	
-The project has default data in src/main/resources/testData.properties file, if you want to change some information, please do it here.
+The project has default data in testData.properties, which is located in src/main/resources/, if you want to change some parameters, please do it in the file mentioned before.
 
 <br>
 
@@ -43,7 +43,7 @@ Then add a new variable again:
 ```
 %MAVEN_HOME%\bin
 ```
-4. Under the section Systes Variables, click on Path environment variable to edit, and click Edit button, add the following line at the end of the list.
+4. Under the section System Variables, click on Path environment variable to edit, and click Edit button, add the following line at the end of the list.
 ```
 %MAVEN_HOME%\bin
 ```
@@ -71,24 +71,24 @@ Output:
 ```
 Java version: 1.8.0_111, 
 ```
-Now the project could be opened, edited and run via Intellij or run via terminal with maven.
+Now the project could be opened, edited and run by using Intellij or run through the terminal with maven.
 
 ##Project Structure
  ![ProjectStructure](/img/im3.png)
 
 ##Setup and Run
-To execute a test,do the following:
+To execute a test, do the following:
 *Execute one test case by Intellij, click on the next icon.
  ![Execute one case](/img/im1.JPG)
 
 *Execute the completed class, click on the next icon.
  ![Execute completed class](/img/im2.JPG)
 
-*Execute by terminal, with the follow command.
+*Execute by using the terminal, with the following command.
 ```
 mvn clean test -DsuiteXmlFile=testSuiteDemo.xml
 ```
-The above command is currently running the entire class, in case you want to change the test, create a new xml file.
+The command above is currently running the entire class, create a new xml file in case you want to change the test.
 
 ##Reporter and Logs
-After executing the class or a test case, a graphical report is generated that can be viewed in a browser, on the other hand, a log file is created within the Log4j folder.
+After executing the class or a test case, a graphical report is generated, which can be viewed in a browser; on the other hand, a log file is created within the Log4j folder.

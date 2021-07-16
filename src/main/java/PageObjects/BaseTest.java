@@ -47,7 +47,6 @@ public class BaseTest {
 
     @BeforeMethod
     public void setUp(){
-
         Log.info("Setting up test execution");
 
         if(osEnv.contains("Mac")){
