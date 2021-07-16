@@ -54,7 +54,7 @@ public class BaseTest {
     @AfterMethod
     public void cleanUp(){
         Log.endLog("Ending Execution");
-//        driver.close();
-//        driver.quit();
+        driver.close();
+        driver.quit();
     }
 }
