@@ -1,297 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="23" passed="23">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Swag Labs" duration-ms="89975" started-at="2021-07-16T19:13:48Z" finished-at="2021-07-16T19:15:18Z">
+  <suite name="Swag Labs" duration-ms="35116" started-at="2021-07-16T19:56:16Z" finished-at="2021-07-16T19:56:51Z">
     <groups>
     </groups>
-    <test name="Swag Labs Test" duration-ms="89975" started-at="2021-07-16T19:13:48Z" finished-at="2021-07-16T19:15:18Z">
+    <test name="Swag Labs Test" duration-ms="35116" started-at="2021-07-16T19:56:16Z" finished-at="2021-07-16T19:56:51Z">
       <class name="Tests.InventoryTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.InventoryTests@614c5515]" name="setUp" is-config="true" duration-ms="1084" started-at="2021-07-16T19:14:03Z" finished-at="2021-07-16T19:14:04Z">
+        <test-method status="PASS" signature="extentSetUp()[pri:0, instance:Tests.InventoryTests@60addb54]" name="extentSetUp" is-config="true" duration-ms="198" started-at="2021-07-16T19:56:16Z" finished-at="2021-07-16T19:56:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentSetUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.InventoryTests@60addb54]" name="setUp" is-config="true" duration-ms="1813" started-at="2021-07-16T19:56:17Z" finished-at="2021-07-16T19:56:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addAndRemoveMultipleProductFromInventoryTest()[pri:0, instance:Tests.InventoryTests@614c5515]" name="addAndRemoveMultipleProductFromInventoryTest" duration-ms="6703" started-at="2021-07-16T19:14:04Z" finished-at="2021-07-16T19:14:11Z">
+        <test-method status="PASS" signature="addAndRemoveMultipleProductFromInventoryTest()[pri:0, instance:Tests.InventoryTests@60addb54]" name="addAndRemoveMultipleProductFromInventoryTest" duration-ms="6984" started-at="2021-07-16T19:56:18Z" finished-at="2021-07-16T19:56:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addAndRemoveMultipleProductFromInventoryTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.InventoryTests@614c5515]" name="cleanUp" is-config="true" duration-ms="636" started-at="2021-07-16T19:14:11Z" finished-at="2021-07-16T19:14:11Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.InventoryTests@60addb54]" name="cleanUp" is-config="true" duration-ms="825" started-at="2021-07-16T19:56:25Z" finished-at="2021-07-16T19:56:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.InventoryTests@614c5515]" name="setUp" is-config="true" duration-ms="1072" started-at="2021-07-16T19:14:11Z" finished-at="2021-07-16T19:14:12Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.InventoryTests@60addb54]" name="setUp" is-config="true" duration-ms="1071" started-at="2021-07-16T19:56:26Z" finished-at="2021-07-16T19:56:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addAndRemoveOneProductFromInventoryTest()[pri:0, instance:Tests.InventoryTests@614c5515]" name="addAndRemoveOneProductFromInventoryTest" duration-ms="6449" started-at="2021-07-16T19:14:12Z" finished-at="2021-07-16T19:14:19Z">
+        <test-method status="PASS" signature="addAndRemoveOneProductFromInventoryTest()[pri:0, instance:Tests.InventoryTests@60addb54]" name="addAndRemoveOneProductFromInventoryTest" duration-ms="6505" started-at="2021-07-16T19:56:27Z" finished-at="2021-07-16T19:56:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addAndRemoveOneProductFromInventoryTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.InventoryTests@614c5515]" name="cleanUp" is-config="true" duration-ms="623" started-at="2021-07-16T19:14:19Z" finished-at="2021-07-16T19:14:19Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.InventoryTests@60addb54]" name="cleanUp" is-config="true" duration-ms="659" started-at="2021-07-16T19:56:34Z" finished-at="2021-07-16T19:56:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.InventoryTests@614c5515]" name="setUp" is-config="true" duration-ms="1072" started-at="2021-07-16T19:14:19Z" finished-at="2021-07-16T19:14:21Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.InventoryTests@60addb54]" name="setUp" is-config="true" duration-ms="1122" started-at="2021-07-16T19:56:34Z" finished-at="2021-07-16T19:56:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addMultipleProductsFromInventoryTest()[pri:0, instance:Tests.InventoryTests@614c5515]" name="addMultipleProductsFromInventoryTest" duration-ms="1209" started-at="2021-07-16T19:14:21Z" finished-at="2021-07-16T19:14:22Z">
+        <test-method status="PASS" signature="addMultipleProductsFromInventoryTest()[pri:0, instance:Tests.InventoryTests@60addb54]" name="addMultipleProductsFromInventoryTest" duration-ms="1452" started-at="2021-07-16T19:56:35Z" finished-at="2021-07-16T19:56:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addMultipleProductsFromInventoryTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.InventoryTests@614c5515]" name="cleanUp" is-config="true" duration-ms="594" started-at="2021-07-16T19:14:22Z" finished-at="2021-07-16T19:14:22Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.InventoryTests@60addb54]" name="cleanUp" is-config="true" duration-ms="645" started-at="2021-07-16T19:56:37Z" finished-at="2021-07-16T19:56:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.InventoryTests@614c5515]" name="setUp" is-config="true" duration-ms="1084" started-at="2021-07-16T19:14:22Z" finished-at="2021-07-16T19:14:23Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.InventoryTests@60addb54]" name="setUp" is-config="true" duration-ms="1081" started-at="2021-07-16T19:56:38Z" finished-at="2021-07-16T19:56:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addOneProductFromInventoryTest()[pri:0, instance:Tests.InventoryTests@614c5515]" name="addOneProductFromInventoryTest" duration-ms="980" started-at="2021-07-16T19:14:23Z" finished-at="2021-07-16T19:14:24Z">
+        <test-method status="PASS" signature="addOneProductFromInventoryTest()[pri:0, instance:Tests.InventoryTests@60addb54]" name="addOneProductFromInventoryTest" duration-ms="967" started-at="2021-07-16T19:56:39Z" finished-at="2021-07-16T19:56:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addOneProductFromInventoryTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.InventoryTests@614c5515]" name="cleanUp" is-config="true" duration-ms="620" started-at="2021-07-16T19:14:24Z" finished-at="2021-07-16T19:14:25Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.InventoryTests@60addb54]" name="cleanUp" is-config="true" duration-ms="663" started-at="2021-07-16T19:56:40Z" finished-at="2021-07-16T19:56:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.InventoryTests@614c5515]" name="setUp" is-config="true" duration-ms="1084" started-at="2021-07-16T19:14:25Z" finished-at="2021-07-16T19:14:26Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.InventoryTests@60addb54]" name="setUp" is-config="true" duration-ms="1081" started-at="2021-07-16T19:56:40Z" finished-at="2021-07-16T19:56:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="inventoryTest()[pri:0, instance:Tests.InventoryTests@614c5515]" name="inventoryTest" duration-ms="795" started-at="2021-07-16T19:14:26Z" finished-at="2021-07-16T19:14:27Z">
+        <test-method status="PASS" signature="inventoryTest()[pri:0, instance:Tests.InventoryTests@60addb54]" name="inventoryTest" duration-ms="821" started-at="2021-07-16T19:56:41Z" finished-at="2021-07-16T19:56:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inventoryTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.InventoryTests@614c5515]" name="cleanUp" is-config="true" duration-ms="607" started-at="2021-07-16T19:14:27Z" finished-at="2021-07-16T19:14:27Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.InventoryTests@60addb54]" name="cleanUp" is-config="true" duration-ms="645" started-at="2021-07-16T19:56:42Z" finished-at="2021-07-16T19:56:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.InventoryTests@614c5515]" name="setUp" is-config="true" duration-ms="1086" started-at="2021-07-16T19:14:27Z" finished-at="2021-07-16T19:14:29Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.InventoryTests@60addb54]" name="setUp" is-config="true" duration-ms="1068" started-at="2021-07-16T19:56:43Z" finished-at="2021-07-16T19:56:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="sortByAlphabeticDescendantTest()[pri:0, instance:Tests.InventoryTests@614c5515]" name="sortByAlphabeticDescendantTest" duration-ms="1041" started-at="2021-07-16T19:14:29Z" finished-at="2021-07-16T19:14:30Z">
+        <test-method status="PASS" signature="sortByAlphabeticDescendantTest()[pri:0, instance:Tests.InventoryTests@60addb54]" name="sortByAlphabeticDescendantTest" duration-ms="1024" started-at="2021-07-16T19:56:44Z" finished-at="2021-07-16T19:56:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sortByAlphabeticDescendantTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.InventoryTests@614c5515]" name="cleanUp" is-config="true" duration-ms="674" started-at="2021-07-16T19:14:30Z" finished-at="2021-07-16T19:14:30Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.InventoryTests@60addb54]" name="cleanUp" is-config="true" duration-ms="701" started-at="2021-07-16T19:56:45Z" finished-at="2021-07-16T19:56:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.InventoryTests@614c5515]" name="setUp" is-config="true" duration-ms="1071" started-at="2021-07-16T19:14:30Z" finished-at="2021-07-16T19:14:31Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.InventoryTests@60addb54]" name="setUp" is-config="true" duration-ms="1096" started-at="2021-07-16T19:56:46Z" finished-at="2021-07-16T19:56:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="sortByPriceAscendantTest()[pri:0, instance:Tests.InventoryTests@614c5515]" name="sortByPriceAscendantTest" duration-ms="1151" started-at="2021-07-16T19:14:31Z" finished-at="2021-07-16T19:14:33Z">
+        <test-method status="PASS" signature="sortByPriceAscendantTest()[pri:0, instance:Tests.InventoryTests@60addb54]" name="sortByPriceAscendantTest" duration-ms="1147" started-at="2021-07-16T19:56:47Z" finished-at="2021-07-16T19:56:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sortByPriceAscendantTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.InventoryTests@614c5515]" name="cleanUp" is-config="true" duration-ms="602" started-at="2021-07-16T19:14:33Z" finished-at="2021-07-16T19:14:33Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.InventoryTests@60addb54]" name="cleanUp" is-config="true" duration-ms="654" started-at="2021-07-16T19:56:48Z" finished-at="2021-07-16T19:56:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.InventoryTests@614c5515]" name="setUp" is-config="true" duration-ms="1094" started-at="2021-07-16T19:14:33Z" finished-at="2021-07-16T19:14:34Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.InventoryTests@60addb54]" name="setUp" is-config="true" duration-ms="1079" started-at="2021-07-16T19:56:49Z" finished-at="2021-07-16T19:56:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="sortByPriceDescendantTest()[pri:0, instance:Tests.InventoryTests@614c5515]" name="sortByPriceDescendantTest" duration-ms="1156" started-at="2021-07-16T19:14:34Z" finished-at="2021-07-16T19:14:35Z">
+        <test-method status="PASS" signature="sortByPriceDescendantTest()[pri:0, instance:Tests.InventoryTests@60addb54]" name="sortByPriceDescendantTest" duration-ms="1095" started-at="2021-07-16T19:56:50Z" finished-at="2021-07-16T19:56:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sortByPriceDescendantTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.InventoryTests@614c5515]" name="cleanUp" is-config="true" duration-ms="600" started-at="2021-07-16T19:14:35Z" finished-at="2021-07-16T19:14:36Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.InventoryTests@60addb54]" name="cleanUp" is-config="true" duration-ms="695" started-at="2021-07-16T19:56:51Z" finished-at="2021-07-16T19:56:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
       </class> <!-- Tests.InventoryTests -->
-      <class name="Tests.ShoppingCartTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.ShoppingCartTests@2d554825]" name="setUp" is-config="true" duration-ms="1085" started-at="2021-07-16T19:14:49Z" finished-at="2021-07-16T19:14:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addOneProductFromInventoryTest()[pri:0, instance:Tests.ShoppingCartTests@2d554825]" name="addOneProductFromInventoryTest" duration-ms="1089" started-at="2021-07-16T19:14:50Z" finished-at="2021-07-16T19:14:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addOneProductFromInventoryTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.ShoppingCartTests@2d554825]" name="cleanUp" is-config="true" duration-ms="589" started-at="2021-07-16T19:14:51Z" finished-at="2021-07-16T19:14:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.ShoppingCartTests@2d554825]" name="setUp" is-config="true" duration-ms="1073" started-at="2021-07-16T19:14:52Z" finished-at="2021-07-16T19:14:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="emptyCartTest()[pri:0, instance:Tests.ShoppingCartTests@2d554825]" name="emptyCartTest" duration-ms="6006" started-at="2021-07-16T19:14:53Z" finished-at="2021-07-16T19:14:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- emptyCartTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.ShoppingCartTests@2d554825]" name="cleanUp" is-config="true" duration-ms="624" started-at="2021-07-16T19:14:59Z" finished-at="2021-07-16T19:15:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.ShoppingCartTests@2d554825]" name="setUp" is-config="true" duration-ms="1070" started-at="2021-07-16T19:15:00Z" finished-at="2021-07-16T19:15:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="removeProductsFromCartTest()[pri:0, instance:Tests.ShoppingCartTests@2d554825]" name="removeProductsFromCartTest" duration-ms="6554" started-at="2021-07-16T19:15:01Z" finished-at="2021-07-16T19:15:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- removeProductsFromCartTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.ShoppingCartTests@2d554825]" name="cleanUp" is-config="true" duration-ms="607" started-at="2021-07-16T19:15:07Z" finished-at="2021-07-16T19:15:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-      </class> <!-- Tests.ShoppingCartTests -->
-      <class name="Tests.ProductDetailTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.ProductDetailTests@77b52d12]" name="setUp" is-config="true" duration-ms="1068" started-at="2021-07-16T19:14:36Z" finished-at="2021-07-16T19:14:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addAndRemoveProductFromDetailTest()[pri:0, instance:Tests.ProductDetailTests@77b52d12]" name="addAndRemoveProductFromDetailTest" duration-ms="6333" started-at="2021-07-16T19:14:37Z" finished-at="2021-07-16T19:14:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addAndRemoveProductFromDetailTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.ProductDetailTests@77b52d12]" name="cleanUp" is-config="true" duration-ms="609" started-at="2021-07-16T19:14:43Z" finished-at="2021-07-16T19:14:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.ProductDetailTests@77b52d12]" name="setUp" is-config="true" duration-ms="1066" started-at="2021-07-16T19:14:44Z" finished-at="2021-07-16T19:14:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addProductFromDetailTest()[pri:0, instance:Tests.ProductDetailTests@77b52d12]" name="addProductFromDetailTest" duration-ms="1107" started-at="2021-07-16T19:14:45Z" finished-at="2021-07-16T19:14:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addProductFromDetailTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.ProductDetailTests@77b52d12]" name="cleanUp" is-config="true" duration-ms="637" started-at="2021-07-16T19:14:46Z" finished-at="2021-07-16T19:14:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.ProductDetailTests@77b52d12]" name="setUp" is-config="true" duration-ms="1098" started-at="2021-07-16T19:14:47Z" finished-at="2021-07-16T19:14:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="productDetailTest()[pri:0, instance:Tests.ProductDetailTests@77b52d12]" name="productDetailTest" duration-ms="844" started-at="2021-07-16T19:14:48Z" finished-at="2021-07-16T19:14:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productDetailTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.ProductDetailTests@77b52d12]" name="cleanUp" is-config="true" duration-ms="600" started-at="2021-07-16T19:14:49Z" finished-at="2021-07-16T19:14:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-      </class> <!-- Tests.ProductDetailTests -->
-      <class name="Tests.LoginTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.LoginTests@6fb554cc]" name="setUp" is-config="true" duration-ms="1962" started-at="2021-07-16T19:13:48Z" finished-at="2021-07-16T19:13:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="emptyPasswordTest()[pri:0, instance:Tests.LoginTests@6fb554cc]" name="emptyPasswordTest" duration-ms="807" started-at="2021-07-16T19:13:50Z" finished-at="2021-07-16T19:13:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- emptyPasswordTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.LoginTests@6fb554cc]" name="cleanUp" is-config="true" duration-ms="606" started-at="2021-07-16T19:13:51Z" finished-at="2021-07-16T19:13:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.LoginTests@6fb554cc]" name="setUp" is-config="true" duration-ms="1083" started-at="2021-07-16T19:13:51Z" finished-at="2021-07-16T19:13:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="emptyUsernameTest()[pri:0, instance:Tests.LoginTests@6fb554cc]" name="emptyUsernameTest" duration-ms="616" started-at="2021-07-16T19:13:52Z" finished-at="2021-07-16T19:13:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- emptyUsernameTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.LoginTests@6fb554cc]" name="cleanUp" is-config="true" duration-ms="592" started-at="2021-07-16T19:13:53Z" finished-at="2021-07-16T19:13:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.LoginTests@6fb554cc]" name="setUp" is-config="true" duration-ms="1105" started-at="2021-07-16T19:13:54Z" finished-at="2021-07-16T19:13:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="invalidLoginTest()[pri:0, instance:Tests.LoginTests@6fb554cc]" name="invalidLoginTest" duration-ms="623" started-at="2021-07-16T19:13:55Z" finished-at="2021-07-16T19:13:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidLoginTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.LoginTests@6fb554cc]" name="cleanUp" is-config="true" duration-ms="604" started-at="2021-07-16T19:13:55Z" finished-at="2021-07-16T19:13:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.LoginTests@6fb554cc]" name="setUp" is-config="true" duration-ms="1090" started-at="2021-07-16T19:13:56Z" finished-at="2021-07-16T19:13:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:Tests.LoginTests@6fb554cc]" name="validLoginTest" duration-ms="694" started-at="2021-07-16T19:13:57Z" finished-at="2021-07-16T19:13:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.LoginTests@6fb554cc]" name="cleanUp" is-config="true" duration-ms="607" started-at="2021-07-16T19:13:58Z" finished-at="2021-07-16T19:13:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.LoginTests@6fb554cc]" name="setUp" is-config="true" duration-ms="1072" started-at="2021-07-16T19:13:58Z" finished-at="2021-07-16T19:13:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="wrongPasswordTest()[pri:0, instance:Tests.LoginTests@6fb554cc]" name="wrongPasswordTest" duration-ms="639" started-at="2021-07-16T19:13:59Z" finished-at="2021-07-16T19:14:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wrongPasswordTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.LoginTests@6fb554cc]" name="cleanUp" is-config="true" duration-ms="611" started-at="2021-07-16T19:14:00Z" finished-at="2021-07-16T19:14:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.LoginTests@6fb554cc]" name="setUp" is-config="true" duration-ms="1072" started-at="2021-07-16T19:14:01Z" finished-at="2021-07-16T19:14:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="wrongUsernameTest()[pri:0, instance:Tests.LoginTests@6fb554cc]" name="wrongUsernameTest" duration-ms="626" started-at="2021-07-16T19:14:02Z" finished-at="2021-07-16T19:14:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wrongUsernameTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.LoginTests@6fb554cc]" name="cleanUp" is-config="true" duration-ms="592" started-at="2021-07-16T19:14:02Z" finished-at="2021-07-16T19:14:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-      </class> <!-- Tests.LoginTests -->
-      <class name="Tests.PurchaseFlowTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.PurchaseFlowTests@68837a77]" name="setUp" is-config="true" duration-ms="1105" started-at="2021-07-16T19:15:08Z" finished-at="2021-07-16T19:15:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="checkoutInfoTest()[pri:0, instance:Tests.PurchaseFlowTests@68837a77]" name="checkoutInfoTest" duration-ms="1161" started-at="2021-07-16T19:15:09Z" finished-at="2021-07-16T19:15:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkoutInfoTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.PurchaseFlowTests@68837a77]" name="cleanUp" is-config="true" duration-ms="598" started-at="2021-07-16T19:15:10Z" finished-at="2021-07-16T19:15:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.PurchaseFlowTests@68837a77]" name="setUp" is-config="true" duration-ms="1074" started-at="2021-07-16T19:15:11Z" finished-at="2021-07-16T19:15:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifySuccesfulPurchaseTest()[pri:0, instance:Tests.PurchaseFlowTests@68837a77]" name="verifySuccesfulPurchaseTest" duration-ms="1749" started-at="2021-07-16T19:15:12Z" finished-at="2021-07-16T19:15:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySuccesfulPurchaseTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.PurchaseFlowTests@68837a77]" name="cleanUp" is-config="true" duration-ms="615" started-at="2021-07-16T19:15:14Z" finished-at="2021-07-16T19:15:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests.PurchaseFlowTests@68837a77]" name="setUp" is-config="true" duration-ms="1070" started-at="2021-07-16T19:15:14Z" finished-at="2021-07-16T19:15:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyTotalTest()[pri:0, instance:Tests.PurchaseFlowTests@68837a77]" name="verifyTotalTest" duration-ms="1772" started-at="2021-07-16T19:15:15Z" finished-at="2021-07-16T19:15:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTotalTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:Tests.PurchaseFlowTests@68837a77]" name="cleanUp" is-config="true" duration-ms="642" started-at="2021-07-16T19:15:17Z" finished-at="2021-07-16T19:15:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-      </class> <!-- Tests.PurchaseFlowTests -->
     </test> <!-- Swag Labs Test -->
   </suite> <!-- Swag Labs -->
 </testng-results>

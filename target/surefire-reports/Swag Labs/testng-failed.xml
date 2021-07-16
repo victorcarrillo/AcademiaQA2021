@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Swag Labs]">
+  <test thread-count="1" verbose="0" name="Swag Labs Test(failed)">
+    <classes>
+      <class name="Tests.InventoryTests">
+        <methods>
+          <include name="sortByAlphabeticDescendantTest"/>
+          <include name="sortByPriceDescendantTest"/>
+          <include name="setUp"/>
+          <include name="cleanUp"/>
+          <include name="sortByPriceAscendantTest"/>
+          <include name="extentSetUp"/>
+          <include name="inventoryTest"/>
+        </methods>
+      </class> <!-- Tests.InventoryTests -->
+    </classes>
+  </test> <!-- Swag Labs Test(failed) -->
+</suite> <!-- Failed suite [Swag Labs] -->

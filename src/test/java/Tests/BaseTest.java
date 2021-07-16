@@ -28,13 +28,19 @@ public class BaseTest {
     String osEnv = System.getProperty("os.name");
 
 
-    ExtentReports extent;
-    ExtentTest logger;
+    public ExtentReports extent;
+    public ExtentTest logger;
+
+    @BeforeTest
+    public void extentSetUp(){
+        ExtentHtmlReporter reporter = new ExtentHtmlReporter(projectPath + "/report/TestExecutionReport.html");
+        extent = new ExtentReports();
+        extent.attachReporter(reporter);
+    }
 
     @BeforeMethod
     public void setUp(){
         Log.startLog("Suite de pruebas inicializando");
-        Log.info("");
         Log.info("Iniciando ejecución de pruebas");
 
         if(osEnv.contains("Mac")){
@@ -82,6 +88,7 @@ public class BaseTest {
 
     @AfterMethod
     public void cleanUp(){
+        extent.flush();
         Log.info("Limpiando");
         driver.close();
         driver.quit();

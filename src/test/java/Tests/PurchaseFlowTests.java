@@ -18,6 +18,7 @@ public class PurchaseFlowTests extends BaseTest{
     @Test
     public void checkoutInfoTest(){
         Log.startLog("Caso de prueba 21: verificacion de formulario de informacion de envio");
+        logger = extent.createTest("Caso de prueba 21: verificacion de formulario de informacion de envio");
 
         URL = prop.getProperty("webApp");
         username = prop.getProperty("username");
@@ -27,21 +28,27 @@ public class PurchaseFlowTests extends BaseTest{
 
         LoginPage loginPage = new LoginPage(driver);
         loginPage.inputCredentials(username, password);
+        logger.info("Sesión iniciada exitosamente");
 
         InventoryPage inventoryPage = new InventoryPage(driver);
         inventoryPage.goToShoppingCart();
+        logger.info("Carrito de compra desplegado correctamente");
 
         ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
         Assert.assertTrue(shoppingCartPage.goToCheckout());
+        logger.info("Checkout desplegado de manera correcta");
 
         PurchaseFlowPages purchaseFlowPages = new PurchaseFlowPages(driver);
         Assert.assertTrue(purchaseFlowPages.insertCheckoutInfo());
+        logger.info("Información de envío insertada");
         Assert.assertTrue(purchaseFlowPages.verifyOverview());
+        logger.info("Resumen de compra verificado correctamente");
     }
 
     @Test
     public void verifyTotalTest(){
         Log.startLog("Caso de prueba 22: verificacion de precio total de compra");
+        logger = extent.createTest("Caso de prueba 22: verificacion de precio total de compra");
 
         List<Float> pricesFloat;
         float expectedPrice;
@@ -54,6 +61,7 @@ public class PurchaseFlowTests extends BaseTest{
 
         LoginPage loginPage = new LoginPage(driver);
         loginPage.inputCredentials(username, password);
+        logger.info("Sesión iniciada exitosamente");
 
         InventoryPage inventoryPage = new InventoryPage(driver);
         products = inventoryPage.retrieveAddButtons();
@@ -62,28 +70,35 @@ public class PurchaseFlowTests extends BaseTest{
         pricesFloat = convertToFloat(prices);
 
         Assert.assertTrue(inventoryPage.buttonCartAction(products, 1, "ADD"));
+        logger.info("Producto agregado al carrito exitosamente");
         inventoryPage.selectProduct(products, 5);
 
         expectedPrice = pricesFloat.get(0) + pricesFloat.get(4);
 
         ProductDetailPage productDetailPage = new ProductDetailPage(driver);
         productDetailPage.actionButton("ADD");
+        logger.info("Producto agregado al carrito exitosamente");
 
 
         inventoryPage.goToShoppingCart();
+        logger.info("Carrito de compra desplegado correctamente");
 
         ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
         Assert.assertTrue(shoppingCartPage.verifyCartContent(2));
+        logger.info("Contenido del carrito verificado, 2 productos");
         shoppingCartPage.goToCheckout();
 
         PurchaseFlowPages purchaseFlowPages = new PurchaseFlowPages(driver);
         Assert.assertTrue(purchaseFlowPages.insertCheckoutInfo());
+        logger.info("Información de envío insertada");
         Assert.assertTrue(purchaseFlowPages.verifyTotalPrice(expectedPrice));
+        logger.info("Subtotal en resumen de compra verificado correctamente");
     }
 
     @Test
     public void verifySuccesfulPurchaseTest(){
         Log.startLog("Caso de prueba 23: verificacion de compra exitosa");
+        logger = extent.createTest("Caso de prueba 23: verificacion de compra exitosa");
 
         List<Float> pricesFloat;
         float expectedPrice;
@@ -96,6 +111,7 @@ public class PurchaseFlowTests extends BaseTest{
 
         LoginPage loginPage = new LoginPage(driver);
         loginPage.inputCredentials(username, password);
+        logger.info("Sesión iniciada exitosamente");
 
         InventoryPage inventoryPage = new InventoryPage(driver);
         products = inventoryPage.retrieveAddButtons();
@@ -104,24 +120,31 @@ public class PurchaseFlowTests extends BaseTest{
         pricesFloat = convertToFloat(prices);
 
         Assert.assertTrue(inventoryPage.buttonCartAction(products, 1, "ADD"));
+        logger.info("Producto agregado al carrito exitosamente");
         inventoryPage.selectProduct(products, 5);
 
         expectedPrice = pricesFloat.get(0) + pricesFloat.get(4);
 
         ProductDetailPage productDetailPage = new ProductDetailPage(driver);
         productDetailPage.actionButton("ADD");
+        logger.info("Producto agregado al carrito exitosamente");
 
 
         inventoryPage.goToShoppingCart();
+        logger.info("Carrito de compra desplegado correctamente");
 
         ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
         Assert.assertTrue(shoppingCartPage.verifyCartContent(2));
+        logger.info("Contenido del carrito verificado, 2 productos");
         shoppingCartPage.goToCheckout();
 
         PurchaseFlowPages purchaseFlowPages = new PurchaseFlowPages(driver);
         Assert.assertTrue(purchaseFlowPages.insertCheckoutInfo());
+        logger.info("Información de envío insertada");
         Assert.assertTrue(purchaseFlowPages.verifyTotalPrice(expectedPrice));
+        logger.info("Subtotal en resumen de compra verificado correctamente");
         Assert.assertTrue(purchaseFlowPages.goToFinish());
         Assert.assertTrue(purchaseFlowPages.verifyPurchase());
+        logger.info("Verificación de compra exitosa");
     }
 }
