@@ -9,7 +9,6 @@ import org.testng.annotations.Test;
 import utilities.Log;
 
 import java.util.*;
-import java.util.concurrent.TimeUnit;
 
 public class InventoryTests extends BaseTest{
 
@@ -118,7 +117,7 @@ public class InventoryTests extends BaseTest{
 
         InventoryPage inventoryPage = new InventoryPage(driver);
         products = inventoryPage.retrieveAddButtons();
-        Assert.assertTrue(inventoryPage.addProductToCart(products, 1, "ADD"));
+        Assert.assertTrue(inventoryPage.buttonCartAction(products, 1, "ADD"));
         inventoryPage.goToShoppingCart();
 
         ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
@@ -140,9 +139,9 @@ public class InventoryTests extends BaseTest{
 
         InventoryPage inventoryPage = new InventoryPage(driver);
         products = inventoryPage.retrieveAddButtons();
-        Assert.assertTrue(inventoryPage.addProductToCart(products, 1, "ADD"));
-        Assert.assertTrue(inventoryPage.addProductToCart(products, 2, "ADD"));
-        Assert.assertTrue(inventoryPage.addProductToCart(products, 3, "ADD"));
+        Assert.assertTrue(inventoryPage.buttonCartAction(products, 1, "ADD"));
+        Assert.assertTrue(inventoryPage.buttonCartAction(products, 2, "ADD"));
+        Assert.assertTrue(inventoryPage.buttonCartAction(products, 3, "ADD"));
         inventoryPage.goToShoppingCart();
 
         ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
@@ -164,9 +163,9 @@ public class InventoryTests extends BaseTest{
 
         InventoryPage inventoryPage = new InventoryPage(driver);
         products = inventoryPage.retrieveAddButtons();
-        Assert.assertTrue(inventoryPage.addProductToCart(products, 1, "ADD"));
+        Assert.assertTrue(inventoryPage.buttonCartAction(products, 1, "ADD"));
         products = inventoryPage.retrieveAddButtons();
-        Assert.assertTrue(inventoryPage.addProductToCart(products, 1, "REMOVE"));
+        Assert.assertTrue(inventoryPage.buttonCartAction(products, 1, "REMOVE"));
         inventoryPage.goToShoppingCart();
 
         ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
@@ -188,13 +187,13 @@ public class InventoryTests extends BaseTest{
 
         InventoryPage inventoryPage = new InventoryPage(driver);
         products = inventoryPage.retrieveAddButtons();
-        Assert.assertTrue(inventoryPage.addProductToCart(products, 1, "ADD"));
-        Assert.assertTrue(inventoryPage.addProductToCart(products, 2, "ADD"));
-        Assert.assertTrue(inventoryPage.addProductToCart(products, 3, "ADD"));
+        Assert.assertTrue(inventoryPage.buttonCartAction(products, 1, "ADD"));
+        Assert.assertTrue(inventoryPage.buttonCartAction(products, 2, "ADD"));
+        Assert.assertTrue(inventoryPage.buttonCartAction(products, 3, "ADD"));
         products = inventoryPage.retrieveAddButtons();
-        Assert.assertTrue(inventoryPage.addProductToCart(products, 1, "REMOVE"));
-        Assert.assertTrue(inventoryPage.addProductToCart(products, 2, "REMOVE"));
-        Assert.assertTrue(inventoryPage.addProductToCart(products, 3, "REMOVE"));
+        Assert.assertTrue(inventoryPage.buttonCartAction(products, 1, "REMOVE"));
+        Assert.assertTrue(inventoryPage.buttonCartAction(products, 2, "REMOVE"));
+        Assert.assertTrue(inventoryPage.buttonCartAction(products, 3, "REMOVE"));
         inventoryPage.goToShoppingCart();
 
         ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
@@ -209,18 +208,6 @@ public class InventoryTests extends BaseTest{
         for(int i = 0; i < orderedProducts.size(); i++){
             System.out.println(orderedProducts.get(i).getText());
         }
-    }
-
-    private List<Float> convertToFloat(List<WebElement> elements){
-        List<Float> prices = new ArrayList<>();
-        String tempPrice;
-
-        for(int i = 0; i < elements.size(); i++){
-            tempPrice = elements.get(i).getText();
-            tempPrice= tempPrice.replace("$", "");
-            prices.add(Float.parseFloat(tempPrice));
-        }
-        return prices;
     }
 
     private boolean compareOrder(String comparer) {

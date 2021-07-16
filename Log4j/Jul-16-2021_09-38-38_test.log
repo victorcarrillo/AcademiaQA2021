@@ -1,0 +1,11 @@
+2021-07-16 09:38:39 INFO  Log:20 - Starting Testing ...Suite de pruebas inicializando
+2021-07-16 09:38:39 INFO  Log:30 - Iniciando ejecución de pruebas
+2021-07-16 09:38:41 INFO  Log:30 - Opening Browser
+2021-07-16 09:38:41 INFO  Log:20 - Starting Testing ...Caso de prueba 18: verificacion de carrito vacio
+2021-07-16 09:38:41 INFO  Log:30 - Ingresando usuario
+2021-07-16 09:38:41 INFO  Log:30 - Ingresando contraseña
+2021-07-16 09:38:41 INFO  Log:30 - Accesando carrito de compra
+2021-07-16 09:38:42 INFO  Log:30 - Recuperando productos en el carrito
+2021-07-16 09:38:47 INFO  Log:30 - El carrito está vacío
+2021-07-16 09:38:47 INFO  Log:30 - Limpiando
+2021-07-16 09:38:48 INFO  Log:25 - Ending Testing ...Finalizando ejecución

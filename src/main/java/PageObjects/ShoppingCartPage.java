@@ -11,6 +11,8 @@ public class ShoppingCartPage extends BasePage{
 
     /** Locators **/
     By byProductsOnCart;
+    By byActionButtons;
+    By byCheckoutButton;
 
     public ShoppingCartPage(WebDriver driver){
         super(driver);
@@ -41,6 +43,42 @@ public class ShoppingCartPage extends BasePage{
                 Log.fatal("Productos no encontrados");
                 return false;
             }
+        }
+    }
+
+    public boolean removeProduct(int productToRemove) {
+        byActionButtons = By.cssSelector(prop.getProperty("cartButtons"));
+
+        try {
+            List<WebElement> buttons = getListElements(byActionButtons, 5);
+            if(productToRemove <= buttons.size()) {
+                buttons.get(productToRemove - 1).click();
+                Log.info("Producto eliminado");
+                return true;
+            }
+            else{
+                Log.fatal("Productos no encontrados");
+                return false;
+            }
+        }
+        catch (Exception e){
+            Log.fatal("Productos no encontrados");
+            return false;
+        }
+    }
+
+    public boolean goToCheckout() {
+        byCheckoutButton = By.cssSelector(prop.getProperty("checkoutButton"));
+
+        try{
+            WebElement button = getElementOfPresenceOfElementLocated(byCheckoutButton, 5);
+            button.click();
+            Log.info("Entranto a checkout");
+            return true;
+        }
+        catch (Exception e){
+            Log.fatal("Checkout no encontrado");
+            return false;
         }
     }
 }

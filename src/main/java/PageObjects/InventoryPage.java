@@ -90,7 +90,7 @@ public class InventoryPage extends BasePage{
         return addButtons;
     }
 
-    public boolean addProductToCart(List<WebElement> products, int productNumber, String action) {
+    public boolean buttonCartAction(List<WebElement> products, int productNumber, String action) {
         if(productNumber <= products.size()) {
             Log.info("Encontrando producto para accion: " + action);
             WebElement addButton = products.get(productNumber - 1);
@@ -108,6 +108,15 @@ public class InventoryPage extends BasePage{
         else {
             Log.fatal("Producto inexistente");
             return false;
+        }
+    }
+
+    public void selectProduct(List<WebElement> products, int productNumber) {
+        if(productNumber <= products.size()) {
+            Log.info("Encontrando producto para entrar a detalle");
+            WebElement productName = products.get(productNumber - 1);
+            productName.click();
+            Log.info("Producto encontrado");
         }
     }
 }

@@ -4,6 +4,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.opera.OperaDriver;
@@ -12,6 +13,8 @@ import org.testng.annotations.BeforeTest;
 import utilities.CommonUtilities;
 import utilities.Log;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -70,5 +73,17 @@ public class BaseTest {
         driver.close();
         driver.quit();
         Log.endLog("Finalizando ejecución");
+    }
+
+    public List<Float> convertToFloat(List<WebElement> elements){
+        List<Float> prices = new ArrayList<>();
+        String tempPrice;
+
+        for(int i = 0; i < elements.size(); i++){
+            tempPrice = elements.get(i).getText();
+            tempPrice= tempPrice.replace("$", "");
+            prices.add(Float.parseFloat(tempPrice));
+        }
+        return prices;
     }
 }
