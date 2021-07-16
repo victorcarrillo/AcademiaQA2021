@@ -10,13 +10,13 @@
 * [Reporter and Logs](#reporter-and-logs)
 
 
-##Description
+## Description
 This project is a test suite with several cases for https://www.saucedemo.com/ <br>
 These cases are described in the document "CasosPrueba" and were made on based of the document "Requerimientos".
 
 The following description is for a Windows OS, if you have any questions, please contact the author.
 
-##Getting Started
+## Getting Started
    *Download and decompress this project
    *Installing [Intellij Idea](https://www.jetbrains.com/es-es/idea/) 
    * Installing [Java 8](https://www.oracle.com/mx/java/technologies/javase/javase-jdk8-downloads.html
@@ -27,7 +27,7 @@ The project has default data in testData.properties, which is located in src/mai
 
 <br>
 
-###Setting global environment variables on Windows 10 and Windows 8
+### Setting global environment variables on Windows 10 and Windows 8
 1. Search and select System (Control Panel).
 2. Click on the Advanced system settings link and then click Environment Variables. Under the section User Variables, click New and add te following variable:
 ```
@@ -73,10 +73,10 @@ Java version: 1.8.0_111,
 ```
 Now the project could be opened, edited and run by using Intellij or run through the terminal with maven.
 
-##Project Structure
+## Project Structure
  ![ProjectStructure](/img/im3.png)
 
-##Setup and Run
+## Setup and Run
 To execute a test, do the following:
 *Execute one test case by Intellij, click on the next icon.
  ![Execute one case](/img/im1.JPG)
@@ -90,5 +90,5 @@ mvn clean test -DsuiteXmlFile=testSuiteDemo.xml
 ```
 The command above is currently running the entire class, create a new xml file in case you want to change the test.
 
-##Reporter and Logs
+## Reporter and Logs
 After executing the class or a test case, a graphical report is generated, which can be viewed in a browser; on the other hand, a log file is created within the Log4j folder.
