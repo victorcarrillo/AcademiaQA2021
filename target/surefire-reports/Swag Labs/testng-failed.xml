@@ -5,15 +5,53 @@
     <classes>
       <class name="Tests.InventoryTests">
         <methods>
+          <include name="addAndRemoveMultipleProductFromInventoryTest"/>
           <include name="sortByAlphabeticDescendantTest"/>
           <include name="sortByPriceDescendantTest"/>
           <include name="setUp"/>
+          <include name="addOneProductFromInventoryTest"/>
           <include name="cleanUp"/>
           <include name="sortByPriceAscendantTest"/>
           <include name="extentSetUp"/>
           <include name="inventoryTest"/>
+          <include name="addMultipleProductsFromInventoryTest"/>
+          <include name="extentCleanUp"/>
+          <include name="addAndRemoveOneProductFromInventoryTest"/>
         </methods>
       </class> <!-- Tests.InventoryTests -->
+      <class name="Tests.ShoppingCartTests">
+        <methods>
+          <include name="addOneProductFromInventoryTest"/>
+          <include name="setUp"/>
+          <include name="cleanUp"/>
+          <include name="extentSetUp"/>
+          <include name="emptyCartTest"/>
+          <include name="removeProductsFromCartTest"/>
+          <include name="extentCleanUp"/>
+        </methods>
+      </class> <!-- Tests.ShoppingCartTests -->
+      <class name="Tests.PurchaseFlowTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="checkoutInfoTest"/>
+          <include name="verifyTotalTest"/>
+          <include name="verifySuccesfulPurchaseTest"/>
+          <include name="cleanUp"/>
+          <include name="extentSetUp"/>
+          <include name="extentCleanUp"/>
+        </methods>
+      </class> <!-- Tests.PurchaseFlowTests -->
+      <class name="Tests.ProductDetailTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="addAndRemoveProductFromDetailTest"/>
+          <include name="productDetailTest"/>
+          <include name="cleanUp"/>
+          <include name="addProductFromDetailTest"/>
+          <include name="extentSetUp"/>
+          <include name="extentCleanUp"/>
+        </methods>
+      </class> <!-- Tests.ProductDetailTests -->
     </classes>
   </test> <!-- Swag Labs Test(failed) -->
 </suite> <!-- Failed suite [Swag Labs] -->

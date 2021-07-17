@@ -18,7 +18,7 @@ public class PurchaseFlowTests extends BaseTest{
     @Test
     public void checkoutInfoTest(){
         Log.startLog("Caso de prueba 21: verificacion de formulario de informacion de envio");
-        logger = extent.createTest("Caso de prueba 21: verificacion de formulario de informacion de envio");
+        logger = extent.createTest("Caso de prueba 21", "Verificacion de formulario de informacion de envio");
 
         URL = prop.getProperty("webApp");
         username = prop.getProperty("username");
@@ -48,7 +48,7 @@ public class PurchaseFlowTests extends BaseTest{
     @Test
     public void verifyTotalTest(){
         Log.startLog("Caso de prueba 22: verificacion de precio total de compra");
-        logger = extent.createTest("Caso de prueba 22: verificacion de precio total de compra");
+        logger = extent.createTest("Caso de prueba 22", "Verificacion de precio total de compra");
 
         List<Float> pricesFloat;
         float expectedPrice;
@@ -98,7 +98,7 @@ public class PurchaseFlowTests extends BaseTest{
     @Test
     public void verifySuccesfulPurchaseTest(){
         Log.startLog("Caso de prueba 23: verificacion de compra exitosa");
-        logger = extent.createTest("Caso de prueba 23: verificacion de compra exitosa");
+        logger = extent.createTest("Caso de prueba 23", "Verificacion de compra exitosa");
 
         List<Float> pricesFloat;
         float expectedPrice;

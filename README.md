@@ -55,3 +55,8 @@ inventoryTestSuite.xml | Catálogo de productos
 productDetailTestSuite.xml | Vista de detalle de producto 
 shoppingCartTestSuite.xml | Carrito de compra
 purchaseFlowTestSuite.xml | Proceso de compra
+
+El script tiene la opcion de ejecución headless activada, si se desea ver el proceso de pruebas, se debe cambiar la variable en el archivo testDarta.properties, que se encuentra en src/main/resources
+```
+webapp.headlessExecution = true
+```

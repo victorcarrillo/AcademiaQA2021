@@ -21,7 +21,7 @@ public class InventoryTests extends BaseTest{
     @Test
     public void inventoryTest(){
         Log.startLog("Caso de prueba 7: verificacion de inventario");
-        logger = extent.createTest("Caso de prueba 7: verificación de inventario");
+        logger = extent.createTest("Caso de prueba 7", "Verificación de inventario");
 
         URL = prop.getProperty("webApp");
         username = prop.getProperty("username");
@@ -42,7 +42,7 @@ public class InventoryTests extends BaseTest{
     @Test
     public void sortByAlphabeticDescendantTest(){
         Log.startLog("Caso de prueba 8: filtro alfabético descendente");
-        logger = extent.createTest("Caso de prueba 8: filtro alfabético descendente");
+        logger = extent.createTest("Caso de prueba 8", "filtro alfabético descendente");
 
         URL = prop.getProperty("webApp");
         username = prop.getProperty("username");
@@ -67,7 +67,7 @@ public class InventoryTests extends BaseTest{
     @Test
     public void sortByPriceAscendantTest(){
         Log.startLog("Caso de prueba 9: filtro precio ascendente");
-        logger = extent.createTest("Caso de prueba 9: filtro precio ascendente");
+        logger = extent.createTest("Caso de prueba 9", "Filtro precio ascendente");
 
         URL = prop.getProperty("webApp");
         username = prop.getProperty("username");
@@ -92,7 +92,7 @@ public class InventoryTests extends BaseTest{
     @Test
     public void sortByPriceDescendantTest(){
         Log.startLog("Caso de prueba 10: filtro precio descendente");
-        logger = extent.createTest("Caso de prueba 10: filtro precio descendente");
+        logger = extent.createTest("Caso de prueba 10", "Filtro precio descendente");
 
         URL = prop.getProperty("webApp");
         username = prop.getProperty("username");
@@ -117,7 +117,7 @@ public class InventoryTests extends BaseTest{
     @Test
     public void addOneProductFromInventoryTest(){
         Log.startLog("Caso de prueba 11: agregar un producto a carrito desde inventario");
-        logger = extent.createTest("Caso de prueba 11: agregar un producto a carrito desde inventario");
+        logger = extent.createTest("Caso de prueba 11", "Agregar un producto a carrito desde inventario");
 
         URL = prop.getProperty("webApp");
         username = prop.getProperty("username");
@@ -142,7 +142,7 @@ public class InventoryTests extends BaseTest{
     @Test
     public void addMultipleProductsFromInventoryTest(){
         Log.startLog("Caso de prueba 12: agregar varios producto a carrito desde inventario");
-        logger = extent.createTest("Caso de prueba 12: agregar varios producto a carrito desde inventario");
+        logger = extent.createTest("Caso de prueba 12", "Agregar varios producto a carrito desde inventario");
 
         URL = prop.getProperty("webApp");
         username = prop.getProperty("username");
@@ -171,7 +171,7 @@ public class InventoryTests extends BaseTest{
     @Test
     public void addAndRemoveOneProductFromInventoryTest(){
         Log.startLog("Caso de prueba 13: agregar un producto a carrito desde inventario y eliminarlo");
-        logger = extent.createTest("Caso de prueba 13: agregar un producto a carrito desde inventario y eliminarlo");
+        logger = extent.createTest("Caso de prueba 13", "Agregar un producto a carrito desde inventario y eliminarlo");
 
         URL = prop.getProperty("webApp");
         username = prop.getProperty("username");
@@ -199,7 +199,7 @@ public class InventoryTests extends BaseTest{
     @Test
     public void addAndRemoveMultipleProductFromInventoryTest(){
         Log.startLog("Caso de prueba 14: agregar multiples productos a carrito desde inventario y luego eliminarlos");
-        logger = extent.createTest("Caso de prueba 14: agregar multiples productos a carrito desde inventario y luego eliminarlos");
+        logger = extent.createTest("Caso de prueba 14", "Agregar multiples productos a carrito desde inventario y luego eliminarlos");
 
         URL = prop.getProperty("webApp");
         username = prop.getProperty("username");

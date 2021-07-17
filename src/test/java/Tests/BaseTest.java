@@ -8,10 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.opera.OperaDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
+import org.testng.ITest;
+import org.testng.ITestClass;
+import org.testng.ITestResult;
+import org.testng.annotations.*;
 import utilities.CommonUtilities;
 import utilities.Log;
 
@@ -31,9 +31,9 @@ public class BaseTest {
     public ExtentReports extent;
     public ExtentTest logger;
 
-    @BeforeTest
-    public void extentSetUp(){
-        ExtentHtmlReporter reporter = new ExtentHtmlReporter(projectPath + "/report/TestExecutionReport.html");
+    @BeforeClass
+    public void extentSetUp() {
+        ExtentHtmlReporter reporter = new ExtentHtmlReporter(projectPath + "/report/" + this.getClass().getName() + "TestExecutionReport.html");
         extent = new ExtentReports();
         extent.attachReporter(reporter);
     }
@@ -87,12 +87,22 @@ public class BaseTest {
     }
 
     @AfterMethod
-    public void cleanUp(){
-        extent.flush();
+    public void cleanUp(ITestResult result){
+
+        if(result.getStatus() == ITestResult.FAILURE){
+            logger.fail("Prueba " + result.getTestName() + " fallo");
+        }else if(result.getStatus() == ITestResult.SUCCESS){
+            logger.pass("Prueba " + result.getTestName() + " pasada");
+        }
         Log.info("Limpiando");
         driver.close();
         driver.quit();
         Log.endLog("Finalizando ejecución");
+    }
+
+    @AfterClass
+    public void extentCleanUp(){
+        extent.flush();
     }
 
     public List<Float> convertToFloat(List<WebElement> elements){

@@ -21,7 +21,7 @@ public class ProductDetailTests extends BaseTest{
     @Test
     public void productDetailTest(){
         Log.startLog("Caso de prueba 15: verificación detalle producto");
-        logger = extent.createTest("Caso de prueba 15: verificación detalle producto");
+        logger = extent.createTest("Caso de prueba 15","Verificación detalle producto");
 
         URL = prop.getProperty("webApp");
         username = prop.getProperty("username");
@@ -46,7 +46,7 @@ public class ProductDetailTests extends BaseTest{
     @Test
     public void addProductFromDetailTest(){
         Log.startLog("Caso de prueba 16: agregar producto a carrito desde detalle");
-        logger = extent.createTest("Caso de prueba 16: agregar producto a carrito desde detalle");
+        logger = extent.createTest("Caso de prueba 16","Agregar producto a carrito desde detalle");
 
         URL = prop.getProperty("webApp");
         username = prop.getProperty("username");
@@ -78,7 +78,7 @@ public class ProductDetailTests extends BaseTest{
     @Test
     public void addAndRemoveProductFromDetailTest(){
         Log.startLog("Caso de prueba 17: agregar producto a carrito y despues eliminar desde detalle");
-        logger = extent.createTest("Caso de prueba 17: agregar producto a carrito y despues eliminar desde detalle");
+        logger = extent.createTest("Caso de prueba 17", "Agregar producto a carrito y despues eliminar desde detalle");
 
         URL = prop.getProperty("webApp");
         username = prop.getProperty("username");
