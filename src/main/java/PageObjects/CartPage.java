@@ -66,75 +66,91 @@ public class CartPage extends BasePage{
         }
     }
 
-    public void isCartList() {
+    public boolean isCartList() {
         try{
             getElement(locCartList,5);
             Log.info("cart list found");
+            return true;
         } catch(Exception e) {
             Log.fatal("cart list not found");
+            return false;
         }
     }
 
-    public void isBackButton() {
+    public boolean isBackButton() {
         try{
             getElement(locBackButton,5);
             Log.info("back button not found");
+            return true;
         } catch(Exception e) {
             Log.fatal("back button not found");
+            return false;
         }
     }
 
-    public void isCheckoutButton() {
+    public boolean isCheckoutButton() {
         try{
             getElement(locCheckoutButton,5);
             Log.info("checkout button found");
+            return true;
         } catch(Exception e) {
             Log.fatal("checkout button not found");
+            return false;
         }
     }
 
-    public void isCheckoutFirstName() {
+    public boolean isCheckoutFirstName() {
         try {
             getElement(locCheckoutFirstName,5);
             Log.info("first name field found");
+            return true;
         } catch(Exception e){
             Log.fatal("first name field not found");
+            return false;
         }
     }
 
-    public void isCheckoutLastName() {
+    public boolean isCheckoutLastName() {
         try {
             getElement(locCheckoutLastName,5);
             Log.info("last name field found");
+            return true;
         } catch(Exception e){
             Log.fatal("last name field not found");
+            return false;
         }
     }
 
-    public void isCheckoutZip() {
+    public boolean isCheckoutZip() {
         try {
             getElement(locCheckoutZip,5);
             Log.info("zip/postal code field found");
+            return true;
         } catch(Exception e){
             Log.fatal("zip/postal code field not found");
+            return false;
         }
     }
 
-    public void isCheckoutCancel() {
+    public boolean isCheckoutCancel() {
         try {
             getElement(locCheckoutCancel,5);
             Log.info("cancel checkout button found");
+            return true;
         } catch(Exception e){
             Log.fatal("cancel checkout button not found");
+            return false;
         }
     }
 
-    public void isCheckoutContinue() {
+    public boolean isCheckoutContinue() {
         try {
             getElement(locCheckoutContinue,5);
             Log.info("continue checkout button found");
+            return true;
         } catch(Exception e){
             Log.fatal("continue checkout button not found");
+            return false;
         }
     }
 
@@ -274,39 +290,47 @@ public class CartPage extends BasePage{
         }
     }
 
-    public void isOverviewCartList() {
+    public boolean isOverviewCartList() {
         try{
             getElement(locOverviewCartList,5);
             Log.info("cart list found");
+            return true;
         } catch(Exception e) {
             Log.fatal("cart list not found");
+            return false;
         }
     }
 
-    public void isOverviewSummaryInfo() {
+    public boolean isOverviewSummaryInfo() {
         try{
             getElement(locOverviewSummaryInfo,5);
             Log.info("summary info found");
+            return true;
         } catch(Exception e) {
             Log.fatal("summary info not found");
+            return false;
         }
     }
 
-    public void isOverviewCancel() {
+    public boolean isOverviewCancel() {
         try{
             getElement(locOverviewCancel,5);
             Log.info("cancel button found");
+            return true;
         } catch(Exception e) {
             Log.fatal("cancel button not found");
+            return false;
         }
     }
 
-    public void isOverviewFinish() {
+    public boolean isOverviewFinish() {
         try{
             getElement(locOverviewFinish,5);
             Log.info("finish button found");
+            return true;
         } catch(Exception e) {
             Log.fatal("finish button not found");
+            return false;
         }
     }
 }

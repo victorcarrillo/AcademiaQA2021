@@ -18,30 +18,36 @@ public class LoginPage extends BasePage {
         super(driver);
     }
 
-    public void isUserField() {
+    public boolean isUserField() {
         try{
             getElement(locUserField,5);
             Log.info("username field found");
+            return true;
         } catch(Exception e) {
             Log.fatal("username field not found");
+            return false;
         }
     }
 
-    public void isPassField() {
+    public boolean isPassField() {
         try{
             getElement(locPassField,5);
             Log.info("password field found");
+            return true;
         } catch(Exception e) {
             Log.fatal("password field not found");
+            return false;
         }
     }
 
-    public void isLoginButton() {
+    public boolean isLoginButton() {
         try{
             getElement(locLoginButton,5);
             Log.info("login button found");
+            return true;
         } catch(Exception e) {
             Log.fatal("login button not found");
+            return false;
         }
     }
 
@@ -105,13 +111,15 @@ public class LoginPage extends BasePage {
         return null;
     }
 
-    public void closeErrorMessage() {
+    public boolean closeErrorMessage() {
         try {
             Log.info("clicking error's close button");
             getButton(locCloseError,5).click();
             Log.info("error message closed");
+            return true;
         } catch (Exception e) {
             Log.fatal("error's close button not found");
+            return false;
         }
     }
 }

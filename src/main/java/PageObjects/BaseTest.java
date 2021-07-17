@@ -17,7 +17,7 @@ public class BaseTest {
     public WebDriver driver;
     public Properties props;
 
-    String projectPath = System.getProperty("user.dir");
+    public String projectPath = System.getProperty("user.dir");
     String osEnv = System.getProperty("os.name");
 
     public ExtentReports extent;
@@ -76,13 +76,13 @@ public class BaseTest {
     @AfterMethod
     public void testResults(ITestResult result) {
         if(result.getStatus()==ITestResult.SUCCESS) {
-            logger.pass("Test "+ result.getName() +" passed");
+            logger.pass("Test case "+ result.getName() +" P A S S E D");
             extent.flush();
         } else if(result.getStatus()==ITestResult.FAILURE) {
-            logger.fail("Test "+ result.getName() +" failed");
+            logger.fail("Test case "+ result.getName() +" F A I L E D");
             extent.flush();
         } else if(result.getStatus()==ITestResult.SKIP) {
-            logger.skip("Test "+ result.getName() +" skipped");
+            logger.skip("Test case "+ result.getName() +" S K I P P E D");
             extent.flush();
         }
     }

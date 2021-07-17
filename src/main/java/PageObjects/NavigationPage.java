@@ -26,66 +26,80 @@ public class NavigationPage extends BasePage{
         super(driver);
     }
 
-    public void isBurgerMenu() {
+    public boolean isBurgerMenu() {
         try{
             getElement(locBurgerMenu,5);
             Log.info("burger menu found");
+            return true;
         } catch(Exception e) {
             Log.fatal("burger menu not found");
+            return false;
         }
     }
 
-    public void isAppLogo() {
+    public boolean isAppLogo() {
         try {
             getElement(locAppLogo,5);
             Log.info("app logo found");
+            return true;
         } catch(Exception e) {
             Log.fatal("app logo not found");
+            return false;
         }
     }
 
-    public void isCartButton() {
+    public boolean isCartButton() {
         try {
             getElement(locCartButton,5);
             Log.info("cart button found");
+            return true;
         } catch(Exception e) {
             Log.fatal("cart button not found");
+            return false;
         }
     }
 
-    public void isTwitterLink() {
+    public boolean isTwitterLink() {
         try {
             getElement(locTwitterLink,5);
             Log.info("twitter link found");
+            return true;
         } catch(Exception e) {
             Log.fatal("twitter link not found");
+            return false;
         }
     }
 
-    public void isFacebookLink() {
+    public boolean isFacebookLink() {
         try {
             getElement(locFacebookLink,5);
             Log.info("facebook link found");
+            return true;
         } catch(Exception e) {
             Log.fatal("facebook link not found");
+            return false;
         }
     }
 
-    public void isLinkedinLink() {
+    public boolean isLinkedinLink() {
         try {
             getElement(locLinkedInLink,5);
             Log.info("linkedIn link found");
+            return true;
         } catch(Exception e) {
             Log.fatal("linkedIn link not found");
+            return false;
         }
     }
 
-    public void isCopyright() {
+    public boolean isCopyright() {
         try {
             getElement(locCopyright,5);
             Log.info("copyright message found");
+            return true;
         } catch(Exception e) {
             Log.fatal("copyright message not found");
+            return false;
         }
     }
 

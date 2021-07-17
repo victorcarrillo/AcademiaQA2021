@@ -1,0 +1,81 @@
+2021-07-16 23:22:50 INFO  Log:20 - Starting Testing ...TestSuite is starting
+2021-07-16 23:22:50 INFO  Log:30 - Setting up test execution
+2021-07-16 23:22:53 INFO  Log:30 - Opening Browser
+2021-07-16 23:22:53 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 23:22:54 INFO  Log:30 - Verifying presence of Username Field
+2021-07-16 23:22:54 INFO  Log:30 - username field found
+2021-07-16 23:22:54 INFO  Log:30 - Verifying presence of Password Field
+2021-07-16 23:22:54 INFO  Log:30 - password field found
+2021-07-16 23:22:54 INFO  Log:30 - Verifying presence of Login Button
+
+2021-07-16 23:22:54 INFO  Log:30 - login button found
+2021-07-16 23:22:55 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 23:22:55 INFO  Log:30 - Filling up login form with valid user and correct password
+2021-07-16 23:22:55 INFO  Log:30 - filling up username field with: standard_user
+2021-07-16 23:22:55 INFO  Log:30 - filling up password field with: secret_sauce
+2021-07-16 23:22:55 INFO  Log:30 - clicking login button
+2021-07-16 23:22:56 INFO  Log:30 - Verifying if current page is PRODUCTS
+2021-07-16 23:22:56 INFO  Log:30 - getting current's page title
+2021-07-16 23:22:56 INFO  Log:30 - current page is: PRODUCTS
+2021-07-16 23:22:56 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 23:22:56 INFO  Log:30 - Filling up login form with invalid user and password
+2021-07-16 23:22:56 INFO  Log:30 - filling up username field with: not_user
+2021-07-16 23:22:56 INFO  Log:30 - filling up password field with: secret_sauce
+2021-07-16 23:22:56 INFO  Log:30 - clicking login button
+2021-07-16 23:22:57 INFO  Log:30 - Verifying if current page is LOGIN
+2021-07-16 23:22:57 INFO  Log:30 - current page is: LOGIN FORM
+2021-07-16 23:22:57 INFO  Log:30 - Verifying if error message is: Epic sadface: Username and password do not match any user in this service
+2021-07-16 23:22:57 INFO  Log:30 - getting error message
+2021-07-16 23:22:57 INFO  Log:30 - error message showed: Epic sadface: Username and password do not match any user in this service
+2021-07-16 23:22:57 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 23:22:57 INFO  Log:30 - Filling up login form with valid user and wrong password
+2021-07-16 23:22:57 INFO  Log:30 - filling up username field with: standard_user
+2021-07-16 23:22:57 INFO  Log:30 - filling up password field with: not_pass
+2021-07-16 23:22:57 INFO  Log:30 - clicking login button
+2021-07-16 23:22:57 INFO  Log:30 - Verifying if current page is LOGIN
+2021-07-16 23:22:57 INFO  Log:30 - current page is: LOGIN FORM
+2021-07-16 23:22:57 INFO  Log:30 - Verifying if error message is: Epic sadface: Username and password do not match any user in this service
+2021-07-16 23:22:57 INFO  Log:30 - getting error message
+2021-07-16 23:22:57 INFO  Log:30 - error message showed: Epic sadface: Username and password do not match any user in this service
+2021-07-16 23:22:57 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 23:22:57 INFO  Log:30 - Filling up login form with blocked user and correct password
+2021-07-16 23:22:57 INFO  Log:30 - filling up username field with: locked_out_user
+2021-07-16 23:22:57 INFO  Log:30 - filling up password field with: secret_sauce
+2021-07-16 23:22:57 INFO  Log:30 - clicking login button
+2021-07-16 23:22:57 INFO  Log:30 - Verifying if current page is LOGIN
+2021-07-16 23:22:57 INFO  Log:30 - current page is: LOGIN FORM
+2021-07-16 23:22:57 INFO  Log:30 - Verifying if error message is: Epic sadface: Sorry, this user has been locked out.
+2021-07-16 23:22:57 INFO  Log:30 - getting error message
+2021-07-16 23:22:58 INFO  Log:30 - error message showed: Epic sadface: Sorry, this user has been locked out.
+2021-07-16 23:22:58 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 23:22:58 INFO  Log:30 - Filling up login form with only password
+2021-07-16 23:22:58 INFO  Log:30 - filling up username field with: 
+2021-07-16 23:22:58 INFO  Log:30 - filling up password field with: secret_sauce
+2021-07-16 23:22:58 INFO  Log:30 - clicking login button
+2021-07-16 23:22:58 INFO  Log:30 - Verifying if current page is LOGIN
+2021-07-16 23:22:58 INFO  Log:30 - current page is: LOGIN FORM
+2021-07-16 23:22:58 INFO  Log:30 - Verifying if error message is: Epic sadface: Username is required
+2021-07-16 23:22:58 INFO  Log:30 - getting error message
+2021-07-16 23:22:58 INFO  Log:30 - error message showed: Epic sadface: Username is required
+2021-07-16 23:22:58 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 23:22:58 INFO  Log:30 - Filling up login form with only user
+2021-07-16 23:22:58 INFO  Log:30 - filling up username field with: standard_user
+2021-07-16 23:22:58 INFO  Log:30 - filling up password field with: 
+2021-07-16 23:22:58 INFO  Log:30 - clicking login button
+2021-07-16 23:22:58 INFO  Log:30 - Verifying if current page is LOGIN
+2021-07-16 23:22:58 INFO  Log:30 - current page is: LOGIN FORM
+2021-07-16 23:22:58 INFO  Log:30 - Verifying if error message is: Epic sadface: Password is required
+2021-07-16 23:22:58 INFO  Log:30 - getting error message
+2021-07-16 23:22:58 INFO  Log:30 - error message showed: Epic sadface: Password is required
+2021-07-16 23:22:58 INFO  Log:30 - Going to https://www.saucedemo.com/
+2021-07-16 23:22:58 INFO  Log:30 - Filling up login form with invalid data to get an error message
+2021-07-16 23:22:58 INFO  Log:30 - filling up username field with: 
+2021-07-16 23:22:59 INFO  Log:30 - filling up password field with: 
+2021-07-16 23:22:59 INFO  Log:30 - clicking login button
+2021-07-16 23:22:59 INFO  Log:30 - Verifying error message shown
+2021-07-16 23:22:59 INFO  Log:30 - getting error message
+2021-07-16 23:22:59 INFO  Log:30 - error message showed: Epic sadface: Username is required
+2021-07-16 23:22:59 INFO  Log:30 - Closing error message: Epic sadface: Username is required
+2021-07-16 23:22:59 INFO  Log:30 - clicking error's close button
+2021-07-16 23:22:59 INFO  Log:30 - error message closed
+2021-07-16 23:22:59 INFO  Log:25 - Ending Testing ...TestSuite is closing

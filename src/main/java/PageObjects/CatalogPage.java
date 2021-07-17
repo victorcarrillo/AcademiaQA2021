@@ -40,12 +40,14 @@ public class CatalogPage extends BasePage{
         super(driver);
     }
 
-    public void productsInInventory() {
+    public boolean productsInInventory() {
         try{
             List<WebElement> products = getListWebElement(locInventory,5);
             Log.info("products in inventory: "+products.size());
+            return true;
         } catch(Exception e) {
             Log.fatal("inventory is empty");
+            return false;
         }
     }
 
@@ -99,7 +101,7 @@ public class CatalogPage extends BasePage{
         return null;
     }
 
-    public void productsCardsHaveName() {
+    public boolean productsCardsHaveName() {
         List<WebElement> products = new ArrayList<>();
         List<WebElement> name = new ArrayList<>();
 
@@ -120,14 +122,17 @@ public class CatalogPage extends BasePage{
         Log.info("comparing products against names");
         if(products.size() == name.size()) {
             Log.info("all products' cards in inventory have a name");
+            return true;
         } else if(products.size() > name.size()) {
             Log.fatal("not all products' cards in inventory have a name");
+            return false;
         } else {
             Log.fatal("more names were found");
+            return false;
         }
     }
 
-    public void productsCardsHaveImage() {
+    public boolean productsCardsHaveImage() {
         List<WebElement> products = new ArrayList<>();
         List<WebElement> image = new ArrayList<>();
 
@@ -148,14 +153,17 @@ public class CatalogPage extends BasePage{
         Log.info("comparing products against images");
         if(products.size() == image.size()) {
             Log.info("all products' cards in inventory have an image");
+            return true;
         } else if(products.size() > image.size()) {
             Log.fatal("not all products' cards in inventory have an image");
+            return false;
         } else {
             Log.fatal("more images were found");
+            return false;
         }
     }
 
-    public void productsCardsHaveDescription() {
+    public boolean productsCardsHaveDescription() {
         List<WebElement> products = new ArrayList<>();
         List<WebElement> description = new ArrayList<>();
 
@@ -176,14 +184,17 @@ public class CatalogPage extends BasePage{
         Log.info("comparing products against descriptions");
         if(products.size() == description.size()) {
             Log.info("all products' cards in inventory have a description");
+            return true;
         } else if(products.size() > description.size()) {
             Log.fatal("not all products' cards in inventory have a description");
+            return false;
         } else {
             Log.fatal("more descriptions were found");
+            return false;
         }
     }
 
-    public void productsCardsHavePrice() {
+    public boolean productsCardsHavePrice() {
         List<WebElement> products = new ArrayList<>();
         List<WebElement> price = new ArrayList<>();
 
@@ -204,14 +215,17 @@ public class CatalogPage extends BasePage{
         Log.info("comparing products against prices");
         if(products.size() == price.size()) {
             Log.info("all products' cards in inventory have a price");
+            return true;
         } else if(products.size() > price.size()) {
             Log.fatal("not all products' cards in inventory have a price");
+            return false;
         } else {
             Log.fatal("more prices were found");
+            return false;
         }
     }
 
-    public void productsCardsHaveButton() {
+    public boolean productsCardsHaveButton() {
         List<WebElement> products = new ArrayList<>();
         List<WebElement> button = new ArrayList<>();
 
@@ -232,10 +246,13 @@ public class CatalogPage extends BasePage{
         Log.info("comparing products against buttons");
         if(products.size() == button.size()) {
             Log.info("all products' cards in inventory have a cart button");
+            return true;
         } else if(products.size() > button.size()) {
             Log.fatal("not all products' cards in inventory have a cart button");
+            return false;
         } else {
             Log.fatal("more cart buttons were found");
+            return false;
         }
     }
 
@@ -251,7 +268,7 @@ public class CatalogPage extends BasePage{
         return null;
     }
 
-    public void isAddTo(String p) {
+    public boolean isAddTo(String p) {
         Log.info("getting product name");
         String product = getProductName(locNameInCard);
 
@@ -259,12 +276,14 @@ public class CatalogPage extends BasePage{
         try {
             getElement(locAddToCart,5);
             Log.info("button add to cart found");
+            return true;
         } catch(Exception e) {
             Log.fatal("button add to cart not found");
+            return false;
         }
     }
 
-    public void isRemove(String p) {
+    public boolean isRemove(String p) {
         Log.info("getting product name");
         String product = getProductName(locCardName);
 
@@ -272,12 +291,14 @@ public class CatalogPage extends BasePage{
         try {
             getElement(locRemoveFromCart,5);
             Log.info("button remove found");
+            return true;
         } catch(Exception e) {
             Log.fatal("button remove not found");
+            return false;
         }
     }
 
-    public void isAddToPage(String p) {
+    public boolean isAddToPage(String p) {
         Log.info("getting product name");
         String product = getProductName(locCardName);
 
@@ -285,12 +306,14 @@ public class CatalogPage extends BasePage{
         try {
             getElement(locAddToCart,5);
             Log.info("button add to cart found");
+            return true;
         } catch(Exception e) {
             Log.fatal("button add to cart not found");
+            return false;
         }
     }
 
-    public void isRemovePage(String p) {
+    public boolean isRemovePage(String p) {
         Log.info("getting product name");
         String product = getProductName(locCardName);
 
@@ -298,17 +321,21 @@ public class CatalogPage extends BasePage{
         try {
             getElement(locRemoveFromCart,5);
             Log.info("button remove found");
+            return true;
         } catch(Exception e) {
             Log.fatal("button remove not found");
+            return false;
         }
     }
 
-    public void isSortOption() {
+    public boolean isSortOption() {
         try{
             getElement(locSortOption,5);
             Log.info("sort option found");
+            return true;
         } catch(Exception e) {
             Log.fatal("sort option not found");
+            return false;
         }
     }
 
@@ -462,57 +489,69 @@ public class CatalogPage extends BasePage{
         return null;
     }
 
-    public void isNameInPage() {
+    public boolean isNameInPage() {
         try{
             getElement(locNameInPage,5);
             Log.info("product name found");
+            return true;
         } catch(Exception e) {
             Log.fatal("product name not found");
+            return false;
         }
     }
 
-    public void isImageInPage() {
+    public boolean isImageInPage() {
         try{
             getElement(locImageInPage,5);
             Log.info("product image found");
+            return true;
         } catch(Exception e) {
             Log.fatal("product image not found");
+            return false;
         }
     }
 
-    public void isDescriptionInPage() {
+    public boolean isDescriptionInPage() {
         try{
             getElement(locDescriptionInPage,5);
             Log.info("product description found");
+            return true;
         } catch(Exception e) {
             Log.fatal("product description not found");
+            return false;
         }
     }
 
-    public void isPriceInPage() {
+    public boolean isPriceInPage() {
         try{
             getElement(locPriceInPage,5);
             Log.info("product's price found");
+            return true;
         } catch(Exception e) {
             Log.fatal("product price not found");
+            return false;
         }
     }
 
-    public void isButtonInPage() {
+    public boolean isButtonInPage() {
         try{
             getElement(locButtonInPage,5);
             Log.info("add to cart button found");
+            return true;
         } catch(Exception e) {
             Log.fatal("add to cart button not found");
+            return false;
         }
     }
 
-    public void isBackInPage() {
+    public boolean isBackInPage() {
         try{
             getElement(locBackInPage,5);
             Log.info("back to products button found");
+            return true;
         } catch(Exception e) {
             Log.fatal("back to products button not found");
+            return false;
         }
     }
 }
